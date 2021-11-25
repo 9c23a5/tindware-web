@@ -30,13 +30,18 @@
     if (mysqli_num_rows($out) == 1) {
         echo "Datos correctos";
         $loginCorrecto = true;
-        $resultado = mysqli_fetch_row($out);
+        $resultado = mysqli_fetch_array($out);
 
         # Y obtenemos los datos del usuario mediante su id
         $id = $resultado['id'];
         $datosUser = obtenerDatosUser($id);
+
+        # Setteamos las cookies
+        setcookie('id_user', $id, 0, '/');
+        setcookie('type_user', $datosUser['tipo'], 0, '/');
     }
     else {
+        $loginCorrecto = false;
         echo "Datos incorrectos";
     }
     ?>

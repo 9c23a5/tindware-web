@@ -15,7 +15,7 @@ function obtenerDatosUser($id) {
         return false;
     }
     else {
-        $resultado = mysqli_fetch_row($out);
+        $resultado = mysqli_fetch_array($out);
         $datosUsuario['id'] = $id;
         $datosUsuario['tipo'] = $resultado['tipo'];
         $datosUsuario['username'] = $resultado['username'];
