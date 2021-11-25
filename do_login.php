@@ -12,10 +12,11 @@
 
     </header>
     <?php
+    require 'constantes.php';
     require 'obtenerDatosUser.php';
     # Recogemos datos del POST
-    $login = $_POST['login'];
-    $passwd = $_POST['passwd'];
+    @$login = $_POST['login'];
+    @$passwd = $_POST['passwd'];
     $con = mysqli_connect('localhost', 'root');
     if (str_contains($login, '@')) {
         # Ha iniciado sesión utilizando un correo
@@ -49,33 +50,33 @@
     <?php
     # Si el usuario no ha introducido los datos correctos escondemos el div de success
     if (!$loginCorrecto) {
-         echo "<span class='hidden'>";
+         echo HIDE;
      }
     ?>
     <div id="login_success">
-        Bienvenido, <?php echo $datosUser['username'] ?> 
+        Bienvenido, <?php echo $datosUser['username'] ?>. <a href="index.php">Volver al inicio</a>
     </div>
     <?php
     # Si el usuario no ha introducido los datos correctos escondemos el div de success
     if (!$loginCorrecto) {
-         echo "</span>";
+         echo HIDECLOSE;
      }
     ?>
 
     <?php
     # Si el inicio de sesión es correcto escondemos el div de error
     if ($loginCorrecto) {
-         echo "<span class='hidden'>";
+         echo HIDE;
      }
     ?>
     <div id="login_error">
-        El usuaio o la contraseña son inválidos
+        El usuaio o la contraseña son inválidos. <a href="login.php">Vuelve a intentarlo</a> o <a href="index.php">vuelve al inicio</a>
         <!-- Error cuando ya has iniciado sesión -->
     </div>
     <?php
     # Si el inicio de sesión es correcto escondemos el div de error
     if ($loginCorrecto) {
-         echo "<span class='hidden'>";
+         echo HIDECLOSE;
      }
     ?>
 
