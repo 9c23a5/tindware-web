@@ -18,9 +18,9 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Prueba anthony
+--
 -- Base de datos: `tindware`
---Prueba ander
+--
 
 -- --------------------------------------------------------
 
@@ -39,7 +39,6 @@ CREATE TABLE `perfil` (
 
 --
 -- Estructura de tabla para la tabla `trabajo`
---Prueba El jose
 --
 
 CREATE TABLE `trabajo` (
