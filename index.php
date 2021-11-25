@@ -11,6 +11,9 @@
     # Cargamos cookies
     require 'obtenerCookies.php';
     echo "MIS COOKIES SON $id_user Y $type_user"; # debug
+    # Cargamos los datos del usuario
+    require 'obtenerDatosUser.php';
+    $datosUsuario = obtenerDatosUser($id_user);
     ?>
     <header>
         <div id="logo">

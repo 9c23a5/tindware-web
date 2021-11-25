@@ -23,7 +23,14 @@
      }
     ?>
     <div id="form_login">
-        <!-- Formulario de inicio de sesión-->    
+    <form action="do_login.php" method="POST">
+        <!-- Formulario de inicio de sesión-->
+        Nombre de usuario o email:<br/>
+        <input type="text" name="login" required/><br/>
+        Contraseña:<br/>
+        <input type="password" name="passwd" required/><br/>
+        <input type="submit" name="Iniciar Sesión"/>
+    </form>    
     </div>
     <?php
     # Si el usuario no es invitado escondemos el form de login
@@ -39,6 +46,7 @@
      }
     ?>
     <div id="login_error">
+        Ya has iniciado sesión
         <!-- Error cuando ya has iniciado sesión -->
     </div>
     <?php
@@ -49,3 +57,4 @@
     ?>
 
 </body>
+</html>
