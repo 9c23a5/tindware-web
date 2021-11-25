@@ -39,6 +39,7 @@ CREATE TABLE `perfil` (
 
 --
 -- Estructura de tabla para la tabla `trabajo`
+--Prueba El jose
 --
 
 CREATE TABLE `trabajo` (
