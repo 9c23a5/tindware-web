@@ -1,8 +1,9 @@
 ## Ejemplo header
 ![Ejemplo header](https://github.com/9c23a5/tindware-web/blob/main/ejemplo_header.png?raw=true)
 ## Enlaces
-Header: https://www.prospects.ac.uk/
-https://hired.com/
+[Header Prospects](https://www.prospects.ac.uk/)
+
+[Hired](https://hired.com/)
 
 ## Para añadir virtual host en XAMMP a tindware-web
 1. Abrimos notepad como administrador
