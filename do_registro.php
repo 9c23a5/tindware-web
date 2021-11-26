@@ -129,6 +129,7 @@
     if ($registroCorrecto) {
          echo HIDECLOSE;
      }
+     mysqli_close($con);
     ?>
 
 </body>
