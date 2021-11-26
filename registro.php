@@ -33,12 +33,12 @@
         <input type="password" name="passwd" required/><br/>
         Correo electrónico:<br/>
         <input type="email" name="email" required/><br/>
-        Tipo de usuario:
+        Tipo de usuario:<br/>
         <select name="tipo">
             <option value="particular" selected>Particular</option>
             <option value="tecnico">Técnico</option>
             <option value="business">Business</option>
-        </select>
+        </select><br/>
         Fecha de Nacimiento:<br/>
         <input type="date" name="fechanac" required/><br/>
         <input type="submit" value="Registrarse"/><br/>
