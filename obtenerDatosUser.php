@@ -22,6 +22,7 @@ function obtenerDatosUser($id) {
         $datosUsuario['email'] = $resultado['email'];
         return $datosUsuario;
     }
+    mysqli_close($con);
 }
 
 ?>

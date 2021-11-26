@@ -78,6 +78,7 @@
     if ($loginCorrecto) {
          echo HIDECLOSE;
      }
+     mysqli_close($con);
     ?>
 
 </body>
