@@ -53,7 +53,7 @@
          echo HIDE;
      }
     ?>
-    <div id="login_success">
+    <div id="dologin_success">
         Bienvenido, <?php echo $datosUser['username'] ?>. <a href="index.php">Volver al inicio</a>
     </div>
     <?php
@@ -69,7 +69,7 @@
          echo HIDE;
      }
     ?>
-    <div id="login_error">
+    <div id="dologin_error">
         El usuaio o la contraseña son inválidos. <a href="login.php">Vuelve a intentarlo</a> o <a href="index.php">vuelve al inicio</a>
         <!-- Error cuando ya has iniciado sesión -->
     </div>

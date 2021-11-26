@@ -24,7 +24,7 @@
     setcookie("id_user", 0, 0, "/");
     setcookie("type_user", "invitado", 0, "/");
     ?>
-    <div id="logout_success">
+    <div id="dologout_success">
         Has cerrado sesión correctamente. <a href="index.php">Volver al inicio</a>.
     </div>
     <?php
@@ -40,7 +40,7 @@
          echo HIDE;
      }
     ?>
-    <div id="logout_error">
+    <div id="dologout_error">
         ¡Todavía no has iniciado sesión! <a href="login.php">Inicia sesión</a> o <a href="index.php">vuelve al inicio</a>.
         <!-- Error cuando ya has iniciado sesión -->
     </div>
