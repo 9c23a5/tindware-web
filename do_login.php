@@ -40,6 +40,8 @@
         # Setteamos las cookies
         setcookie('id_user', $id, 0, '/');
         setcookie('type_user', $datosUser['tipo'], 0, '/');
+        $query = "UPDATE tindware.usuario SET lastlogin = current_timestamp() WHERE id = $id;";
+        mysqli_query($con, $query);
     }
     else {
         $loginCorrecto = false;
