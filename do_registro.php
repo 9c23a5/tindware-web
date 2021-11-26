@@ -14,7 +14,6 @@
     <?php
     require 'constantes.php';
     define('EDADMINIMA', 18); # Edad minima del usuario en un registro
-    define('ERRORGENERICO', 'Error en el registro. Contácte con el administrador de la página');
     # Recogemos datos del POST
     @$username = $_POST['username'];
     @$passwd = $_POST['passwd'];
@@ -30,7 +29,7 @@
     }
     
     # debug
-    echo "Username $username<br/>Passwd: $passwd<br/>Email: $email<br/>Tipo: $tipo<br/>Fecha nac: $fechaNac<br/>";
+    #echo "Username $username<br/>Passwd: $passwd<br/>Email: $email<br/>Tipo: $tipo<br/>Fecha nac: $fechaNac<br/>";
 
     # Comprobamos que los campos existen
     if (@!empty($username) AND @!empty($passwd) AND @!empty($email) AND @!empty($tipo) AND @!empty($fechaNac)) {
@@ -69,13 +68,17 @@
                         $out = mysqli_query($con, $query);
                         if (mysqli_num_rows($out) == 1) {
                             $registroCorrecto = true;
+                            # Iniciamos sesión con el usuario
+                            $id = mysqli_fetch_array($out)['id'];
+                            setcookie('id_user', (int)$id, 0, "/");
+                            setcookie('type_user', $tipo, 0, "/");
                         }
                         else {
-                            errorReg(ERRORGENERICO);
+                            errorReg('Error en el registro. Contácte con el administrador de la página');
                         }
                     }
                     else {
-                        errorReg(ERRORGENERICO);
+                        errorReg('El usuario ya existe o el correo ya esta siendo utilizada con otra cuenta. Si no se acuerda de sus datos contacte con el adminstrador de la página');
                     }
                     
                 }
@@ -103,7 +106,7 @@
      }
     ?>
     <div id="doregistro_success">
-        Bienvenido, <?php echo @$username ?>. <a href="index.php">Volver al inicio</a>
+        Bienvenido a TindWare, <?php echo @$username ?>. <a href="index.php">Volver al inicio</a> o <a href="#">crea su primera oferta</a>.
     </div>
     <?php
     # Si el registro ha fallado escondemos el div de success
@@ -119,7 +122,7 @@
      }
     ?>
     <div id="doregistro_error">
-        Error: <?php echo @$mensajeError ?>. <a href="login.php">Vuelve a intentarlo</a> o <a href="index.php">vuelve al inicio</a>
+        Error: <?php echo @$mensajeError ?>. <a href="registro.php">Vuelva al formulario</a> o <a href="index.php">vuelve al inicio</a>
     </div>
     <?php
     # Si el registro es correcto escondemos el div de error
