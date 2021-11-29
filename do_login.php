@@ -8,12 +8,9 @@
     <title>TindWare</title>
 </head>
 <body>
-    <header>
-
-    </header>
     <?php
-    require 'constantes.php';
-    require 'obtenerDatosUser.php';
+    include 'inc/constantes.php';
+    include 'inc/obtenerDatosUser.php';
     # Recogemos datos del POST
     @$login = $_POST['login'];
     @$passwd = $_POST['passwd'];
@@ -47,6 +44,8 @@
         $loginCorrecto = false;
         echo "Datos incorrectos";
     }
+    # Incluir header
+    include 'inc/header.php';
     ?>
 
     <?php

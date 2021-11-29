@@ -10,13 +10,13 @@
 <body>
     <?php
     # Cargar constantes
-    require 'constantes.php';
+    include 'inc/constantes.php';
     # Cargamos cookies
-    require 'obtenerCookies.php';
-    ?>
-    <header>
+    include 'inc/obtenerCookies.php';
 
-    </header>
+    # Incluir header
+    include 'inc/header.php';
+    ?>
 
     <?php
     # Si el usuario no es invitado escondemos el form de login

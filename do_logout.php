@@ -8,12 +8,9 @@
     <title>TindWare</title>
 </head>
 <body>
-    <header>
-
-    </header>
     <?php
-    require 'constantes.php';
-    require 'obtenerCookies.php';
+    include 'inc/constantes.php';
+    include 'inc/obtenerCookies.php';
     ?>
 
     <?php
@@ -49,6 +46,8 @@
     if ($type_user != 'invitado') {
          echo HIDECLOSE;
      }
+    # Incluir header
+    include 'inc/header.php';
     ?>
 
 </body>

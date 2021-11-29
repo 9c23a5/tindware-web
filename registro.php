@@ -14,10 +14,7 @@
     # Cargamos cookies
     require 'obtenerCookies.php';
     ?>
-    <header>
-
-    </header>
-
+    
     <?php
     # Si el usuario no es invitado escondemos el form de login
     if ($type_user != 'invitado') {
