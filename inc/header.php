@@ -1,3 +1,6 @@
+<?php
+include constantes.php
+?>
 <header>
     <div id="logo">
         <!-- Un img con el logo de TindWare y un canvas con el nombre -->
