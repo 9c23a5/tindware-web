@@ -8,11 +8,8 @@
     <title>TindWare</title>
 </head>
 <body>
-    <header>
-
-    </header>
     <?php
-    require 'constantes.php';
+    include 'inc/constantes.php';
     define('EDADMINIMA', 18); # Edad minima del usuario en un registro
     # Recogemos datos del POST
     @$username = $_POST['username'];
@@ -97,6 +94,8 @@
     else {
         errorReg("Algunos de los campos está vacío");
     }
+    # Incluir header
+    include 'inc/header.php';
     ?>
 
     <?php
