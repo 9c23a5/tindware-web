@@ -68,7 +68,9 @@
                             # Iniciamos sesión con el usuario
                             $id = mysqli_fetch_array($out)['id'];
                             setcookie('id_user', (int)$id, 0, "/");
+                            $id_user = $id;
                             setcookie('type_user', $tipo, 0, "/");
+                            $type_user = $tipo;
                         }
                         else {
                             errorReg('Error en el registro. Contácte con el administrador de la página');

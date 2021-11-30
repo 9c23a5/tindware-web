@@ -8,7 +8,7 @@ $datosUser = obtenerDatosUser($id_user);
 <header>
     <div id="logo">
         <!-- Un img con el logo de TindWare y un canvas con el nombre -->
-        <img src="img/logo.png">
+        <a href="index.php"><img src="img/logo.png"></a>
     </div>
 
     <div id="menu">

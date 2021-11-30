@@ -10,9 +10,9 @@
 <body>
     <?php
     # Cargar constantes
-    require 'constantes.php';
+    include 'inc/constantes.php';
     # Cargamos cookies
-    require 'obtenerCookies.php';
+    include 'inc/obtenerCookies.php';
     ?>
     
     <?php

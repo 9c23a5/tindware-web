@@ -13,10 +13,6 @@
     include 'inc/constantes.php';
     # Cargamos cookies
     include 'inc/obtenerCookies.php';
-    # Cargamos los datos del usuario
-    include 'inc/obtenerDatosUser.php';
-    $datosUser = obtenerDatosUser($id_user);
-
     # Incluir header
     include 'inc/header.php';
     ?>
