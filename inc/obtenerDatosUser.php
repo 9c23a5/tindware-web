@@ -7,22 +7,28 @@
 # $datosUser['email'] = el email del usuario
 
 function obtenerDatosUser($id) {
-    $con = mysqli_connect('localhost', 'root');
-    $query = "SELECT tipo, username, email FROM tindware.usuario WHERE id = $id LIMIT 1";
+    $datosUser['id'] = $id;
+    if ($id != 0) {
+        $con = mysqli_connect('localhost', 'root');
+        $query = "SELECT tipo, username, email FROM tindware.usuario WHERE id = $id LIMIT 1";
 
-    $out = mysqli_query($con, $query);
-    if (mysqli_num_rows($out) != 1) {
-        return false;
+        $out = mysqli_query($con, $query);
+        if (mysqli_num_rows($out) != 1) {
+            return false;
+        }
+        else {
+            $resultado = mysqli_fetch_array($out);
+            $datosUser['tipo'] = $resultado['tipo'];
+            $datosUser['username'] = $resultado['username'];
+            $datosUser['email'] = $resultado['email'];
+            return $datosUser;
+        }
+        mysqli_close($con);
     }
     else {
-        $resultado = mysqli_fetch_array($out);
-        $datosUser['id'] = $id;
-        $datosUser['tipo'] = $resultado['tipo'];
-        $datosUser['username'] = $resultado['username'];
-        $datosUser['email'] = $resultado['email'];
+        $datosUser['tipo'] = 'invitado';
         return $datosUser;
     }
-    mysqli_close($con);
 }
 
 ?>
