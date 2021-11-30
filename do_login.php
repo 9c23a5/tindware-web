@@ -8,12 +8,9 @@
     <title>TindWare</title>
 </head>
 <body>
-    <header>
-
-    </header>
     <?php
-    require 'constantes.php';
-    require 'obtenerDatosUser.php';
+    include 'inc/constantes.php';
+    include 'inc/obtenerDatosUser.php';
     # Recogemos datos del POST
     @$login = $_POST['login'];
     @$passwd = $_POST['passwd'];
@@ -40,11 +37,15 @@
         # Setteamos las cookies
         setcookie('id_user', $id, 0, '/');
         setcookie('type_user', $datosUser['tipo'], 0, '/');
+        $query = "UPDATE tindware.usuario SET lastlogin = current_timestamp() WHERE id = $id;";
+        mysqli_query($con, $query);
     }
     else {
         $loginCorrecto = false;
         echo "Datos incorrectos";
     }
+    # Incluir header
+    include 'inc/header.php';
     ?>
 
     <?php
@@ -78,6 +79,7 @@
     if ($loginCorrecto) {
          echo HIDECLOSE;
      }
+     mysqli_close($con);
     ?>
 
 </body>
