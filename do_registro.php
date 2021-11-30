@@ -76,10 +76,10 @@
                     else {
                         errorReg('El usuario ya existe o el correo ya esta siendo utilizada con otra cuenta. Si no se acuerda de sus datos contacte con el adminstrador de la página');
                     }
-                    
+                    mysqli_close($con);
                 }
                 else {
-                    errorReg('Debes ser mayor que '.strval(EDADMINIMA).' años para registrarte');
+                    errorReg('Debes ser mayor de '.strval(EDADMINIMA).' años para registrarte');
                 }
             }
             else {
@@ -127,7 +127,6 @@
     if ($registroCorrecto) {
          echo HIDECLOSE;
      }
-     mysqli_close($con);
     ?>
 
 </body>

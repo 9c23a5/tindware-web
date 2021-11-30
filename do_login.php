@@ -7,7 +7,8 @@
 <body>
     <?php
     include 'inc/constantes.php';
-    include 'inc/obtenerDatosUser.php';
+    # Incluir header
+    include 'inc/header.php';
     # Recogemos datos del POST
     @$login = $_POST['login'];
     @$passwd = $_POST['passwd'];
@@ -23,7 +24,7 @@
     
     $out = mysqli_query($con, $query);
     if (mysqli_num_rows($out) == 1) {
-        echo "Datos correctos";
+        #echo "Datos correctos"; # DEBUG
         $loginCorrecto = true;
         $resultado = mysqli_fetch_array($out);
 
@@ -39,10 +40,8 @@
     }
     else {
         $loginCorrecto = false;
-        echo "Datos incorrectos";
+        #echo "Datos incorrectos"; # DEBUG
     }
-    # Incluir header
-    include 'inc/header.php';
     ?>
 
     <?php
