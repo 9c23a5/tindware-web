@@ -1,5 +1,5 @@
 <?php
-include constantes.php
+@include "constantes.php";
 ?>
 <header>
     <div id="logo">
