@@ -1,5 +1,9 @@
 <?php
 @include "constantes.php";
+@include "obtenerCookies.php";
+@include "obtenerDatosUser.php";
+
+$datosUser = obtenerDatosUser($id_user);
 ?>
 <header>
     <div id="logo">
@@ -45,7 +49,7 @@
     }
     ?>
     <div id="cerrar_sesion">
-        Hola, <?php echo @$datosUsuario['username'] ?>. <a href="do_logout.php">Cerrar Sesión</a>
+        Hola, <?php echo @$datosUser['username'] ?>. <a href="do_logout.php">Cerrar Sesión</a>
     </div>
     <?php
     # Si el usuario NO ha iniciado sesión escondemos este menu

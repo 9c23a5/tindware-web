@@ -15,7 +15,7 @@
     include 'inc/obtenerCookies.php';
     # Cargamos los datos del usuario
     include 'inc/obtenerDatosUser.php';
-    $datosUsuario = obtenerDatosUser($id_user);
+    $datosUser = obtenerDatosUser($id_user);
 
     # Incluir header
     include 'inc/header.php';
