@@ -12,5 +12,8 @@
     # Incluir header
     include 'inc/header.php';
     ?>
+    <div id="main">
+        <!-- Aqui va el contenido despues del header -->
+    </div>
 </body>
 </html>
