@@ -1,10 +1,10 @@
 <?php
 # Pequeño snippet para obtener los datos de un usuario dado su id
 # El return es un array con los siguientes valores
-# $datosUsuario['id'] = el id del usuario
-# $datosUsuario['tipo'] = el tipo de usuario
-# $datosUsuario['username'] = el nombre del usuario
-# $datosUsuario['email'] = el email del usuario
+# $datosUser['id'] = el id del usuario
+# $datosUser['tipo'] = el tipo de usuario
+# $datosUser['username'] = el nombre del usuario
+# $datosUser['email'] = el email del usuario
 
 function obtenerDatosUser($id) {
     $con = mysqli_connect('localhost', 'root');
@@ -16,12 +16,13 @@ function obtenerDatosUser($id) {
     }
     else {
         $resultado = mysqli_fetch_array($out);
-        $datosUsuario['id'] = $id;
-        $datosUsuario['tipo'] = $resultado['tipo'];
-        $datosUsuario['username'] = $resultado['username'];
-        $datosUsuario['email'] = $resultado['email'];
-        return $datosUsuario;
+        $datosUser['id'] = $id;
+        $datosUser['tipo'] = $resultado['tipo'];
+        $datosUser['username'] = $resultado['username'];
+        $datosUser['email'] = $resultado['email'];
+        return $datosUser;
     }
+    mysqli_close($con);
 }
 
 ?>

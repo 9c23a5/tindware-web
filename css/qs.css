@@ -1,0 +1,36 @@
+header{
+
+    background-color: bisque;
+    font-family: fantasy;   
+
+}
+
+body{
+
+    font-family: fantasy;
+}
+
+
+h1{
+    text-align: center;
+    font-family: fantasy;
+}
+
+footer{
+
+    background-color: black;
+    color: aliceblue;
+    font-family: fantasy;
+
+}
+
+#qs{
+
+   margin-left: 7cm;
+   margin-right: 7cm;
+   text-align: justify;
+   font-size: 20px;
+   font-family: fantasy;
+   line-height: 0.9cm;
+
+}

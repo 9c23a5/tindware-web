@@ -1,77 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/misc.css" type="text/css"/>
-    <script src="scripts/canvas.js" type="text/javascript"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TindWare</title>
+    <title>TindWare - Inicio</title>
 </head>
 <body>
     <?php
     # Cargar constantes
-    require 'constantes.php';
+    include 'inc/constantes.php';
     # Cargamos cookies
-    require 'obtenerCookies.php';
-    echo "MIS COOKIES SON $id_user Y $type_user"; # debug
-    # Cargamos los datos del usuario
-    require 'obtenerDatosUser.php';
-    $datosUsuario = obtenerDatosUser($id_user);
+    include 'inc/obtenerCookies.php';
+    # Incluir header
+    include 'inc/header.php';
     ?>
-    <header>
-        <div id="logo">
-            <!-- Un img con el logo de TindWare y un canvas con el nombre -->
-            <img src="logo.png">
-            <canvas id="nombre" width="200" height="50"></canvas>
-        </div>
-
-        <div id="menu">
-            <!-- Un menu con las diferentes opciones (mapa tecnicos, ultimas ofertas, faq, etc...) -->
-            <ul>
-                <li>Mapa tecnicos</li>
-                <li>Ultima ofertas</li>
-                <li>FAQ</li>
-                <li>Panel administrativo</li><!--Admin-->
-                <li></li>
-            </ul>
-            
-            <!-- Hay otros menus, por ejemplo 'Panel administracion', que dependen segun el valor de la cookie de inicio de sesion -->
-        </div>
-
-        <?php
-        # Si el usuario ha iniciado sesión escondemos este menu
-        if ($id_user != 0) {
-            echo HIDE;
-        }
-        ?>
-        <div id="login_registro">
-            <!-- Enlaces para Iniciar Sesión y Registro -->
-            <a href="login.php">Iniciar Sesión</a>
-            <a href="registro.php">Registro</a>
-        </div>
-        <?php
-        # Si el usuario ha iniciado sesión escondemos este menu
-        if ($id_user != 0) {
-            echo HIDECLOSE;
-        }
-        ?>
-
-        <?php
-        # Si el usuario NO ha iniciado sesión escondemos este menu
-        if ($id_user == 0) {
-            echo HIDE;
-        }
-        ?>
-        <div id="cerrar_sesion">
-            Hola, <?php echo @$datosUsuario['username'] ?>. <a href="do_logout.php">Cerrar Sesión</a>
-        </div>
-        <?php
-        # Si el usuario NO ha iniciado sesión escondemos este menu
-        if ($id_user == 0) {
-            echo HIDECLOSE;
-        }
-        ?>
-    </header>
+    <div id="main">
+        <!-- Aqui va el contenido despues del header -->
+    </div>
 </body>
 </html>

@@ -1,0 +1,71 @@
+<?php
+@include "constantes.php";
+@include "obtenerCookies.php";
+@include "obtenerDatosUser.php";
+
+$datosUser = obtenerDatosUser($id_user);
+?>
+<head>
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap" rel="stylesheet"> 
+    <!-- CSS local -->
+    <link rel="stylesheet" href="../css/misc.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/main.css" type="text/css"/>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<header>
+    <div id="logo">
+        <!-- Un img con el logo de TindWare y un canvas con el nombre -->
+        <a href="index.php"><img src="img/logo.png"></a>
+    </div>
+    <div id="botones">
+        <!-- Un menu con las diferentes opciones (mapa tecnicos, ultimas ofertas, faq, etc...) -->
+        <div id="links">
+            <ul>
+                <li><a href="#">Mapa técnicos</a></li>
+                <li><a href="#">Ultima ofertas</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a><a href="/admin/">Panel administrativo</a></a><!--Admin--></li>
+            </ul>
+        <!-- Hay otros menus, por ejemplo 'Panel administracion', que dependen segun el valor de la cookie de inicio de sesion -->
+        </div>
+        <div id="login_reg_logout">
+            <?php
+            # Si el usuario ha iniciado sesión escondemos este menu
+            if ($id_user != 0) {
+                echo HIDE;
+            }
+            ?>
+                <!-- Enlaces para Iniciar Sesión y Registro -->
+                <a href="login.php">Iniciar Sesión</a>
+                <span class="separador">&nbsp;</span>
+                <a href="registro.php">Registro</a>
+            <?php
+            # Si el usuario ha iniciado sesión escondemos este menu
+            if ($id_user != 0) {
+                echo HIDECLOSE;
+            }
+            ?>
+
+            <?php
+            # Si el usuario NO ha iniciado sesión escondemos este menu
+            if ($id_user == 0) {
+                echo HIDE;
+            }
+            ?>
+                Hola, <?php echo @$datosUser['username'] ?>. <a href="do_logout.php">Cerrar Sesión</a>
+            <?php
+            # Si el usuario NO ha iniciado sesión escondemos este menu
+            if ($id_user == 0) {
+                echo HIDECLOSE;
+            }
+            ?>
+        </div>
+    </div>
+</header>
