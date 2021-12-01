@@ -51,7 +51,3 @@ function neonLightEffect() {
     ctx.restore();
 };
 
-var canvas = document.getElementById("canvas");
-var ctx = canvas.getContext("2d");
-ctx.font = "30px 'Press Start 2P'";
-ctx.fillText("TindWare", 10, 50);
