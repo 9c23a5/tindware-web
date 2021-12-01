@@ -6,6 +6,11 @@
 $datosUser = obtenerDatosUser($id_user);
 ?>
 <head>
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap" rel="stylesheet"> 
+    <!-- CSS local -->
     <link rel="stylesheet" href="../css/misc.css" type="text/css"/>
     <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
     <meta charset="UTF-8">

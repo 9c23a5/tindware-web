@@ -10,8 +10,8 @@ body {
 
 header {
       margin: 0;
-      padding: 5px 0 0 5px;
-      background-color: blue;
+      padding: 5px 10px 0 10px;
+      background-color: #053041;
 }
 
 header a {
@@ -32,6 +32,8 @@ header #botones {
 }
 
 header #links {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
       width: auto;
 }
             
@@ -41,18 +43,20 @@ header #links  li {
       width: auto;
       height:30px;
       padding:5px 10px;
-      background-color:#000;
-      border:1px solid #000;
+      background-color:#375967;
+      border:1px solid #375967;
       text-align:center;
-      color:#fff;
+      color: white;
       margin-right: 5px;
+      border-radius: 10px 10px 0 0;
 }
 
 header #login_reg_logout {
-      color: purple;
+      font-family: 'Outfit', sans-serif;
+      color: #bfd312;
       margin-bottom: 5px;
 }
 
 header #login_reg_logout a {
-      color: plum;
+      color: #f64598;
 }
