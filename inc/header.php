@@ -77,9 +77,13 @@ $datosUser = obtenerDatosUser($id_user);
     var ctx = canvas.getContext("2d");
     // ctx.font = "200px Press Start 2P";
     ctx.font = "30px PressStart2P";
-    ctx.shadowColor = 'green';
-    ctx.shadowOffsetX = 2;
-    ctx.shadowOffsetY = 4;
-    ctx.shadowBlur = 10;
-    ctx.fillText("TindWare", 10, 50);
+    ctx.font = "42px PressStart2P";
+    ctx.fillStyle = "#17d314";
+    ctx.shadowColor = 'white';
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+    ctx.shadowBlur = 14;
+    ctx.fillText("T", 10, 75);
+    ctx.fillText("ind", 41, 75);
+    ctx.fillText("Ware", 171, 75);
 </script> 
