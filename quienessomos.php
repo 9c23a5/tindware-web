@@ -77,13 +77,14 @@
                     <td>
                         <table>
                             <tr>
-                                <td>Correo electrónico</td>
+                                <td>Correo electrónico*</td>
                                 <td><input type="email" name="email"></td>                                
                             </tr>
                             <tr>
                             <td>Observaciones</td>
-                            <td><textarea name="observaciones" cols="18" rows="10"></textarea></td>
+                            <td><textarea name="observaciones" cols="18" rows="5"></textarea></td>
                             </tr>
+                            <tr><td colspan="2" ><input type="submit" value="Enviar" class="submit"></td></tr>
 
                         </table>
                     </td>
