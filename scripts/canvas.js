@@ -1,7 +1,6 @@
 function neonLightEffect() {
     var text = "TindWare('"+String.fromCharCode(0x2665)+"')";
     var font = "120px Futura, Helvetica, sans-serif";
-    // ctx.font = "42px PressStart2P";
     var jitter = 25; // the distance of the maximum jitter
     var offsetX = 30;
     var offsetY = 70;
