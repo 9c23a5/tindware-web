@@ -34,6 +34,13 @@
         <p>Dedicamos todos nuestros esfuerzos a enlazar los mejores técnicos en cada campo de la informática con usuarios y empresas que necesiten en un momento crucial la asistencia.
         Creemos que el tiempo es oro, y por eso nuestros técnicos están capacitados para trabajar de la manera más rápida y eficiente.</p>
 
+        <h1>¿Por qué nuestro servicio?</h1>
+        <p>Nos centramos en ofrecer un servicio de calidad, orientado hacia todas las personas. Creemos que es importante que una sociedad tenga
+        conocimientos en informática, ya que un futuro completamente informatizado está a la vuelta de la esquina.
+        Por tanto, estamos plantando la semilla de un futuro sin preocupaciones, en el cuál un simple mensaje de texto o una llamada teléfonica
+        ponga a tu disposicion a los mejores técnicos del mercado.</p>
+        <p>Además queremos ser unfa fuente de oprtunidades para aquellas personas con dificultades para encontrar un empleo pueda tener un oportunidad en este mercado en 
+            expansión</p>
          
        
         <h1>¿Por qué trabajar con nosotros?</h1>
@@ -62,8 +69,8 @@
                 <h2>8. Data Scientist</h2>
                 <h1>¿Hace falta estar titulado para trabajar con nosotros?</h1>
 
-                <p>Principalmente no, realizamos nuestros propios examanes tanto practicos como teoricos para valorar si esa persona 
-                    tiene cumple con nuestros requisitos minimos. De todos modos, la titulación que poseas nos ayuda de manera orientativa</p>
+                <p>Principalmente no, realizamos nuestros propios exámanes, tanto prácticos como teóricos para valorar si esa persona 
+                    tiene cumple con nuestros requisitos minimos. De todos modos, la titulación que poseas nos ayuda de manera orientativa.</p>
 
                 
 
