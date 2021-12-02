@@ -27,13 +27,16 @@
                     height="600"
                     frameborder="0">
                 </iframe>
-                <span id="gmap_antes">Por favor, activa la ubicación en su navegador o escriba su ubicación en el cuadro de texto.</span>
-                <span id="gmap_nosoporte">Su navegador no permite la geolocalización, escriba su ubicación en el cuadro de texto.</span>
-                <span id="gmap_noseguro">Esta función solo funciona en sitios seguros (HTTPS).</span>
+                <span class="errorMaps" id="gmap_antes">Por favor, activa la ubicación en su navegador o escriba su ubicación en el cuadro de texto.</span>
+                <span class="errorMaps" id="gmap_nosoporte">Su navegador no permite la geolocalización, escriba su ubicación en el cuadro de texto.</span>
+                <span class="errorMaps" id="gmap_noseguro">Esta función solo funciona en sitios seguros (HTTPS).</span>
             </div>
         </div>
         <div id="columna">
-
+            <div id="buscar">
+                <input type="text" id="formBuscar" placeholder="Introduce tu lugar..."/>
+                <button onclick="getLocForm()">Mostrar</button>
+            </div>
         </div>
     </div>
 </body>
