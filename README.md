@@ -27,7 +27,7 @@ NameVirtualHost *
 </VirtualHost>
 ```
 7. Guardamos y abrimos httpd-ssl.conf
-8. Copiamos este codigo al final, al igual que antes cambiamos la ruta/URL. (Es lo mismo pero con :443)
+8. Copiamos este codigo al final, al igual que antes cambiamos la ruta/URL. (Es lo mismo pero con :443) **NECESARIO PARA MAPA TECNICOS**
 ```
 <VirtualHost *:443>
   DocumentRoot "C:\Users\mikeldi14\dev\tindware-web"

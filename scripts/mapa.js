@@ -21,14 +21,23 @@ function geoloc_error(err) {
 }
 
 function getLocForm() {
-    var texto = $("#formBuscar").val();
-    if (texto === "") {
-        console.log("Form vacio");
+    var texto = $("#inputMostrar").val();
+    if (!texto) {
+        alert("Form vacio");
     }
     else {
         updateGMaps(undefined, undefined, texto);
     }
 }
+
+$(function(){
+    $("#inputMostrar").keypress(function (e) {
+        var key = e.which;
+        if(key == 13) {
+            $("#buttonMostrar").click();
+        }
+    });
+});
 
 $(document).ready(function() {
     $("#gmap").hide();
@@ -37,7 +46,13 @@ $(document).ready(function() {
 
     if (window.isSecureContext) {
         if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(geoloc_ok, geoloc_error);
+            const {lat, lon, error} = obtenerLatLon();
+            if (error) {
+                alert("Se ha encontrado el siguiente error: " + eror);
+            }
+            else {
+                updateGMaps(lat, lon);
+            }
         }
         else {
             $("#gmap_antes").hide();
@@ -49,3 +64,4 @@ $(document).ready(function() {
         $("#gmap_noseguro").show();
     }
 });
+
