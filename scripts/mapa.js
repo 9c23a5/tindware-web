@@ -12,7 +12,7 @@ function geoloc_ok(pos) {
     $("#gmap_antes").hide();
     lat = pos.coords.latitude;
     lon = pos.coords.longitude;
-    alert("ok");
+    console.log("Localizacion permitida");
     updateGMaps(lat, lon);
 }
 
@@ -23,7 +23,7 @@ function geoloc_error(err) {
 function getLocForm() {
     var texto = $("#formBuscar").val();
     if (texto === "") {
-        console.log("form empty");
+        console.log("Form vacio");
     }
     else {
         updateGMaps(undefined, undefined, texto);
