@@ -19,7 +19,6 @@
         <div id="mapa">
             <div style="width: 100%">
                 <iframe id="gmap"
-                    style="display: hidden;"
                     scrolling="no"
                     marginheight="0"
                     marginwidth="0"
@@ -28,8 +27,9 @@
                     height="600"
                     frameborder="0">
                 </iframe>
-                <span id="gmap_antes">Por favor, activa la ubicación en su navegador</span>
-                <span id="gmap_nosoporte" style="display: hidden;">Por favor, activa la ubicación en su navegador</span>
+                <span id="gmap_antes">Por favor, activa la ubicación en su navegador o escriba su ubicación en el cuadro de texto.</span>
+                <span id="gmap_nosoporte">Su navegador no permite la geolocalización, escriba su ubicación en el cuadro de texto.</span>
+                <span id="gmap_noseguro">Esta función solo funciona en sitios seguros (HTTPS).</span>
             </div>
         </div>
         <div id="columna">

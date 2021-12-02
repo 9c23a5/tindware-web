@@ -1,21 +1,30 @@
 function geoloc_ok(pos) {
     $("#gmap_antes").hide();
-    alert("Lat: " + pos.coords.latitude + ". Lon: " + pos.coords.longitude + ".Acc: ");
+    alert("Lat: " + pos.coords.latitude + ". Lon: " + pos.coords.longitude );
+    var lat = pos.coords.latitude;
 }
 
 function geoloc_error(err) {
-    alert(err.message);
+    console.log(err.message);
 }
 
-var geoloc_opcion = { enableHighAccuracy: true };
-
 $(document).ready(function() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(geoloc_ok, geoloc_error, geoloc_opcion);
+    $("#gmap").hide();
+    $("#gmap_nosoporte").hide();
+    $("#gmap_noseguro").hide();
+
+    if (window.isSecureContext) {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(geoloc_ok, geoloc_error);
+        }
+        else {
+            alert("No soporte")
+            $("#gmap_antes").hide();
+            $("#gmap_nosoporte").show();
+        }
     }
     else {
-        alert("No soporte")
         $("#gmap_antes").hide();
-        $("#gmap_nosoporte").show();
+        $("#gmap_noseguro").show();
     }
 });

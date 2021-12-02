@@ -11,7 +11,7 @@
 3. Añadimos la siguiente nueva linea al final ``127.0.0.1 tindware-web.local``
 4. Guardamos
 5. En la consola de XAMMP, presionamos el boton Config en la linea de Apache, seleccionamos httpd.conf
-6. Al final del todo, copiamos este codigo. Cambia "C:\Users\mikeldi14\dev\tindware-web" por tu ruta
+6. Al final del todo, copiamos este codigo. Cambia ``"C:\Users\mikeldi14\dev\tindware-web"`` por tu ruta y ``tindware-web.local`` por la URL que quieras.
 ```
 NameVirtualHost *
 <VirtualHost *>
@@ -26,8 +26,19 @@ NameVirtualHost *
   </Directory>
 </VirtualHost>
 ```
-7. Guardamos y (re)iniciamos Apache
-8. Para acceder a nuestro proyecto, una vez iniciado Apache y MySQL introducimos  º en nuestro navegador
+7. Guardamos y abrimos httpd-ssl.conf
+8. Copiamos este codigo al final, al igual que antes cambiamos la ruta/URL. (Es lo mismo pero con :443)
+```
+<VirtualHost *:443>
+  DocumentRoot "C:\Users\mikeldi14\dev\tindware-web"
+  ServerName tindware-web.local
+  <Directory "C:\Users\mikeldi14\dev\tindware-web">
+    Require all granted
+  </Directory>
+</VirtualHost>
+```
+8. Guardamos y (re)iniciamos Apache
+9. Para acceder a nuestro proyecto, una vez iniciado Apache y MySQL introducimos ```tindware-web.local`` (o la URL que queramos escoger) en nuestro navegador
 
 ## [BEST ENLACE PARA HACER UN BUEN QS JEJE](https://linkiafp.es/blog/profesiones-informatica/)
 
