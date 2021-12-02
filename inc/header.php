@@ -75,5 +75,9 @@ $datosUser = obtenerDatosUser($id_user);
     var ctx = canvas.getContext("2d");
     // ctx.font = "200px Press Start 2P";
     ctx.font = "30px PressStart2P";
+    ctx.shadowColor = 'green';
+    ctx.shadowOffsetX = 2;
+    ctx.shadowOffsetY = 4;
+    ctx.shadowBlur = 10;
     ctx.fillText("TindWare", 10, 50);
 </script> 
