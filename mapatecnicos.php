@@ -37,6 +37,7 @@
             <div id="buscar">
                 <input type="text" id="inputMostrar" placeholder="Introduce tu lugar..."/>
                 <button id="buttonMostrar" onclick="getLocForm()">Mostrar</button>
+                <button id="test" onclick="cookieTest()">Añadir cookie</button>
             </div>
         </div>
     </div>

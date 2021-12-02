@@ -30,6 +30,10 @@ function getLocForm() {
     }
 }
 
+function cookieTest() {
+    document.cookie = "test=value";
+}
+
 $(function(){
     $("#inputMostrar").keypress(function (e) {
         var key = e.which;
@@ -51,6 +55,7 @@ $(document).ready(function() {
                 alert("Se ha encontrado el siguiente error: " + eror);
             }
             else {
+                document
                 updateGMaps(lat, lon);
             }
         }

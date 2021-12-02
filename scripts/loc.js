@@ -14,10 +14,12 @@ function obtenerLatLon() {
     }
     navigator.geolocation.getCurrentPosition(geoloc_ok, geoloc_error);
 
-    if (lat) {
-        return [lat, lon, undefined];
+    if (errorMsg) {
+        return [undefined, undefined, errorMsg];
     }
     else {
-        return [undefined, undefined, errorMsg];
+        document.cookie = "lat=" + lat;
+        document.cookie = "lon=" + lon;
+        return [lat, lon, undefined];
     }
 }
