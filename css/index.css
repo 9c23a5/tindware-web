@@ -1,0 +1,17 @@
+#principal{
+
+    height: 500px;
+    width: 900px;
+    border: 1px solid black;
+    float: left;
+
+}
+
+#secundario{
+    height: 500px;
+    float: right;
+    width: 300px;
+    border: 1px solid black;
+
+
+}
