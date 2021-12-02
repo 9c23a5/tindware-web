@@ -13,6 +13,8 @@ p, ul, li{
 #principal{
     border: 1px solid black;
     float: left;
+    width: 65%;
+    float: left;
 
 }
 
@@ -22,13 +24,6 @@ p, ul, li{
     color: #053041;
     font-family: fantasy;
 
-}
-
-#secundario{
-    height: 500px;
-    float: right;
-    width: 300px;
-    border: 1px solid black;
 }
 
 #principal img{
@@ -43,4 +38,27 @@ p, ul, li{
     top: 12.5cm;
     left: 28cm;
 }
+#secundario{
+    height: 500px;
+    float: right;
+    width: 30%;
+    border: 1px solid black;
+
+}
+#secundario h1{
+    text-align: center;
+}
+
+#redes{
+
+    width: 30%;
+    height: 5cm;
+   border: 1px solid black;
+    float: right;
+}
+
+#redes h1{
+    text-align: center;
+}
+
 
