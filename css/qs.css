@@ -1,36 +1,46 @@
-header{
-
-    background-color: bisque;
-    font-family: fantasy;   
-
-}
-
-body{
-
+p, ul, li{
+    text-align: justify;
+    padding-left: 4cm;
+    padding-right: 4cm;
+    font-size: 17px;
     font-family: fantasy;
+    line-height: 0.8cm;
+    color: #274755;
+    text-decoration: none;
 }
 
 
-h1{
+#principal{
+    border: 1px solid black;
+    float: left;
+
+}
+
+#principal h1,h2{
+
     text-align: center;
-    font-family: fantasy;
-}
-
-footer{
-
-    background-color: black;
-    color: aliceblue;
+    color: #053041;
     font-family: fantasy;
 
 }
 
-#qs{
-
-   margin-left: 7cm;
-   margin-right: 7cm;
-   text-align: justify;
-   font-size: 20px;
-   font-family: fantasy;
-   line-height: 0.9cm;
-
+#secundario{
+    height: 500px;
+    float: right;
+    width: 300px;
+    border: 1px solid black;
 }
+
+#principal img{
+    
+    content: "";
+    background: transparent url(MoneyIcon.png) scroll no-repeat 0 0;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    display: block;
+    top: 12.5cm;
+    left: 28cm;
+}
+

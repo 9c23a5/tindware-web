@@ -1,9 +1,29 @@
+p, ul, li{
+    text-align: justify;
+    padding-left: 1cm;
+    padding-right: 4cm;
+    font-size: 17px;
+    font-family: fantasy;
+    line-height: 0.7cm;
+    color: #274755;
+    text-decoration: none;
+}
+
+
 #principal{
 
-    height: 500px;
-    width: 900px;
+    
+    width: 1300px;
     border: 1px solid black;
     float: left;
+
+}
+
+#principal h1,h2{
+
+    text-align: center;
+    color: #053041;
+    font-family: fantasy;
 
 }
 
@@ -12,6 +32,18 @@
     float: right;
     width: 300px;
     border: 1px solid black;
-
-
 }
+
+#principal img{
+    
+    content: "";
+    background: transparent url(MoneyIcon.png) scroll no-repeat 0 0;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    display: block;
+    top: 12.5cm;
+    left: 28cm;
+}
+
