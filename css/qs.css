@@ -1,10 +1,20 @@
-p, ul, li{
+p{
     text-align: justify;
     padding-left: 4cm;
     padding-right: 4cm;
     font-size: 17px;
     font-family: fantasy;
-    line-height: 0.8cm;
+    line-height: 0.7cm;
+    color: #274755;
+    text-decoration: none;
+}
+ul{
+    text-align: justify;
+    padding-left: 5cm;
+    padding-right: 4cm;
+    font-size: 17px;
+    font-family: fantasy;
+    line-height: 0.7cm;
     color: #274755;
     text-decoration: none;
 }
@@ -18,13 +28,21 @@ p, ul, li{
 
 }
 
-#principal h1,h2{
+#principal h1{
 
     text-align: center;
     color: #053041;
     font-family: fantasy;
     color: #274755;
-    text-decoration: underline overline;
+    
+}
+
+#principal h2{
+
+    color: #053041;
+    font-family: fantasy;
+    color: #274755;
+    padding-left: 4cm;
 }
 
 #principal img{
@@ -49,7 +67,7 @@ p, ul, li{
 #secundario h1{
     text-align: center;
     font-family: fantasy;
-    text-decoration: underline overline;
+  
     color: #274755;
     
 }

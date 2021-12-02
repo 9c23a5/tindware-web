@@ -36,15 +36,15 @@
 
          
        
-        <h2>¿Por qué trabajar con nosotros?</h2>
+        <h1>¿Por qué trabajar con nosotros?</h1>
 
                 <p>En nuestra compañia contamos con profesionales en todas las ramas de la informatica.</p>
                 <p>Te vamos a detallar los campos en los que desarrollamos nuestras actividades, si alguna te llama la atención no dudes en ponerte en contacto con nosotros.</p>
 
-            <h2>Mantenimiento de hardware</h2>
+            <h2>1. Mantenimiento de hardware y software</h2>
                 <p>Servicio de mantenimiento y reparacion de hardware y perifericos(teclados, ratones, switches,etc...)</p>
 
-            <h2>Diseñadores Web</h2>
+            <h2>2. Diseño Web</h2>
                 <p>Mediante lenguajes como css, html, javascript, y framewoks como jquery, etc.
                     Se encargarán de dar soporte y desarrollar paginas web según las indicaciones del cliente.
                 <p>Para ello, contamos con varios campos en los que seccionamos a nuestros empleados:</p> 
@@ -54,16 +54,19 @@
                     <li>Marketing Online</li>
                 </ul> 
                 <p>Cada uno de nuestros diseñdores webs se encuentran segmentados según su experiencia, desde traine hasta senior.</p>
-
+                <h2>3. Especialista en Ciberseguridad </h2>
+                <h2>4. Desarrollador de software </h2>
+                <h2>5. Experto en Blockchain </h2>
+                <h2>6. Analista de sistemas informáticos </h2>
+                <h2>7. Especialista en Cloud Computing </h2>
+                <h2>8. Data Scientist</h2>
                 <h1>¿Hace falta estar titulado para trabajar con nosotros?</h1>
 
+                <p>Principalmente no, realizamos nuestros propios examanes tanto practicos como teoricos para valorar si esa persona 
+                    tiene cumple con nuestros requisitos minimos. De todos modos, la titulación que poseas nos ayuda de manera orientativa</p>
 
+                
 
-
-
-
-
-        <p> [PINCHA AQUI PARA REDIRIGIR AL FORMULARIO]</p>
     </div>
 
     <div id="secundario">
