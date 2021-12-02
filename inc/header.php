@@ -22,8 +22,10 @@ $datosUser = obtenerDatosUser($id_user);
 <header>
     <div id="logo">
         <!-- Un img con el logo de TindWare y un canvas con el nombre -->
-        <a href="index.php"><img src="img/logo.png"></a>
-        <canvas id="miCanvas" height="101">Error al mostrar el canvas</canvas>
+        <a href="index.php">
+            <img src="img/logo.png">
+            <canvas id="miCanvas" height="101" width="355">Error al mostrar el canvas</canvas>
+        </a>
     </div>
     <div id="botones">
         <!-- Un menu con las diferentes opciones (mapa tecnicos, ultimas ofertas, faq, etc...) -->
