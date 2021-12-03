@@ -1,7 +1,6 @@
 p{
     text-align: justify;
-    padding-left: 1cm;
-    padding-right: 1cm;
+   
     font-size: 17px;
     font-family: fantasy;
     line-height: 0.7cm;
@@ -21,11 +20,11 @@ ul{
 
 
 #principal{
-    
     float: left;
-    width: 55%;
+    width: 50%;
     float: left;
-
+    margin-top: 150px;
+    margin-left: 2.5cm;
 }
 
 #principal h1{
@@ -61,7 +60,7 @@ ul{
     height: 500px;
     float: right;
     width: 40%;
-    border: 1px solid black;
+    margin-top: 150px;
 
 }
 #secundario h1{
@@ -75,6 +74,7 @@ ul{
 
     height: 6cm;
     float: right;
+    width: 40%;
 }
 
 #redes h1{
