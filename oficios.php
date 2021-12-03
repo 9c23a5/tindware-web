@@ -17,6 +17,23 @@
     include 'inc/header.php';
     ?>
 
+    <div id="ofertas">
+
+
+        <div id="principal">
+
+            <h2>Aqui van los oficios</h2>
+
+
+            <p>hola buenas.</p>
+
+
+
+        </div>
+
+
+
+    </div>
 
 
 
