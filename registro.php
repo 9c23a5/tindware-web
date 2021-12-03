@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/misc.css" type="text/css"/>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/loc.js"></script>
+    <script src="scripts/registro.js"></script>
     <title>TindWare - Registro</title>
     <link rel="stylesheet" href="css/form.css" type="text/css"/>
 </head>
@@ -54,6 +57,16 @@
                                 <td>Fecha de nacimiento</td>
                                 <td><input type="date" name="fechanac" required class="text"/><br/></td>
                                
+                            </tr>
+                            <tr>
+                                <td>Ubicación</td>
+                                <td>
+                                    <center>
+                                        <input type="text" id="geocoding_input" placeholder="Escriba su dirección..."/> <button type="button" onclick="coordenadasDesdeGeocoding();">Buscar coordenadas</button><br/>
+                                        u <button type="button" onclick="posicionAForm();">Obtener ubicación</button><br/>
+                                        Latitud: <input type="text" size="2" onkeydown="return false;" style="pointer-events: none;" id="lat" name="lat" required value=""/> Longitud: <input type="text" size="2" onkeydown="return false;" style="pointer-events: none;" name="lon" id="lon" required value=""/>
+                                    </center>
+                                </td>
                             </tr>
                             <tr> <td colspan="2" align="center" class="aviso">Rellena todos los campos</td></tr>
                             
