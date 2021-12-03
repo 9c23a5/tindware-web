@@ -1,6 +1,5 @@
 p{
     text-align: justify;
-   
     font-size: 17px;
     font-family: fantasy;
     line-height: 0.7cm;
@@ -21,15 +20,14 @@ ul{
 
 #principal{
     float: left;
-    width: 50%;
+    width: 65%;
     float: left;
     margin-top: 150px;
-    margin-left: 2.5cm;
+    margin-left: 0.5cm;
+
 }
 
 #principal h1{
-
-    text-align: center;
     color: #053041;
     font-family: fantasy;
     color: #274755;
@@ -37,11 +35,11 @@ ul{
 }
 
 #principal h2{
-
     color: #053041;
     font-family: fantasy;
     color: #274755;
-    padding-left: 4cm;
+    
+    text-align: left;
 }
 
 #principal img{
@@ -57,13 +55,17 @@ ul{
     left: 28cm;
 }
 #secundario{
-    height: 500px;
+    height: 315px;
     float: right;
-    width: 40%;
+    width: 30%;
     margin-top: 150px;
-
+    border: 1px solid black;
+    
 }
-#secundario h1{
+
+
+
+#secundario h2{
     text-align: center;
     font-family: fantasy;
     color: #274755;
@@ -74,12 +76,14 @@ ul{
 
     height: 6cm;
     float: right;
-    width: 40%;
+    width: 30%;
+   
 }
 
-#redes h1{
+#redes h2{
     text-align: center;
     font-family: fantasy;
+    color: #274755;
 }
 
 

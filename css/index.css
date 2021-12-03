@@ -11,12 +11,9 @@ p, ul, li{
 
 
 #principal{
-
-    
     width: 1300px;
     border: 1px solid black;
-    float: left;
-
+    float: left
 }
 
 #principal h1,h2{

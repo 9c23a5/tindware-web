@@ -34,6 +34,7 @@ $datosUser = obtenerDatosUser($id_user);
                 <li><a href="#">Mapa técnicos</a></li>
                 <li><a href="#">Ultima ofertas</a></li>
                 <li><a href="#">FAQ</a></li>
+                <li><a href="#">Trabaja con nosotros</a></li>
                 <li><a><a href="/admin/">Panel administrativo</a></a><!--Admin--></li>
             </ul>
         <!-- Hay otros menus, por ejemplo 'Panel administracion', que dependen segun el valor de la cookie de inicio de sesion -->
