@@ -31,8 +31,9 @@ $datosUser = obtenerDatosUser($id_user);
         <!-- Un menu con las diferentes opciones (mapa tecnicos, ultimas ofertas, faq, etc...) -->
         <div id="links">
             <ul>
-                <li><a href="mapatecnicos.php">Mapa técnicos</a></li>
-                <li><a href="#">Ultima ofertas</a></li>
+                <li><a href="mapatecnicos.php">Mapa técnicos</a></li> <!--- Para particulares -->
+                <li><a href="ofertas_part.php">Mis ofertas</a></li> <!-- Para particulares -->
+                <li><a href="ofertas_tec.php">Ultima ofertas</a></li> <!-- Para tecnicos -->
                 <li><a href="#">FAQ</a></li>
                 <li><a><a href="/admin/">Panel administrativo</a></a><!--Admin--></li>
             </ul>
