@@ -28,7 +28,7 @@ header #links ul {
 header #botones {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
+      align-items: center;
 }
 
 header #links {

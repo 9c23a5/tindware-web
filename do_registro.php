@@ -76,10 +76,10 @@
                     else {
                         errorReg('El usuario ya existe o el correo ya esta siendo utilizada con otra cuenta. Si no se acuerda de sus datos contacte con el adminstrador de la página');
                     }
-                    
+                    mysqli_close($con);
                 }
                 else {
-                    errorReg('Debes ser mayor que '.strval(EDADMINIMA).' años para registrarte');
+                    errorReg('Debes ser mayor de '.strval(EDADMINIMA).' años para registrarte');
                 }
             }
             else {
@@ -104,7 +104,7 @@
      }
     ?>
     <div id="doregistro_success">
-        Bienvenido a TindWare, <?php echo @$username ?>. <a href="index.php">Volver al inicio</a> o <a href="#">crea su primera oferta</a>.
+        <center class="bienvenido">Bienvenido a TindWare, <?php echo @$username ?>. <a href="index.php">Volver al inicio</a> o <a href="#">crea su primera oferta</a>.</center>
     </div>
     <?php
     # Si el registro ha fallado escondemos el div de success
@@ -127,7 +127,6 @@
     if ($registroCorrecto) {
          echo HIDECLOSE;
      }
-     mysqli_close($con);
     ?>
 
 </body>

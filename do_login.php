@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/misc.css" type="text/css"/>
     <title>TindWare - Iniciar Sesión</title>
+    <link rel="stylesheet" type="text/css" href="css/form.css">
 </head>
 <body>
     <?php
     include 'inc/constantes.php';
-    include 'inc/obtenerDatosUser.php';
+    # Incluir header
+    include 'inc/header.php';
     # Recogemos datos del POST
     @$login = $_POST['login'];
     @$passwd = $_POST['passwd'];
@@ -23,7 +24,7 @@
     
     $out = mysqli_query($con, $query);
     if (mysqli_num_rows($out) == 1) {
-        echo "Datos correctos";
+        #echo "Datos correctos"; # DEBUG
         $loginCorrecto = true;
         $resultado = mysqli_fetch_array($out);
 
@@ -39,10 +40,8 @@
     }
     else {
         $loginCorrecto = false;
-        echo "Datos incorrectos";
+        #echo "Datos incorrectos"; # DEBUG
     }
-    # Incluir header
-    include 'inc/header.php';
     ?>
 
     <?php
@@ -53,7 +52,9 @@
     ?>
     <div id="main">
         <div id="dologin_success">
-            Bienvenido, <?php echo $datosUser['username'] ?>. <a href="index.php">Volver al inicio</a>
+
+        <center class="bienvenido">Bienvenido de nuevo, <?php echo $datosUser['username'] ?>. 
+        <p><a href="index.php" class="volver">Volver al inicio</a></p></center>
         </div>
         <?php
         # Si el usuario no ha introducido los datos correctos escondemos el div de success
@@ -69,7 +70,7 @@
         }
         ?>
         <div id="dologin_error">
-            El usuaio o la contraseña son inválidos. <a href="login.php">Vuelve a intentarlo</a> o <a href="index.php">vuelve al inicio</a>
+            <center class="bienvenido">El usuaio o la contraseña son inválidos. <a href="login.php" class="volver">Vuelve a intentarlo</a> o <a href="index.php" class="volver">vuelve al inicio</a></center>
             <!-- Error cuando ya has iniciado sesión -->
         </div>
         <?php

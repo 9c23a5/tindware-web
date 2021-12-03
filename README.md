@@ -27,4 +27,4 @@ NameVirtualHost *
 </VirtualHost>
 ```
 7. Guardamos y (re)iniciamos Apache
-8. Para acceder a nuestro proyecto, una vez iniciado Apache y MySQL introducimos tindware-web.local en nuestro navegador
+8. Para acceder a nuestro proyecto, una vez iniciado Apache y MySQL introducimos  º en nuestro navegador
