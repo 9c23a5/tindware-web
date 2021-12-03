@@ -4,7 +4,7 @@
     <title>TindWare - Inicio</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
-<body>
+c
     <?php
     # Cargar constantes
     include 'inc/constantes.php';
