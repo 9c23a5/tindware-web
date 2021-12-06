@@ -22,7 +22,6 @@ ul{
     float: left;
     width: 65%;
     float: left;
-    margin-top: 150px;
     margin-left: 0.5cm;
 
 }
@@ -35,10 +34,10 @@ ul{
 }
 
 #principal h2{
-    color: #053041;
+   
     font-family: fantasy;
     color: #274755;
-    
+    text-decoration:underline;
     text-align: left;
 }
 
