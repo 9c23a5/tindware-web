@@ -23,13 +23,13 @@ ul{
     width: 65%;
     float: left;
     margin-left: 0.5cm;
-
 }
 
 #principal h1{
     color: #053041;
     font-family: fantasy;
     color: #274755;
+    text-decoration: underline;
     
 }
 
@@ -41,6 +41,7 @@ ul{
     text-align: left;
 }
 
+<<<<<<< HEAD
 #principal img{   
     content: "";
     background: transparent url(MoneyIcon.png) scroll no-repeat 0 0;
@@ -52,9 +53,16 @@ ul{
     top: 12.5cm;
     left: 28cm;
 }
+=======
+
+>>>>>>> 2072caa3ca6411da70af338f73a85cbce0eca469
 #secundario{
     float: right;
     width: 30%;
+<<<<<<< HEAD
+=======
+    margin-top: 150px;  
+>>>>>>> 2072caa3ca6411da70af338f73a85cbce0eca469
 }
 
 #secundario h2{
@@ -98,3 +106,18 @@ td{
 	color:#fff;
 	background-color:#000;
 } 
+
+
+#foto{
+
+    text-align: center;
+   
+    width: 100%;
+    margin: 0;
+    float: left;
+}
+#foto img{
+    border: 3px solid black;
+}
+
+

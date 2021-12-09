@@ -44,11 +44,15 @@
         <h2>Ofecemos todos los servicios en el campo de la informática.</h2>
             <p>Como hemos comentado anteriormente, ofrecemos servicios de mantenimiento hardware, desarrollo web, entre otros, orientado
             tanto a particulares como a empresas. </p>
+            <p>Sin necesitas más información, no dudes en ponerte en contacto con nosotros.</p>   
 
-            <p>Sin necesitas más información, no dudes en ponerte en contacto con nosotros.</p>
-           
-            
+            <div id="foto">
+                <h1 class="centro">Los fundadores de la empresa</h1>  
+             <img src="img/photo.jpg" alt="Los fundadores" width="500" height="500">
+            </div>
+          
     </div>
+    
 
     <div id="secundario">
 
@@ -84,16 +88,14 @@
 
         <h2>Siguenos en Twitter</h2>
 
+<<<<<<< HEAD
        <a class="twitter-timeline" data-lang="es" data-width="500" data-height="500" data-theme="dark" href="https://twitter.com/TindWare">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+=======
+        <a class="twitter-timeline" href="https://twitter.com/TindWare?ref_src=twsrc%5Etfw">Tweets by TindWare</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+>>>>>>> 2072caa3ca6411da70af338f73a85cbce0eca469
 
     </div>
 
-
-
-
-    
 </body>
-
-
 
 </html>

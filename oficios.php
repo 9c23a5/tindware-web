@@ -17,6 +17,7 @@
     include 'inc/header.php';
     ?>
 
+<<<<<<< HEAD
 <h2>¿Por qué trabajar con nosotros?</h2>
 
 <p>En nuestra compañia contamos con profesionales en todas las ramas de la informatica.</p>
@@ -51,6 +52,25 @@
 <h2>7. Especialista en Cloud Computing </h2>
 <h2>8. Data Scientist</h2>
 
+=======
+    <div id="oficios">
+
+
+        <div id="principal">
+
+            <h2>Aqui van los oficios</h2>
+
+
+            <p>hola buenas.</p>
+
+
+
+        </div>
+
+
+
+    </div>
+>>>>>>> 2072caa3ca6411da70af338f73a85cbce0eca469
 
 
 
