@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/misc.css" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="css/form.css">
     <title>TindWare - Registro</title>
 </head>
 <body>

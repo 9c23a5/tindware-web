@@ -25,7 +25,7 @@
     <form action="do_registro.php" method="POST">
 
                 
-                <table border="1">
+                <table>
 
                 <tr>
                     <td>

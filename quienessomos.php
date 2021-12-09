@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel=stylesheet href="css/qs.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
 
 
@@ -97,6 +98,33 @@
              <img src="img/photo.jpg" alt="Los fundadores" width="500" height="500">
             
     </div>
+    <footer>
+
+        <div id="cuadro1">
+
+            <h1>Tindware</h1>
+            <p>Autonomia Kalea, 48012 Bilbo, Bizkaia</p>
+            <p>Lunes</p>
+            <p>Martes</p>
+            <p>Miercoles</p>
+            <p class="rights"><span>©  </span><span class="copyright-year">2021</span><span> </span><span>Company</span><span> - </span><span>Todos los derechos reservados.</span></p>
+            
+        </div>
+    
+        <div id="cuadro2">
+            <h1>SERVICIOS</h1>
+
+            <p>Aqui van los enlaces a otras partes de la pagina/servicios</p>
+
+        </div>
+    
+
+        <div id="cuadro3">
+            <h1>Nuestras redes sociales</h1>
+            <p>Aqui van los iconos de las redes sociales con hover</p>
+        </div>
+    
+    </footer>
   
 
  

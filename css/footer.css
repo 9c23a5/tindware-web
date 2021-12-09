@@ -1,0 +1,34 @@
+footer h1{
+    color: wheat;
+    text-align: center;
+    font-family: fantasy;
+}
+
+#cuadro1{
+    
+    height: 300px;
+    width: 33%;
+    float: left;
+}
+
+#cuadro1 h1{
+    color: wheat;
+    text-align: center;
+    font-family: fantasy;
+}
+#cuadro1 p{
+    margin-left: 1cm;
+}
+#cuadro2{
+    
+    height: 300px;
+    width: 33%;
+    float: left;
+}
+
+#cuadro3{
+    
+    height: 300px;
+    width: 33%;
+    float: left;
+}
