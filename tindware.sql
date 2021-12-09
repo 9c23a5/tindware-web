@@ -30,14 +30,12 @@ SET time_zone = "+00:00";
 CREATE TABLE `ofertas` (
   `id` int(11) NOT NULL,
   `id_usuariopart` int(11) NOT NULL,
-  `id_usuariotec` int(11) NOT NULL,
+  `id_usuariotec` int(11) NULL,
   `titulo` varchar(100) NOT NULL,
   `descripcion` text NOT NULL,
   `fechacreacion` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `fechaasignado` timestamp NULL DEFAULT NULL,
   `fechafinalizacion` timestamp NULL DEFAULT NULL,
-  `coordX` float NOT NULL,
-  `coordY` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
