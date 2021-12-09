@@ -84,7 +84,7 @@
 
         <h2>Siguenos en Twitter</h2>
 
-        <p>AQUI VA EL ENLACE A TW</p>
+       <a class="twitter-timeline" data-lang="es" data-width="500" data-height="500" data-theme="dark" href="https://twitter.com/TindWare">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
     </div>
 
