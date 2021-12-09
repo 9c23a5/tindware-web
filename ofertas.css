@@ -5,7 +5,7 @@
   }
   
   .box-container {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
   }
   
@@ -19,7 +19,7 @@
     float: left;
     position: relative;
     padding-bottom: 50%;
-    width: 50%;
+    width: 40%;
     background-color: transparent;
   }
   
