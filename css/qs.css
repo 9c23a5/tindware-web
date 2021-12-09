@@ -30,6 +30,7 @@ ul{
     color: #053041;
     font-family: fantasy;
     color: #274755;
+    text-decoration: underline;
     
 }
 
@@ -95,3 +96,13 @@ td{
 	color:#fff;
 	background-color:#000;
 } 
+
+
+#foto{
+
+    text-align: center;
+    border: 1px solid black;
+}
+#foto img{
+    border: 3px solid black;
+}
