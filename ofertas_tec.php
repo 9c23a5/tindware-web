@@ -12,7 +12,7 @@
     include 'inc/obtenerCookies.php';
     # Header
     include 'inc/header.php';
-    if ($type_user == 'tecnico') {
+    if ($type_user == 'tecnico' or $type_user == 'admin') {
         $permitido = true;
     }
     else {
@@ -121,9 +121,17 @@
                 echo HIDECLOSE;
             }?>
         </div>
-    </div>
     <?php
     if (!$permitido) {
+        echo HIDECLOSE;
+    }
+    if ($permitido) {
+        echo HIDE;
+    }?>
+        <span class="nopermitido">Acceso denegado: debe iniciar sesión</span>
+    </div>
+    <?php
+    if ($permitido) {
         echo HIDECLOSE;
     }?>
 </body>
