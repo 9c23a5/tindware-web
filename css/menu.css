@@ -12,11 +12,25 @@ header {
       margin: 0;
       padding: 5px 10px 0 10px;
       background-color: #053041;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      display: none;
 }
 
 header a {
       color: white;
       text-decoration: none;
+}
+
+@font-face {
+      font-family: 'PressStart2P';
+      src: url("..\\inc\\PressStart2P.ttf")
+}
+
+header #logo {
+      display: flex;
+      justify-content: left;
 }
 
 header #links ul {

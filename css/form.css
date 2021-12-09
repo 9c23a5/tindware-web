@@ -1,8 +1,9 @@
 body {
     background-color: #dedeee;
     font-family: fantasy;
-    
 }
+
+
 
 
 
@@ -71,3 +72,13 @@ td{
 }
 
 
+#form_login{
+
+    margin-top: 150px;
+
+}
+
+#form_registro{
+
+    margin-top: 150px;
+}
