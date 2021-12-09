@@ -2,7 +2,7 @@ p{
     text-align: justify;
     font-size: 17px;
     font-family: fantasy;
-    line-height: 0.7cm;
+    line-height: 0.8cm;
     color: #274755;
     text-decoration: none;
 }
@@ -16,81 +16,93 @@ ul{
     color: #274755;
     text-decoration: none;
 }
-
-
-#principal{
-    float: left;
-    width: 65%;
+#qs{
     float: left;
     margin-left: 0.5cm;
+    height: 404px;
+    width: 65%; 
 }
-
-#principal h1{
-    color: #053041;
+#qs h2{  
     font-family: fantasy;
     color: #274755;
-    text-decoration: underline;
+    text-decoration:underline;
+    text-align: left;
+}
+#img1{
+    float: right;
+    margin-right: 0.5cm;
+    margin-top: 0;
+  
+}
+#qns{
+    float: right;
+    margin-left: 0.5cm;
+    height: auto;
+    width: 60%;
+    margin-right: 0.5cm;  
+}
+#img2{
+    margin-left: 0.5cm;
+    float: right;
+}
+#qns h2{
+    font-family: fantasy;
+    color: #274755;
+    text-decoration:underline;
+    text-align: left;
+}
+#sci{
+    float: left;
+    margin-left: 0.5cm;
+    height: 450px;
+    width: 65%;
     
 }
-
-#principal h2{
+#img3{
+    margin-left: 0.5cm;
+    float: left;
+}
+#sci h2{
    
     font-family: fantasy;
     color: #274755;
     text-decoration:underline;
     text-align: left;
 }
-
-<<<<<<< HEAD
-#principal img{   
-    content: "";
-    background: transparent url(MoneyIcon.png) scroll no-repeat 0 0;
-    background-size: cover;
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    display: block;
-    top: 12.5cm;
-    left: 28cm;
-}
-=======
-
->>>>>>> 2072caa3ca6411da70af338f73a85cbce0eca469
-#secundario{
+#img3{
     float: right;
-    width: 30%;
-<<<<<<< HEAD
-=======
-    margin-top: 150px;  
->>>>>>> 2072caa3ca6411da70af338f73a85cbce0eca469
+    margin-right: 0.5cm;
+    margin-top: 35px;
 }
-
-#secundario h2{
+#img4{
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    float: right; 
+}
+#img4 h2{
     text-align: center;
     font-family: fantasy;
     color: #274755;
+    text-decoration:underline;   
 }
-
 #redes{
     height: 6cm;
     float: right;
     width: 30%;
 }
-
 #redes h2{
     text-align: center;
     font-family: fantasy;
     color: #274755;
 }
-
-
 table{
     background-color:#375967;
     color: whitesmoke;
     border-radius: 4px;
     border-color: gray;
+    margin: 0 auto;
 }
-
 td{
 
     padding: 10px;
@@ -108,16 +120,6 @@ td{
 } 
 
 
-#foto{
 
-    text-align: center;
-   
-    width: 100%;
-    margin: 0;
-    float: left;
-}
-#foto img{
-    border: 3px solid black;
-}
 
 
