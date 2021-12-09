@@ -35,7 +35,7 @@ CREATE TABLE `ofertas` (
   `descripcion` text NOT NULL,
   `fechacreacion` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `fechaasignado` timestamp NULL DEFAULT NULL,
-  `fechafinalizacion` timestamp NULL DEFAULT NULL,
+  `fechafinalizacion` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
