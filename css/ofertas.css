@@ -1,19 +1,12 @@
+
 .container {
     width: 100vw;
     height: 100vh;
     text-align: center;
   }
   
-  .box-container {
-    width: 60%;
-    margin: 0 auto;
-  }
+
   
-  .box-container::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
   
   .box {
     float: left;
@@ -26,9 +19,10 @@
   
   .box-inner {
     position: absolute;
-    top: 10em;
-    bottom: 10em;
+    top: 14em;
+    bottom: 14em;
     left: 10em;
     right: 10em;
-    border: 1px solid #333;
+    border: 1px solid rgb(153, 116, 116);
+    background-color: white;
   }
