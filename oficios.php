@@ -17,7 +17,7 @@
     include 'inc/header.php';
     ?>
 
-    <div id="ofertas">
+    <div id="oficios">
 
 
         <div id="principal">
