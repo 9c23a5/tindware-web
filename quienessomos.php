@@ -44,8 +44,20 @@
         <h2>Ofecemos todos los servicios en el campo de la informática.</h2>
             <p>Como hemos comentado anteriormente, ofrecemos servicios de mantenimiento hardware, desarrollo web, entre otros, orientado
             tanto a particulares como a empresas. </p>
-
             <p>Sin necesitas más información, no dudes en ponerte en contacto con nosotros.</p>
+
+            <div id="foto">
+                <h1 class="centro">Los fundadores de la empresa</h1>  
+             <img src="img/photo.jpg" alt="Los fundadores" width="500" height="500">
+           
+            </div>
+        
+
+
+
+            
+
+            
            
             
     </div>
