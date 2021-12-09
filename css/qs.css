@@ -104,7 +104,6 @@ table{
     margin: 0 auto;
 }
 td{
-
     padding: 10px;
     font-size: 15px;
     font-weight: bold;
@@ -119,7 +118,11 @@ td{
 	background-color:#000;
 } 
 
-
+footer{
+    float: right;
+    background-color: #000;
+    width: 100%;
+}
 
 
 

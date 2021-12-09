@@ -97,6 +97,8 @@
              <img src="img/photo.jpg" alt="Los fundadores" width="500" height="500">
             
     </div>
+  
+
  
 
 
