@@ -45,6 +45,22 @@
             <p>Como hemos comentado anteriormente, ofrecemos servicios de mantenimiento hardware, desarrollo web, entre otros, orientado
             tanto a particulares como a empresas. </p>
 
+        <h2>Los fundadores de la empresa</h2>
+     
+            <img src="img/foto.png" alt="Asier Mejuto" width="400" height="341">
+
+  <p>Asier Mejuto</p>
+
+
+
+            <p>Asier Mejuto DESARROLADOR BACK END</p>
+            <p>Ander Herrero DISEÑADOR UX</p>
+            <p>Jose Luis Villalba DISEÑADOR UI</p>
+            <p>Borja Montaño DESARROLADOR BACK END</p>
+            <p>Anthony Rodriguez DESARROLLADOR FRONT END</p>
+
+
+
             <p>Sin necesitas más información, no dudes en ponerte en contacto con nosotros.</p>
            
             

@@ -41,18 +41,7 @@ ul{
     text-align: left;
 }
 
-#principal img{
-    
-    content: "";
-    background: transparent url(MoneyIcon.png) scroll no-repeat 0 0;
-    background-size: cover;
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    display: block;
-    top: 12.5cm;
-    left: 28cm;
-}
+
 #secundario{
     height: 315px;
     float: right;
