@@ -41,14 +41,13 @@
         <p>Además queremos ser unfa fuente de oprtunidades para aquellas personas con dificultades para encontrar un empleo pueda tener un oportunidad en este mercado en 
             expansión</p>
             
-        <h2>Ofecemos todos los servicios en el campo de la informática</h2>
-            <p>Como hemos comentado anteriormente, ofrecemos servicios de mantenimiento hardware, desarrollo web, entre otros, oreientado
+        <h2>Ofecemos todos los servicios en el campo de la informática.</h2>
+            <p>Como hemos comentado anteriormente, ofrecemos servicios de mantenimiento hardware, desarrollo web, entre otros, orientado
             tanto a particulares como a empresas. </p>
 
             <p>Sin necesitas más información, no dudes en ponerte en contacto con nosotros.</p>
            
-                
-
+            
     </div>
 
     <div id="secundario">
