@@ -38,7 +38,7 @@
     </div>
     <div id="img1">
 
-        <img src="img/tindware.png" alt="Los fundadores" width="500" height="400">
+        <img src="img/tindware.png" alt="Los fundadores" width="480" height="400">
 
     </div>
     <div id="qns">
@@ -52,7 +52,7 @@
     </div>
     <div id="img2">
 
-        <img src="img/servicio.jpg" alt="Los fundadores" width="550" height="400">
+        <img src="img/desUX.jpg" alt="Los fundadores" width="600" height="350">
 
     </div>
     <div id="sci">
