@@ -49,11 +49,42 @@
             $outDisponibles = mysqli_query($con, $queryOfertasDisponibles);
             $outTerminadas = mysqli_query($con, $queryOfertasTerminadas);
 
-            mysqli_close($con);
-
             $pendientesVacio = outVacio($outPendientes);
             $disponiblesVacio = outVacio($outDisponibles);
             $terminadasVacio = outVacio($outTerminadas);
+
+            function mostrarOfertas($out, $con, $clickable, $tipo) {
+                while ($resultadoOfertas = mysqli_fetch_array($out)) {
+                    $id_usuariopart = $resultadoOfertas['id_usuariopart'];
+                    $queryUbi = "SELECT lat, lon FROM tindware.usuario WHERE id = $id_usuariopart;";
+                    $outTemp = mysqli_query($con, $queryUbi);
+                    $resultadoTemp = mysqli_fetch_array($outTemp);
+                    $lat = $resultadoTemp['lat'];
+                    $lon = $resultadoTemp['lon'];
+        
+                    $id_oferta = $resultadoOfertas['id'];
+                    $titulo = $resultadoOfertas['titulo'];
+                    $descripcion = $resultadoOfertas['descripcion'];
+                    echo "<div class='oferta'>";
+                    echo "<span class='tituloOferta'>$titulo</span><br/>";
+                    echo "$descripcion<br/>";
+                    #echo "<form method='post' action='do_asignar_terminar.php'><input type='submit' value='";
+                    echo "<button type='button'";
+                    #if (!$clickable) {echo " disbaled";}
+                    echo "><a";
+                    if (!$clickable) {echo "style='pointer-events: none;cursor: default;'";}
+                    echo " href='do_asignar_terminar.php?id=$id_oferta&accion=";
+                    if ($tipo == 'disponible') {
+                        echo "asignar'>Asignar";
+                    }
+                    else {
+                        echo "terminar'>Terminar";
+                    }
+                    echo "</a></button>";
+                    echo "<span class='ubicacion'><img src='img/place.png'/> $lat, $lon</span>";
+                    echo "</div>";
+                }
+            }
 
 
         }?>
@@ -66,18 +97,18 @@
             </table>
         </div>
         <div id="ofertas">
-            Soy div ofertas
-            <div id="ofertasPendientes">
+            <div class="ensenarOferta" id="ofertasPendientes">
                 <?php
                 if ($pendientesVacio) {
                     echo HIDE;
-                }?>
-                LAS OFERTAS PENDIENTES SON etc etc
-                <?php
+                }
+
+                mostrarOfertas($outPendientes, $con, true, "pendiente");
+
                 if ($pendientesVacio) {
                     echo HIDECLOSE;
-                }?>
-                <?php
+                }
+
                 if (!$pendientesVacio) {
                     echo HIDE;
                 }?>
@@ -88,17 +119,18 @@
                 }?>
             </div>
 
-            <div id="ofertasDisponibles">
+            <div class="ensenarOferta" id="ofertasDisponibles">
                 <?php
                 if ($disponiblesVacio) {
                     echo HIDE;
-                }?>
-                ofertas disponibles
-                <?php
+                }
+
+                mostrarOfertas($outDisponibles, $con, true, "disponible");
+
                 if ($disponiblesVacio) {
                     echo HIDECLOSE;
-                }?>
-                <?php
+                }
+                
                 if (!$disponiblesVacio) {
                     echo HIDE;
                 }?>
@@ -109,17 +141,18 @@
                 }?>
             </div>
 
-            <div id="ofertasTerminadas">
+            <div class="ensenarOferta" id="ofertasTerminadas">
                 <?php
                 if ($terminadasVacio) {
                     echo HIDE;
-                }?>
-                tienes x terminadas
-                <?php
+                }
+                
+                mostrarOfertas($outTerminadas, $con, false, "");
+
                 if ($terminadasVacio) {
                     echo HIDECLOSE;
-                }?>
-                <?php
+                }
+
                 if (!$terminadasVacio) {
                     echo HIDE;
                 }?>
@@ -142,6 +175,8 @@
     <?php
     if ($permitido) {
         echo HIDECLOSE;
-    }?>
+    }
+    mysqli_close($con);
+    ?>
 </body>
 </html>
