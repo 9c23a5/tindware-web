@@ -19,11 +19,6 @@ header a {
       text-decoration: none;
 }
 
-@font-face {
-      font-family: 'PressStart2P';
-      src: url("..\\inc\\PressStart2P.ttf")
-}
-
 header #logo {
       display: flex;
       justify-content: left;
