@@ -1,7 +1,7 @@
 p{
     text-align: justify;
     font-size: 17px;
-    font-family: fantasy;
+    font:  monospace;
     line-height: 0.8cm;
     color: #274755;
     text-decoration: none;
@@ -11,7 +11,7 @@ ul{
     padding-left: 5cm;
     padding-right: 4cm;
     font-size: 17px;
-    font-family: fantasy;
+    font:  monospace;
     line-height: 0.7cm;
     color: #274755;
     text-decoration: none;
@@ -23,7 +23,7 @@ ul{
     width: 65%; 
 }
 #qs h2{  
-    font-family: fantasy;
+    font:  monospace;
     color: #274755;
     text-decoration:underline;
     text-align: left;
@@ -46,7 +46,7 @@ ul{
     float: right;
 }
 #qns h2{
-    font-family: fantasy;
+    font:  monospace;
     color: #274755;
     text-decoration:underline;
     text-align: left;
@@ -64,7 +64,7 @@ ul{
 }
 #sci h2{
    
-    font-family: fantasy;
+    font:  monospace;
     color: #274755;
     text-decoration:underline;
     text-align: left;
@@ -82,7 +82,7 @@ ul{
 }
 #img4 h2{
     text-align: center;
-    font-family: fantasy;
+    font:  monospace;
     color: #274755;
     text-decoration:underline;   
 }
@@ -93,7 +93,7 @@ ul{
 }
 #redes h2{
     text-align: center;
-    font-family: fantasy;
+    font:  monospace;
     color: #274755;
 }
 table{
