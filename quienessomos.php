@@ -85,20 +85,39 @@
         </div>
         <div id="cuadro2">
             <h2>Servicios</h2>
-            <a href="#">enlace a la pagina principal</a><br/>
-            <a href="#">enlace para darse de alta</a><br/>
-            <a href="#">enlace para ver las ofertas</a><br/>
-            <a href="#">enlace para trabaja con nosotros</a><br/>
+            <a href="#">enlace a la pagina principal</a><br/><br/>
+            <a href="#">enlace para darse de alta</a><br/><br/>
+            <a href="#">enlace para ver las ofertas</a><br/><br/>
+            <a href="#">enlace para trabaja con nosotros</a><br/><br/>
         </div>
         <div id="cuadro3">
             <h2>Nuestras redes sociales</h2>
-            <p>Instagram</p><br/>
-            <p>Twitter</p><br/>
-            <p>Facebook</p><br/>
+            <img src="img/in.png" alt="Los fundadores" width="50" height="50" class="in"><br/>
+            <img src="img/tw.png" alt="Los fundadores" width="50" height="50" class="tw"><br/>
+            <img src="img/fb.png" alt="Los fundadores" width="50" height="50" class="fb"><br/>
         </div>
         <div id="cuadro4">
             <h2>¿Necesitas ayuda?</h2>
-            <p>Enlace a un formulario????</p>
+            <form>
+        <table>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>Correo electrónico*</td>
+                            <td><input type="email" name="email"></td>                                
+                        </tr>
+                        <tr>
+                        <td>Observaciones</td>
+                        <td><textarea name="observaciones" cols="18" rows="5"></textarea></td>
+                        </tr>
+                        <tr><td colspan="2" ><input type="submit" value="Enviar" class="submit"></td></tr>
+
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
         </div>
  
     </footer>

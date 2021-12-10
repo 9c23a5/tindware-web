@@ -1,13 +1,14 @@
-footer h1{
+footer h2{
     color: wheat;
     text-align: center;
     font-family: fantasy;
+    text-decoration: underline;
+    font-size: 20px;
 }
 
 #cuadro1{
-    
     height: 300px;
-    width: 33%;
+    width: 25%;
     float: left;
 }
 
@@ -19,16 +20,49 @@ footer h1{
 #cuadro1 p{
     margin-left: 1cm;
 }
-#cuadro2{
-    
+#cuadro2{   
     height: 300px;
-    width: 33%;
+    width: 25%;
+    float: left;
+    text-align: justify;
+    margin-left: 0.5cm;
+}
+#cuadro2 a {
+    color: #274755;
+    text-decoration: none;
+}
+#cuadro2 a:hover{
+    color: burlywood;
+    font-weight: bold;
+}
+#cuadro3{   
+    height: 300px;
+    width: 25%;
     float: left;
 }
-
 #cuadro3{
     
     height: 300px;
-    width: 33%;
+    width: 25%;
     float: left;
+}
+#final{
+    float: right;
+    height: 50px;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+}
+#final a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+#final a:hover{
+    color: burlywood;
+    font-weight: bold;
+}
+
+.in{
+    
 }
