@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/ofertas_tec.js"></script>
     <link rel="stylesheet" href="css/misc.css" type="text/css"/>
+    <link rel="stylesheet" href="css/ofertas.css" type="text/css"/>
     <title>TindWare - Últimas ofertas</title>
 </head>
 <body>
@@ -38,9 +41,9 @@
         if ($permitido) {
             $con = mysqli_connect('localhost', 'root');
             
-            $queryOfertasPendientes = "SELECT * FROM tindware.ofertas WHERE id_usertec = $id_user AND fechafinalizacion IS NULL;";
-            $queryOfertasDisponibles = "SELECT * FROM tindware.ofertas WHERE id_usertec IS NULL;";
-            $queryOfertasTerminadas = "SELECT * FROM tindware.ofertas WHERE id_usertec = $id_user AND fechafinalizacion IS NOT NULL;";
+            $queryOfertasPendientes = "SELECT * FROM tindware.ofertas WHERE id_usuariotec = $id_user AND fechafinalizacion IS NULL;";
+            $queryOfertasDisponibles = "SELECT * FROM tindware.ofertas WHERE id_usuariotec IS NULL;";
+            $queryOfertasTerminadas = "SELECT * FROM tindware.ofertas WHERE id_usuariotec = $id_user AND fechafinalizacion IS NOT NULL;";
 
             $outPendientes = mysqli_query($con, $queryOfertasPendientes);
             $outDisponibles = mysqli_query($con, $queryOfertasDisponibles);
@@ -55,71 +58,77 @@
 
         }?>
         <div id="menuBotones">
-            <a id="botonPendientes" href="#" onclick="showPendientes();">Ofertas Pendientes</a>
-            <a id="botonDisponibles" href="#" onclick="showDisponibles();">Ofertas Disponibles</a>
-            <a id="botonTerminadas" href="#" onclick="showTerminadas();">Ofertas Terminadas</a>
+            <h1>Seleccione filtro</h1>
+            <table>
+                <tr><td><a class="botonOfertas" id="botonPendientes" href="#" onclick="showPendientes();">Ofertas Pendientes</a></td></tr>
+                <tr><td><a class="botonOfertas" id="botonDisponibles" href="#" onclick="showDisponibles();">Ofertas Disponibles</a></td></tr>
+                <tr><td><a class="botonOfertas" id="botonTerminadas" href="#" onclick="showTerminadas();">Ofertas Terminadas</a></td></tr>
+            </table>
         </div>
-        <div id="ofertasPendientes">
-            <?php
-            if ($pendientesVacio) {
-                echo HIDE;
-            }?>
-            LAS OFERTAS PENDIENTES SON etc etc
-            <?php
-            if ($pendientesVacio) {
-                echo HIDECLOSE;
-            }?>
-            <?php
-            if (!$pendientesVacio) {
-                echo HIDE;
-            }?>
-            no tienes ninguna oferta todavia
-            <?php
-            if (!$pendientesVacio) {
-                echo HIDECLOSE;
-            }?>
-        </div>
+        <div id="ofertas">
+            Soy div ofertas
+            <div id="ofertasPendientes">
+                <?php
+                if ($pendientesVacio) {
+                    echo HIDE;
+                }?>
+                LAS OFERTAS PENDIENTES SON etc etc
+                <?php
+                if ($pendientesVacio) {
+                    echo HIDECLOSE;
+                }?>
+                <?php
+                if (!$pendientesVacio) {
+                    echo HIDE;
+                }?>
+                no tienes ninguna oferta todavia
+                <?php
+                if (!$pendientesVacio) {
+                    echo HIDECLOSE;
+                }?>
+            </div>
 
-        <div id="ofertasDisponibles">
-            <?php
-            if ($disponiblesVacio) {
-                echo HIDE;
-            }?>
-            ofertas disponibles
-            <?php
-            if ($disponiblesVacio) {
-                echo HIDECLOSE;
-            }?>
-            <?php
-            if (!$disponiblesVacio) {
-                echo HIDE;
-            }?>
-            no se ha encontrado ninguna oferta
-            <?php
-            if (!$disponiblesVacio) {
-                echo HIDECLOSE;
-            }?>
-        </div>
+            <div id="ofertasDisponibles">
+                <?php
+                if ($disponiblesVacio) {
+                    echo HIDE;
+                }?>
+                ofertas disponibles
+                <?php
+                if ($disponiblesVacio) {
+                    echo HIDECLOSE;
+                }?>
+                <?php
+                if (!$disponiblesVacio) {
+                    echo HIDE;
+                }?>
+                no se ha encontrado ninguna oferta
+                <?php
+                if (!$disponiblesVacio) {
+                    echo HIDECLOSE;
+                }?>
+            </div>
 
-        <div id="ofertasTerminadas">
-            <?php
-            if ($terminadasVacio) {
-                echo HIDE;
-            }?>
-            tienes x terminadas
-            <?php
-            if ($terminadasVacio) {
-                echo HIDECLOSE;
-            }?>
-            <?php
-            if (!$terminadasVacio) {
-                echo HIDE;
-            }?>
-            no has terminado nada
-            <?php
-            if (!$terminadasVacio) {
-                echo HIDECLOSE;
-            }?>
+            <div id="ofertasTerminadas">
+                <?php
+                if ($terminadasVacio) {
+                    echo HIDE;
+                }?>
+                tienes x terminadas
+                <?php
+                if ($terminadasVacio) {
+                    echo HIDECLOSE;
+                }?>
+                <?php
+                if (!$terminadasVacio) {
+                    echo HIDE;
+                }?>
+                no has terminado nada
+                <?php
+                if (!$terminadasVacio) {
+                    echo HIDECLOSE;
+                }?>
+            </div>
         </div>
     <?php
     if (!$permitido) {
