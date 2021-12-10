@@ -3,23 +3,23 @@
 
 $conexion=mysqli_connect('localhost','root') or die ("No se ha conectado al servidor  la base de datos");
 
-mysqli_select_db($conexion,"agenda") or die ("No se ha conectado a la base de datos");
+mysqli_select_db($conexion,"tindware") or die ("No se ha conectado a la base de datos");
 
-$nombre=$_GET['nombre'];
-$apellido=$_GET['apellido'];
-
-
+$username=$_GET['username'];
+$email=$_GET['email'];
 
 
 
-if (empty($nombre)and empty($apellido)){
+
+
+if (empty($username) and empty($email)){
     echo "Los campos estan vacios<br/>";
     echo "Recuerde rellenarlos<br/>";
     echo "<a href='Pantalla_inicial.html'>Volver al inicio<a/>";
     }
 
 else {
-        $res="SELECT * FROM  usuario where nombre like '%$nombre%' and apellido like '%$apellido%';";
+        $res="SELECT * FROM  tindware.usuario where username like '%$username%' and email like '%$email%';";
         $resultado=mysqli_query($conexion,$res);
         $registro=mysqli_num_rows($resultado);
     
@@ -31,12 +31,12 @@ else {
     
         else{ 
      echo "<table border=1 >";
-     echo "<tr bgcolor=yellow ><td>nombre<td/>";
-     echo "<td>apellido<td/><tr/>";
+     echo "<tr bgcolor=yellow ><td>Nombre de usuario<td/>";
+     echo "<td>Direccion de correo<td/><tr/>";
      
             while($fila=mysqli_fetch_array($resultado)){
                 
-               echo  "<tr><td>".$fila ['nombre']."<td/><td>".$fila ['apellido']."<td/><tr/>";
+               echo  "<tr><td>".$fila ['username']."<td/><td>".$fila ['email']."<td/><tr/>";
           }//cierra while
            
     
