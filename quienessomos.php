@@ -61,29 +61,7 @@
             tanto a particulares como a empresas. Un auténtico soporte 365 dias al año, distinto, real. </p>
             <p>Sin necesitas más información, no dudes en ponerte en contacto con nosotros.</p>  
             <div id="secundario">
-    <form>
-        <table>
-            <tr>
-                <td>
-                    <table>
-                        <tr>
-                            <td>Correo electrónico*</td>
-                            <td><input type="email" name="email"></td>                                
-                        </tr>
-                        <tr>
-                        <td>Observaciones</td>
-                        <td><textarea name="observaciones" cols="18" rows="5"></textarea></td>
-                        </tr>
-                        <tr><td colspan="2" ><input type="submit" value="Enviar" class="submit"></td></tr>
-
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </form>
-
-
-
+    
 </div>
 
     </div>
@@ -99,37 +77,36 @@
             
     </div>
     <footer>
-
         <div id="cuadro1">
-
-            <h1>Tindware</h1>
-            <p>Autonomia Kalea, 48012 Bilbo, Bizkaia</p>
-            <p>Lunes</p>
-            <p>Martes</p>
-            <p>Miercoles</p>
-            <p class="rights"><span>©  </span><span class="copyright-year">2021</span><span> </span><span>Company</span><span> - </span><span>Todos los derechos reservados.</span></p>
-            
+            <h2>TindWare</h2>
+            <p>Dirección: Autonomia Kalea, 48012 Bilbao, Bizkaia</p>
+            <p>Horario: Lunes a Viernes 08:00-14:00</p>
+            <p class="rights"><span>©  </span><span class="copyright-year">2021</span><span> </span><span>Company</span><span> - </span><span>Todos los derechos reservados</span></p>        
         </div>
-    
         <div id="cuadro2">
-            <h1>SERVICIOS</h1>
-
-            <p>Aqui van los enlaces a otras partes de la pagina/servicios</p>
-
+            <h2>Servicios</h2>
+            <a href="#">enlace a la pagina principal</a><br/>
+            <a href="#">enlace para darse de alta</a><br/>
+            <a href="#">enlace para ver las ofertas</a><br/>
+            <a href="#">enlace para trabaja con nosotros</a><br/>
         </div>
-    
-
         <div id="cuadro3">
-            <h1>Nuestras redes sociales</h1>
-            <p>Aqui van los iconos de las redes sociales con hover</p>
+            <h2>Nuestras redes sociales</h2>
+            <p>Instagram</p><br/>
+            <p>Twitter</p><br/>
+            <p>Facebook</p><br/>
         </div>
-    
-    </footer>
-  
-
+        <div id="cuadro4">
+            <h2>¿Necesitas ayuda?</h2>
+            <p>Enlace a un formulario????</p>
+        </div>
  
+    </footer>
+    <div id="final">
 
+        <a href="#">Pulsa aqui para subir</a>
 
+    </div>
 </body>
 
 </html>

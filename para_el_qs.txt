@@ -31,3 +31,24 @@ ponga a tu disposicion a los mejores técnicos del mercado.
             <p>Jose Luis Villalba DISEÑADOR UI</p>
             <p>Borja Montaño DESARROLADOR BACK END</p>
             <p>Anthony Rodriguez DESARROLLADOR FRONT END</p>
+
+<form>
+        <table>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>Correo electrónico*</td>
+                            <td><input type="email" name="email"></td>                                
+                        </tr>
+                        <tr>
+                        <td>Observaciones</td>
+                        <td><textarea name="observaciones" cols="18" rows="5"></textarea></td>
+                        </tr>
+                        <tr><td colspan="2" ><input type="submit" value="Enviar" class="submit"></td></tr>
+
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
