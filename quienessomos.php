@@ -52,7 +52,7 @@
     </div>
     <div id="img2">
 
-        <img src="img/desUX.jpg" alt="Los fundadores" width="600" height="350">
+        <img src="img/desUX.jpg" alt="Los fundadores" width="700" height="400">
 
     </div>
     <div id="sci">

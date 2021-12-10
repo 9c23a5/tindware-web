@@ -1,62 +1,34 @@
-footer{
-    right: 500px;
-    font-weight: bold;
+footer h1{
+    color: wheat;
+    text-align: center;
+    font-family: fantasy;
 }
 
-footer p{
-    margin-left: 0.5cm;
-}
-footer h2{
-    color: white;
-    text-align: center;
-    font-family: monospace;
-}
 #cuadro1{
-    width: 25%;
+    
+    height: 300px;
+    width: 33%;
     float: left;
+}
+
+#cuadro1 h1{
+    color: wheat;
+    text-align: center;
+    font-family: fantasy;
+}
+#cuadro1 p{
+    margin-left: 1cm;
 }
 #cuadro2{
-    width: 25%;
+    
+    height: 300px;
+    width: 33%;
     float: left;
-}
-#cuadro3{
-    width: 25%;
-    float: left;
-}
-#cuadro3{
-    line-height: 0.2cm;
-}
-#cuadro4{
-    width: 25%;
-    float: left;
-}
-#cuadro2 a{
-    text-align: center;
-    font-size: 17px;
-    font-family: monospace;
-    color: white;
-    text-decoration: none;
-}
-#cuadro2 a:hover{
-    color:burlywood;
 }
 
-#final{
-    float: right;
-    width: 100%;
-    height: 50px;
-    font-size: 25px;
-    background-color: black;
-    text-align: center;
-    font: monospace;
-}
-#final a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-#final a:hover{
-    color: burlywood;
-    text-decoration: overline;
+#cuadro3{
+    
+    height: 300px;
+    width: 33%;
+    float: left;
 }

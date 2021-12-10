@@ -1,3 +1,5 @@
+
+
 p{
     text-align: justify;
     font-size: 17px;
@@ -20,7 +22,7 @@ ul{
     float: left;
     margin-left: 0.5cm;
     height: 404px;
-    width: 65%; 
+    width: 60%; 
 }
 #qs h2{  
     font:  monospace;
@@ -29,7 +31,6 @@ ul{
     text-align: left;
 }
 #img1{
-    float: right;
     margin-right: 0.5cm;
     margin-top: 0;
   
@@ -43,7 +44,8 @@ ul{
 }
 #img2{
     margin-left: 0.5cm;
-    float: right;
+  
+  
 }
 #qns h2{
     font:  monospace;
@@ -60,7 +62,7 @@ ul{
 }
 #img3{
     margin-left: 0.5cm;
-    float: left;
+   
 }
 #sci h2{
    
@@ -70,7 +72,7 @@ ul{
     text-align: left;
 }
 #img3{
-    float: right;
+    
     margin-right: 0.5cm;
     margin-top: 35px;
 }
