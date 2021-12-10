@@ -45,10 +45,11 @@ footer h2{
     height: 300px;
     width: 25%;
     float: left;
+    text-align: center;
 }
 #final{
     float: right;
-    height: 50px;
+    height: 100px;
     background-color: black;
     width: 100%;
     text-align: center;
@@ -58,11 +59,37 @@ footer h2{
     font-size: 25px;
     color: white;
 }
+
 #final a:hover{
     color: burlywood;
     font-weight: bold;
 }
 
-.in{
-    
+#final p{
+    background-color: black;
+    text-align: center;
 }
+.in {
+    transition: transform .2s;
+   padding-bottom: 0.5cm;
+}
+.in:hover {
+    transform: scale(1.5); 
+}
+.tw {
+    transition: transform .2s; 
+    padding-bottom: 0.5cm;
+}
+ 
+.tw:hover {
+    transform: scale(1.5); 
+}
+.fb {
+    transition: transform .2s; 
+    padding-bottom: 0.5cm;
+}
+.fb:hover {
+    transform: scale(1.5); 
+}
+
+	

@@ -81,7 +81,6 @@
             <h2>TindWare</h2>
             <p>Dirección: Autonomia Kalea, 48012 Bilbao, Bizkaia</p>
             <p>Horario: Lunes a Viernes 08:00-14:00</p>
-            <p class="rights"><span>©  </span><span class="copyright-year">2021</span><span> </span><span>Company</span><span> - </span><span>Todos los derechos reservados</span></p>        
         </div>
         <div id="cuadro2">
             <h2>Servicios</h2>
@@ -92,9 +91,9 @@
         </div>
         <div id="cuadro3">
             <h2>Nuestras redes sociales</h2>
-            <img src="img/in.png" alt="Los fundadores" width="50" height="50" class="in"><br/>
-            <img src="img/tw.png" alt="Los fundadores" width="50" height="50" class="tw"><br/>
-            <img src="img/fb.png" alt="Los fundadores" width="50" height="50" class="fb"><br/>
+            <a href="https://www.instagram.com/tindwareoficial/?hl=es"><img src="img/in.png" alt="Los fundadores" width="50" height="50" class="in"></a><br/>
+            <a href="https://twitter.com/TindWare"><img src="img/tw.png" alt="Los fundadores" width="50" height="50" class="tw"></a><br/>
+            <a href="#"><img src="img/fb.png" alt="Los fundadores" width="50" height="50" class="fb"><br/></a>
         </div>
         <div id="cuadro4">
             <h2>¿Necesitas ayuda?</h2>
@@ -124,6 +123,7 @@
     <div id="final">
 
         <a href="#">Pulsa aqui para subir</a>
+        <p>© 2021Company - Todos los derechos reservados</p>        
 
     </div>
 </body>
