@@ -8,9 +8,6 @@
     <link rel=stylesheet href="css/qs.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
 </head>
-
-
-
 <body>
 
     <?php
@@ -21,9 +18,8 @@
     # Incluir header
     include 'inc/header.php';
     ?>
-
     
-
+    <div id="todo">
     <div id="qs">
         
         <h2>¿Quiénes somos?</h2>
@@ -52,7 +48,7 @@
     </div>
     <div id="img2">
 
-        <img src="img/desUX.jpg" alt="Los fundadores" width="700" height="400">
+        <img src="img/desUX.jpg" alt="Los fundadores" width="500" height="400">
 
     </div>
     <div id="sci">
@@ -75,6 +71,7 @@
                 
              <img src="img/photo.jpg" alt="Los fundadores" width="500" height="500">
             
+    </div>
     </div>
     <footer>
         <div id="cuadro1">
