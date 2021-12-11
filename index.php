@@ -6,6 +6,14 @@
     
 </head>
 <body>
+<?php
+    # Cargar constantes
+    include 'inc/constantes.php';
+    # Cargamos cookies
+    include 'inc/obtenerCookies.php';
+    # Incluir header
+    include 'inc/header.php';
+    ?>
    
     <div id="main">
        
