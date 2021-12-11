@@ -11,7 +11,6 @@
     include 'inc/constantes.php';
     # Cargamos cookies
     include 'inc/obtenerCookies.php';
-
     # Incluir header
     include 'inc/header.php';
     ?>
