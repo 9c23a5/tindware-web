@@ -69,18 +69,17 @@
                     echo "<span class='tituloOferta'>$titulo</span><br/>";
                     echo "$descripcion<br/>";
                     #echo "<form method='post' action='do_asignar_terminar.php'><input type='submit' value='";
-                    echo "<button type='button'";
+                    echo "<input type='button' onclick=location.href=do_asignar_terminar.php?id=$id_oferta&accion=";
                     #if (!$clickable) {echo " disbaled";}
-                    echo "><a";
-                    if (!$clickable) {echo "style='pointer-events: none;cursor: default;'";}
-                    echo " href='do_asignar_terminar.php?id=$id_oferta&accion=";
+                    #if (!$clickable) {echo "style='pointer-events: none;cursor: default;'";}
                     if ($tipo == 'disponible') {
-                        echo "asignar'>Asignar";
+                        echo "asignar value='Asignar'";
                     }
                     else {
-                        echo "terminar'>Terminar";
+                        echo "terminar value='Terminar'";
                     }
-                    echo "</a></button>";
+                    if (!$clickable) { echo " disabled"; }
+                    echo "></input>";
                     echo "<span class='ubicacion'><img src='img/place.png'/> $lat, $lon</span>";
                     echo "</div>";
                 }
