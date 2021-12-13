@@ -65,18 +65,24 @@
                     $id_oferta = $resultadoOfertas['id'];
                     $titulo = $resultadoOfertas['titulo'];
                     $descripcion = $resultadoOfertas['descripcion'];
+                    if ($tipo == 'disponible') {
+                        $miOnclick = "location.href='do_asignar_terminar.php?id=$id_oferta&accion=asignar';";
+                    }
+                    else {
+                        $miOnclick = "location.href='do_asignar_terminar.php?id=$id_oferta&accion=terminar';";
+                    }
                     echo "<div class='oferta'>";
                     echo "<span class='tituloOferta'>$titulo</span><br/>";
                     echo "$descripcion<br/>";
                     #echo "<form method='post' action='do_asignar_terminar.php'><input type='submit' value='";
-                    echo "<input type='button' onclick=location.href=do_asignar_terminar.php?id=$id_oferta&accion=";
+                    echo "<input type='button' onclick=$miOnclick";
                     #if (!$clickable) {echo " disbaled";}
                     #if (!$clickable) {echo "style='pointer-events: none;cursor: default;'";}
                     if ($tipo == 'disponible') {
-                        echo "asignar value='Asignar'";
+                        echo " value='Asignar'";
                     }
                     else {
-                        echo "terminar value='Terminar'";
+                        echo " value='Terminar'";
                     }
                     if (!$clickable) { echo " disabled"; }
                     echo "></input>";
