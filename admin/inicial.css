@@ -1,33 +1,34 @@
-#div1 { margin: 10px;
-    float:left   ;
+body {
+    background-color: #dedeee;
+}
+
+#div1 { margin-left:40%;
     border: 1px solid black;
-    width: 700px;height: 300px;
+    width: 27%;height: 200px;
    }
 
-#div2 {margin: 10px;
-    float:right  ;
+#div2 {margin-left: 40%;
     border: 1px solid black;
-    width: 500px;height: 300px;
+    width: 27%;height: 200px;
     
 
 }
 
-#div3 {margin: 10px;
-    float:left   ;
+#div3 {margin-left: 40%;
     border: 1px solid black;
-    width: 700px;height: 300px;
+    width: 27%;height: 200px;
 
 }
 
 #div4 {
-    margin: 10px;
-    float:right   ;
+    margin-left: 40%;
     border: 1px solid black;
-    width: 500px;height: 300px;
+    width: 27%;height: 200px;
 }
 
 .style{
-    color: red;
+    color: #274755;
+    font: monospace;
     text-decoration: none;
 }
 
