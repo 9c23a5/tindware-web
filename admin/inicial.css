@@ -1,0 +1,46 @@
+#div1 { margin: 10px;
+    float:left   ;
+    border: 1px solid black;
+    width: 700px;height: 300px;
+   }
+
+#div2 {margin: 10px;
+    float:right  ;
+    border: 1px solid black;
+    width: 500px;height: 300px;
+    
+
+}
+
+#div3 {margin: 10px;
+    float:left   ;
+    border: 1px solid black;
+    width: 700px;height: 300px;
+
+}
+
+#div4 {
+    margin: 10px;
+    float:right   ;
+    border: 1px solid black;
+    width: 500px;height: 300px;
+}
+
+.style{
+    color: red;
+    text-decoration: none;
+}
+
+.big{
+    margin: 10px; font-weight: bold;
+vertical-align: middle;
+ position: relative;
+    top: 55%;
+    -ms-transform: translateY(250%);
+    -webkit-transform: translateY(250%);
+    transform: translateY(250%);}
+
+    
+    
+
+    
