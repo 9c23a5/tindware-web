@@ -3,6 +3,7 @@
 <head>
     <title>TindWare - Inicio</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/footer2.css">
     
 </head>
 <body>
@@ -56,14 +57,10 @@
                 </tr>
             </table>
         </form>
-
-
         </div>
-
-
-
         </div>
     </div>
+
     <?php
     # Si el usuario no es invitado escondemos el form de login
     if ($type_user != 'invitado') {

@@ -29,19 +29,19 @@
                     <td>
                         <table>
                             <tr>
-                             <td>Nombre de usuario </td>
+                             <td>Nombre de usuario: </td>
                             <td><input type="text" name="username" required class="text"/></td>
                             </tr>
                             <tr>
-                                <td>Contraseña </td>
+                                <td>Contraseña: </td>
                                 <td><input type="password" name="passwd" required class="text"/></td>
                             </tr>
                             <tr>
-                                <td>Correo electrónico</td>
+                                <td>Correo electrónico:</td>
                                 <td><input type="email" name="email" required class="text"/></td>
                             </tr>
                             <tr>
-                                <td>Tipo de usuario</td>
+                                <td>Tipo de usuario:</td>
                                 <td><select name="tipo" class="text">
                                 <option value="particular" selected>Particular</option>
                                 <option value="tecnico">Técnico</option>
@@ -49,7 +49,7 @@
                                 </select></td>
                                 </tr>
                             <tr>
-                                <td>Fecha de nacimiento</td>
+                                <td>Fecha de nacimiento:</td>
                                 <td><input type="date" name="fechanac" required class="text"/><br/></td>
                                
                             </tr>

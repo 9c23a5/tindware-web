@@ -1,0 +1,98 @@
+#foot{
+    margin-top: 20cm;
+}
+
+footer h2{
+    color: white;
+    text-align: center;
+    font:  monospace;
+    font-size: 20px;
+}
+
+#cuadro1{
+    height: 300px;
+    width: 25%;
+    float: left;
+}
+
+#cuadro1 h1{
+    color: wheat;
+    text-align: center;
+    font:  monospace;
+}
+#cuadro1 p{
+    margin-left: 1cm;
+}
+#cuadro2{   
+    height: 300px;
+    width: 25%;
+    float: left;
+    text-align: justify;
+    margin-left: 0.5cm;
+}
+#cuadro2 a {
+    color: #274755;
+    text-decoration: none;
+}
+#cuadro2 a:hover{
+    color: burlywood;
+    font-weight: bold;
+}
+#cuadro3{   
+    height: 300px;
+    width: 25%;
+    float: left;
+}
+#cuadro3{
+    
+    height: 300px;
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+#final{
+    float: right;
+    height: 100px;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+}
+#final a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+#final a:hover{
+    color: burlywood;
+    font-weight: bold;
+}
+
+#final p{
+    background-color: black;
+    text-align: center;
+}
+.in {
+    transition: transform .2s;
+   padding-bottom: 0.5cm;
+}
+.in:hover {
+    transform: scale(1.5); 
+}
+.tw {
+    transition: transform .2s; 
+    padding-bottom: 0.5cm;
+}
+ 
+.tw:hover {
+    transform: scale(1.5); 
+}
+.fb {
+    transition: transform .2s; 
+    padding-bottom: 0.5cm;
+}
+.fb:hover {
+    transform: scale(1.5); 
+}
+
+	
