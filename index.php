@@ -14,6 +14,12 @@
     # Incluir header
     include 'inc/header.php';
     ?>
+    <?php
+    # Si el usuario no es invitado escondemos el form de login
+    if ($type_user != 'invitado') {
+         echo HIDE;
+     }
+    ?>
    
     <div id="main">
        
@@ -58,5 +64,29 @@
 
         </div>
     </div>
+    <?php
+    # Si el usuario no es invitado escondemos el form de login
+    if ($type_user != 'invitado') {
+         echo HIDECLOSE;
+     }
+    ?>
+
+    <?php
+    # Si el usuario es invitado escondemos el mensaje de error
+    if ($type_user == 'invitado') {
+         echo HIDE;
+     }
+    ?>
+    <div id="login_error">
+        Ya has iniciado sesión. <a href="index.php">Volver al inicio</a>
+        <!-- Error cuando ya has iniciado sesión -->
+    </div>
+    <?php
+    # Si el usuario es invitado escondemos el mensaje de error
+    if ($type_user == 'invitado') {
+         echo HIDECLOSE;
+     }
+    ?>
+
 </body>
 </html>

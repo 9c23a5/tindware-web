@@ -36,9 +36,6 @@ $datosUser = obtenerDatosUser($id_user);
                 <li><a href="#">FAQ</a></li>
                 <li><a href="oficios.php">Trabaja con nosotros</a></li>
                 <li><a href="quienessomos.php">Quienes somos</a></li>
-                <li><a href="#">Trabaja con nosotros</a></li>
-                <li><a href="#">Quienes somos</a></li> 
-
                 <li><a><a href="/admin/">Panel administrativo</a></a><!--Admin--></li>
             </ul>
         <!-- Hay otros menus, por ejemplo 'Panel administracion', que dependen segun el valor de la cookie de inicio de sesion -->
