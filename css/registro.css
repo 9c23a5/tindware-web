@@ -1,0 +1,41 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url("../img/registroimg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+  }
+  #form_registro{
+    margin-top: 9cm;
+    margin-left: 1cm;
+  }
+
+  
+.volver:hover{
+    color: burlywood;
+    font-weight: bold;
+}
+.volver{
+    text-decoration: none;
+    color: black;
+}
+
+.submit{
+  width:100%;
+	padding:8px 16px;
+	border:1px solid #000;
+	border-radius:4px;
+	color:#fff;
+	background-color:#000;
+} 
+
+table h2{
+  font: monospace;
+}
+
+td{
+  font: monospace;
+  line-height: 1cm;
+}

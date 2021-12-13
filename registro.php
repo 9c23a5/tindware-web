@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" href="css/misc.css" type="text/css"/>
     <title>TindWare - Registro</title>
-    <link rel="stylesheet" href="css/form.css" type="text/css"/>
+    <link rel="stylesheet" href="css/registro.css" type="text/css"/>
 </head>
 <body>
     <?php
@@ -23,8 +23,6 @@
     <div id="form_registro"><center>
         <h2>Formulario de Inscripción</h2>
     <form action="do_registro.php" method="POST">
-
-                
                 <table>
 
                 <tr>
@@ -55,8 +53,6 @@
                                 <td><input type="date" name="fechanac" required class="text"/><br/></td>
                                
                             </tr>
-                            <tr> <td colspan="2" align="center" class="aviso">Rellena todos los campos</td></tr>
-                            
                              <tr>
                                 <td colspan="2"><input type="submit" value="Registrarse" class="submit"/><br/></td>  
                             </tr>
