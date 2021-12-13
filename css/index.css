@@ -10,11 +10,11 @@ body {
   }
   #imgtit{
       text-align: center;
-      margin-top: 8cm;
+      margin-top: 5cm;
   }
   #login{
       margin-left: 21cm;
-      margin-top: -3cm;
+      margin-top: -4cm;
 }
 .submit{
     width:100%;
@@ -31,4 +31,7 @@ body {
 .reg{
     text-decoration: none;
     color: black;
+}
+td{
+    line-height: 1cm;
 }
