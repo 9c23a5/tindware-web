@@ -28,14 +28,14 @@ ul{
 
 #principal h1{
     color: #053041;
-    font-family: fantasy;
+    font:  monospace;
     color: #274755;
     
 }
 
 #principal h2{
    
-    font-family: fantasy;
+    font:  monospace;
     color: #274755;
     text-decoration:underline;
     text-align: left;
@@ -59,7 +59,7 @@ ul{
 
 #secundario h2{
     text-align: center;
-    font-family: fantasy;
+    font:  monospace;
     color: #274755;
 }
 
@@ -71,7 +71,7 @@ ul{
 
 #redes h2{
     text-align: center;
-    font-family: fantasy;
+    font:  monospace;
     color: #274755;
 }
 
