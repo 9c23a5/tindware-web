@@ -7,14 +7,24 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+position: fixed;
   }
   #imgtit{
       text-align: center;
       margin-top: 5cm;
+   
+      position: fixed;
+      margin-left: 19cm;
+      margin-top: 3cm;
   }
   #login{
       margin-left: 21cm;
       margin-top: -4cm;
+    
+      position: fixed;
+      margin-left: 21cm;
+      margin-top: 10cm;
+
 }
 .submit{
     width:100%;

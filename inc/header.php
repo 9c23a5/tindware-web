@@ -48,7 +48,7 @@ $datosUser = obtenerDatosUser($id_user);
             }
             ?>
                 <!-- Enlaces para Iniciar Sesión y Registro -->
-                <a href="login.php">Iniciar Sesión</a>
+                <a href="index.php">Iniciar Sesión</a>
                 <span class="separador">&nbsp;</span>
                 <a href="registro.php">Registro</a>
             <?php

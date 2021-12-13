@@ -4,12 +4,12 @@ body {
     background-image: url("../img/registroimg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
     background-attachment: fixed;
   }
   #form_registro{
-    margin-top: 5cm;
-    margin-left: 1cm;
+    margin-top: 7cm;
+    margin-left: 22cm;
+    position: fixed;
   }
 
   
