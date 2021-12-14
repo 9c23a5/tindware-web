@@ -81,10 +81,10 @@
         </div>
         <div id="cuadro2">
             <h2>Servicios</h2>
-            <a href="#">enlace a la pagina principal</a><br/><br/>
-            <a href="#">enlace para darse de alta</a><br/><br/>
-            <a href="#">enlace para ver las ofertas</a><br/><br/>
-            <a href="#">enlace para trabaja con nosotros</a><br/><br/>
+            <a href="index.php">Volver a la pagina principal</a><br/><br/>
+            <a href="registro.php">Registrate</a><br/><br/>
+            <a href="#">Todas nuestras ofertas de empleo</a><br/><br/>
+            <a href="index.php">Iniciar sesión</a><br/><br/>
         </div>
         <div id="cuadro3">
             <h2>Nuestras redes sociales</h2>

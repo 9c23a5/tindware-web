@@ -23,6 +23,11 @@
     ?>
    
     <div id="main">
+
+    <div id="txtizq">
+        <h2>"Un nuevo soporte técnico nunca antes visto"</h2>
+            <p>Nos dedicamos a implementar soluciones en tu dia a dia</p>
+    </div>
        
         <div id="imgtit">
         <img src="img/tindware.png" alt="Los fundadores" width="480" height="400">
@@ -60,7 +65,7 @@
         </div>
         </div>
     </div>
-
+   
     <?php
     # Si el usuario no es invitado escondemos el form de login
     if ($type_user != 'invitado') {
