@@ -3,6 +3,8 @@
 <html>
 <head>
     <title>borrar</title>
+    <link rel="stylesheet" type="text/css"
+    href="borrar.css">
 </head>
 
 <body>
@@ -11,27 +13,28 @@
 <form action='borrar.php' method='get'>
 <table>
     
-    <tr>
-    <a href="Pantalla_inicial.html" >Pagina Inicial</a>
-    
-      <td>Escriba los criterios de busqueda:</td>
+    <tr> 
+        <td><h1 class="style">Borrar Usuarios</h1></td>
+        <tr><td class="style">Escriba los criterios de busqueda:</td></tr>
+      
     
  </tr>
     
     <tr>
-<td>Username:</td>    
+<td class="style">Username:</td>    
 <td>
 <input type="text" name="username">
 </td>
 </tr>
     
        <tr>
-<td>Email:</td>    
+<td class="style">Email:</td>    
 <td>
 <input type="text" name="email">
 </td>
 </tr>
-      <tr> <td><input type="submit" value="Borrar"> </td></tr>
+      <tr> <td><input type="submit" value="Borrar"> </td>
+    </tr>
     
    <br/>
     
@@ -45,6 +48,8 @@
     
 </table>
 </form>
+<br/>
+<a href="Pantalla_inicial.html" class="button">[Pagina Inicial]</a>
 
 
 </body>
