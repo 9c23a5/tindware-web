@@ -18,6 +18,9 @@ $datosUser = obtenerDatosUser($id_user);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../scripts/chat.js"></script>
+    <!-- Chat Tawk -->
+    <script type="text/javascript" src="chat.js"></script>
 </head>
 <header>
     <div style="font-family: PressStart2P;" onload="hacerCanvas();">.</div>
