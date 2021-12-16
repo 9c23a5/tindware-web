@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <title>TindWare - Inicio</title>
-    <link rel="stylesheet" href="css/mapatecnicos.css" type="text/css"/>
     <script src="scripts/jquery-3.6.0.min.js"></script>
     <script src="scripts/loc.js"></script>
     <script src="scripts/mapa.js"></script>
