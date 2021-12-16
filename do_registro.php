@@ -2,10 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/misc.css" type="text/css"/>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TindWare</title>
+    <title>TindWare - Registro</title>
 </head>
 <body>
     <?php
@@ -68,7 +65,9 @@
                             # Iniciamos sesión con el usuario
                             $id = mysqli_fetch_array($out)['id'];
                             setcookie('id_user', (int)$id, 0, "/");
+                            $id_user = $id;
                             setcookie('type_user', $tipo, 0, "/");
+                            $type_user = $tipo;
                         }
                         else {
                             errorReg('Error en el registro. Contácte con el administrador de la página');
@@ -77,10 +76,10 @@
                     else {
                         errorReg('El usuario ya existe o el correo ya esta siendo utilizada con otra cuenta. Si no se acuerda de sus datos contacte con el adminstrador de la página');
                     }
-                    
+                    mysqli_close($con);
                 }
                 else {
-                    errorReg('Debes ser mayor que '.strval(EDADMINIMA).' años para registrarte');
+                    errorReg('Debes ser mayor de '.strval(EDADMINIMA).' años para registrarte');
                 }
             }
             else {
@@ -128,7 +127,6 @@
     if ($registroCorrecto) {
          echo HIDECLOSE;
      }
-     mysqli_close($con);
     ?>
 
 </body>

@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/misc.css" type="text/css"/>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TindWare</title>
+    <title>TindWare - Cerrar Sesión</title>
 </head>
 <body>
     <?php
     include 'inc/constantes.php';
     include 'inc/obtenerCookies.php';
+    setcookie("id_user", 0, 0, "/");
+    setcookie("type_user", "invitado", 0, "/");
+    include 'inc/header.php';
     ?>
 
     <?php
@@ -18,8 +18,6 @@
     if ($type_user == 'invitado') {
          echo HIDE;
      }
-    setcookie("id_user", 0, 0, "/");
-    setcookie("type_user", "invitado", 0, "/");
     ?>
     <div id="dologout_success">
         Has cerrado sesión correctamente. <a href="index.php">Volver al inicio</a>.
@@ -46,8 +44,6 @@
     if ($type_user != 'invitado') {
          echo HIDECLOSE;
      }
-    # Incluir header
-    include 'inc/header.php';
     ?>
 
 </body>
