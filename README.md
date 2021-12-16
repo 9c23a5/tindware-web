@@ -1,3 +1,11 @@
+## Tareas a hacer
+- Panel admin ([panel-admin](https://github.com/9c23a5/tindware-web/tree/panel-admin))
+- Asignar ofertas ([ofertas](https://github.com/9c23a5/tindware-web/tree/ofertas))
+- Crear ofertas ([ofertas](https://github.com/9c23a5/tindware-web/tree/ofertas))
+- Estetica ([css](https://github.com/9c23a5/tindware-web/tree/css))
+- Perfil (no hay rama todavia)
+- FAQ (no hay rama todavia)
+
 ## Ejemplo header
 ![Ejemplo header](https://github.com/9c23a5/tindware-web/blob/main/ejemplo_header.png?raw=true)
 ## Enlaces
