@@ -37,7 +37,7 @@ header #botones {
 }
 
 header #links {
-      font:  monospace;
+      font-family: 'Outfit', sans-serif;
       font-weight: 300;
       width: auto;
 }
@@ -57,7 +57,7 @@ header #links  li {
 }
 
 header #login_reg_logout {
-      font:  monospace;
+      font-family: 'Outfit', sans-serif;
       color: #bfd312;
       margin-bottom: 5px;
 }
