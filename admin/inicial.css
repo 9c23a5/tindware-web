@@ -1,0 +1,47 @@
+body {
+    background-color: #dedeee;
+}
+
+#div1 { margin-left:40%;
+    border: 1px solid black;
+    width: 27%;height: 200px;
+   }
+
+#div2 {margin-left: 40%;
+    border: 1px solid black;
+    width: 27%;height: 200px;
+    
+
+}
+
+#div3 {margin-left: 40%;
+    border: 1px solid black;
+    width: 27%;height: 200px;
+
+}
+
+#div4 {
+    margin-left: 40%;
+    border: 1px solid black;
+    width: 27%;height: 200px;
+}
+
+.style{
+    color: #274755;
+    font: monospace;
+    text-decoration: none;
+}
+
+.big{
+    margin: 10px; font-weight: bold;
+vertical-align: middle;
+ position: relative;
+    top: 55%;
+    -ms-transform: translateY(250%);
+    -webkit-transform: translateY(250%);
+    transform: translateY(250%);}
+
+    
+    
+
+    

@@ -1,0 +1,18 @@
+body {
+    background-color: #dedeee;
+    text-decoration: none;
+}
+.style{
+    color: #274755;
+    font: monospace;
+    text-decoration: none;
+}
+table{margin-left: 40%;
+border-color: black;}
+a{margin-left: 40%;}
+h1{color: #274755;}
+
+a.button{
+text-decoration: none;
+color: initial;
+}
