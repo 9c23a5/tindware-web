@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <title>TindWare - Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/footer2.css">
-    
+
 </head>
 <body>
 <?php
@@ -21,12 +21,28 @@
          echo HIDE;
      }
     ?>
-   
-    <div id="main">
 
-    <div id="txtizq">
+    <div id="main">
+    <div id="txt1">
         <h2>"Un nuevo soporte técnico nunca antes visto"</h2>
-            <p>Nos dedicamos a implementar soluciones en tu dia a dia</p>
+            <p>Nos dedicamos a implementar soluciones en tu dia a dia.</p>
+    </div>
+    
+    <div id="txt2">
+        <h2>"Hay una igualdad absoluta en todos los sentidos"</h2>
+            <p>Si la persona está feliz, el trabajo será desarollado de forma eficaz y eficiente.</p>
+    </div>
+    <div id="txt3">
+        <h2>"Es increíble, son muy profesionales"</h2>
+            <p>Las personas que dan el soporte técnico deben poseer una cualidad básica: Ganas de aprender.</p>
+    </div>
+    <div id="txtder">
+        <h2>Empresa dedicada al soporte técnico</h2>
+            <p>Somos una empresa de infromática que está orientada al soporte técnico. Contamos con empleados en todos
+                los campos con los cuales ayudamos tanto a particulares como a empresas.<br/>
+                Nuestra gran virtud es el servicio 24h, los 365 dias del año, demostrando que un servicio técnico
+                es aquel que no descansa. 
+            </p>
     </div>
        
         <div id="imgtit">
