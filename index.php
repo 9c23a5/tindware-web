@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>TindWare - Inicio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/index.css">
 
 </head>
@@ -22,35 +22,20 @@
      }
     ?>
 
-    <div id="main">
-    <div id="txt1">
+    <div class="main">
+    <div id="txtizq">
         <h2>"Un nuevo soporte técnico nunca antes visto"</h2>
             <p>Nos dedicamos a implementar soluciones en tu dia a dia.</p>
-    </div>
-    
-    <div id="txt2">
+
         <h2>"Hay una igualdad absoluta en todos los sentidos"</h2>
             <p>Si la persona está feliz, el trabajo será desarollado de forma eficaz y eficiente.</p>
-    </div>
-    <div id="txt3">
+
         <h2>"Es increíble, son muy profesionales"</h2>
             <p>Las personas que dan el soporte técnico deben poseer una cualidad básica: Ganas de aprender.</p>
-    </div>
-    <div id="txtder">
-        <h2>Empresa dedicada al soporte técnico</h2>
-            <p>Somos una empresa de infromática que está orientada al soporte técnico. Contamos con empleados en todos
-                los campos con los cuales ayudamos tanto a particulares como a empresas.<br/>
-                Nuestra gran virtud es el servicio 24h, los 365 dias del año, demostrando que un servicio técnico
-                es aquel que no descansa. 
-            </p>
-    </div>
-       
-        <div id="imgtit">
-        <img src="img/tindware.png" alt="Los fundadores" width="480" height="400">
-        </div>
-        <div id="login">
-
-        <form action="do_login.php" method="POST">
+    </div> 
+        <div id="centro">
+            <img src="img/tindware.png" alt="Los fundadores" width="480" height="400">
+            <form action="do_login.php" method="POST">
         <!-- Formulario de inicio de sesión-->
             <table>
                 <tr>
@@ -71,15 +56,22 @@
                             <tr>
                                 <td colspan="2" align="center"><a href="registro.php" class="reg">Pincha aquí para registrarte</a></td>
                             </tr>
-                            
-
                         </table>
                     </td>
                 </tr>
             </table>
         </form>
         </div>
-        </div>
+        <div id="txtder">
+        <h2>Empresa dedicada al soporte técnico</h2>
+            <p>Somos una empresa de infromática que está orientada al soporte técnico. Contamos con empleados en todos
+                los campos con los cuales ayudamos tanto a particulares como a empresas.<br/>
+                Nuestra gran virtud es el servicio 24h, los 365 dias del año, demostrando que un servicio técnico
+                es aquel que no descansa. 
+            </p>
+    </div>
+
+
     </div>
    
     <?php
