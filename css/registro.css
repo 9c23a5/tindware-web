@@ -1,18 +1,19 @@
-body {
-    height: 100%;
-    width: 100%;
-    background-image: url("../img/registroimg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: fantasy;
+}
   #form_registro{
-    margin-top: 7cm;
-    margin-left: 22cm;
-    position: fixed;
+    border: 1px solid black;
+    width: 100%;
+    margin-top: 1cm;
+    
   }
-
-  
+  table{
+    border: 1px solid black;
+  }
 .volver:hover{
     color: burlywood;
     font-weight: bold;
@@ -37,5 +38,38 @@ table h2{
 
 td{
   font: monospace;
-  line-height: 1cm;
+  line-height: 1.5cm;
+}
+footer{
+  float: right;
+  background-color: #000;
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width:800px){
+  .main{
+      width: 100%;
+  }
+  #form_registro{
+      width: 100%;
+  }
+ 
+}
+@media screen and (max-width:1280px){
+  .main{
+      width: 100%;
+  }
+  #form_registro{
+      width: 100%;
+  }
+ 
+}
+@media screen and (max-width:1600px){
+  .main{
+      width: 100%;
+  }
+  #form_registro{
+      width: 100%;
+  }
+ 
 }
