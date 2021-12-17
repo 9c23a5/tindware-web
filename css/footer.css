@@ -1,3 +1,4 @@
+
 footer h2{
     color: white;
     text-align: center;
@@ -6,9 +7,10 @@ footer h2{
 }
 
 #cuadro1{
-    height: 300px;
+    height: 200px;
     width: 25%;
     float: left;
+    margin-top: 0.5cm;
 }
 
 #cuadro1 h1{
@@ -18,26 +20,33 @@ footer h2{
 }
 #cuadro1 p{
     margin-left: 1cm;
+    margin-top: 0.5cm;
+    color: white; 
 }
 #cuadro2{   
-    height: 300px;
+    height: 200px;
     width: 25%;
     float: left;
     text-align: justify;
     margin-left: 0.5cm;
+    margin-top: 0.5cm;
 }
+
 #cuadro2 a {
-    color: #274755;
+    color: white;
     text-decoration: none;
+    margin-top: 0.5cm;
+
 }
 #cuadro2 a:hover{
     color: burlywood;
     font-weight: bold;
 }
 #cuadro3{   
-    height: 300px;
+    height: 200px;
     width: 25%;
     float: left;
+    margin-top: 0.5cm;
 }
 #cuadro3{
     
@@ -46,10 +55,12 @@ footer h2{
     float: left;
     text-align: center;
 }
+#cuadro4{
+    margin-top: 0.5cm;
+}
 
 #final{
     float: right;
-    height: 100px;
     background-color: black;
     width: 100%;
     text-align: center;
@@ -61,7 +72,7 @@ footer h2{
 }
 
 #final a:hover{
-    color: burlywood;
+    color: #e1e1e1;
     font-weight: bold;
 }
 
@@ -70,6 +81,7 @@ footer h2{
     text-align: center;
 }
 .in {
+    margin-top: 1cm;
     transition: transform .2s;
    padding-bottom: 0.5cm;
 }
@@ -91,5 +103,25 @@ footer h2{
 .fb:hover {
     transform: scale(1.5); 
 }
+#cuadro4 td{
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+  
+}
+.input{
+    background: #e1e1e1;
+    width: 100%;
+}
+#cuadro4 .submit{
+    background: #e1e1e1;
+    width: 100%;
+    color: black;
+}
 
-	
+
+#cuadro4 form{
+   
+    justify-content: center;
+    align-items: center;
+}

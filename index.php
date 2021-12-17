@@ -80,18 +80,18 @@
         </div>
         <div id="cuadro4">
             <h2>¿Necesitas ayuda?</h2>
-            <form>
+            <form class="form">
         <table>
             <tr>
                 <td>
                     <table>
                         <tr>
-                            <td>Correo electrónico*</td>
-                            <td><input type="email" name="email"></td>                                
+                            <td>Correo*: </td>
+                            <td><input type="email" name="email" class="input"></td>                                
                         </tr>
                         <tr>
-                        <td>Observaciones</td>
-                        <td><textarea name="observaciones" cols="18" rows="5"></textarea></td>
+                        <td>Observaciones: </td>
+                        <td><textarea name="observaciones" cols="18" rows="5" class="input"></textarea></td>
                         </tr>
                         <tr><td colspan="2" ><input type="submit" value="Enviar" class="submit"></td></tr>
 
