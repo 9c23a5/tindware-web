@@ -33,7 +33,7 @@ $datosUser = obtenerDatosUser($id_user);
             <ul>
                 <li><a href="#">Mapa técnicos</a></li>
                 <li><a href="#">Ultima ofertas</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="FAQ.php">FAQ</a></li>
                 <li><a href="oficios.php">Trabaja con nosotros</a></li>
                 <li><a href="quienessomos.php">Quienes somos</a></li>
                 <li><a><a href="/admin/">Panel administrativo</a></a><!--Admin--></li>
