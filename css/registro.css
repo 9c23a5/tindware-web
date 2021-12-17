@@ -5,15 +5,19 @@
 body{
   font-family: fantasy;
 }
-  #form_registro{
-    border: 1px solid black;
-    width: 100%;
+#form_registro{
     margin-top: 1cm;
-    
-  }
-  table{
-    border: 1px solid black;
-  }
+    margin:  100px auto;    
+}
+input:hover{
+  background-color: #d1d0cf;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+}
+
 .volver:hover{
     color: burlywood;
     font-weight: bold;
@@ -22,7 +26,6 @@ body{
     text-decoration: none;
     color: black;
 }
-
 .submit{
   width:100%;
 	padding:8px 16px;
@@ -31,14 +34,15 @@ body{
 	color:#fff;
 	background-color:#000;
 } 
-
-table h2{
-  font: monospace;
+table{
+  background-color: rgb(224, 224, 224);
+  padding: 1px;
 }
-
 td{
-  font: monospace;
   line-height: 1.5cm;
+  text-align: justify;
+  width: 250px;
+  text-align: center;
 }
 footer{
   float: right;
@@ -46,6 +50,11 @@ footer{
   width: 100%;
   height: auto;
 }
+
+
+
+
+
 @media screen and (max-width:800px){
   .main{
       width: 100%;
