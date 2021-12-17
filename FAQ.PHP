@@ -28,7 +28,7 @@ pondra en contacto con usted en 48-72h</p>
 
 <h1>Porque tenemos que registar vuestra ubicacion?</h1>
 <p>Si habilitas la ubicación precisa, podremos tener a tiempo completo la ubicacion
-y usar tu ubicación precisa, como la información del GPS</p>
+y usar tu ubicación precisa,dasdasdasdasdas como la información del GPS</p>
  
 
  
