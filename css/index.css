@@ -4,58 +4,57 @@
 }
 
 body{
-    background: bisque;
+   
+    font-family: fantasy;
 }
 .main{
     width: 100%;
     max-width: 1920px;
-    background-color: burlywood; 
+    background: #f3f1f0;
     margin: 0 auto;
     overflow: hidden;
-    
+    font-family: fantasy;
 }
 h2{
-    color: black;
-    font-weight: bold;
-    text-decoration-line:overline underline ;
+    color: brown;
+    font-weight: bold;  
+    font-size: 19px;;
 }
 p{
-    color: rgb(251, 230, 202);
+  
     font-weight: bold;
     line-height: 0.8cm;
     margin-left: 0.1cm;
     font-size: 17px;
 }
-
-#txtizq{
-    float: left;
-    border: 1px solid black;
-    width: 25%;
-    height: 750px;
-}
 #centro{
     float: left;
-    border: 1px solid black;
-    width: 50%;
-
-}#centro img{
-    width: 50%;
-    text-align: center;
+    width: 40%;
+    margin-bottom: 0 auto;
+    
+}
+#centro img{
     margin: auto;
     display: block;
-    border: 1px solid black;
+  
+
 }
 
 #txtder{
     float: left;
-    width: 24%;
-    border: 1px solid black;
+    margin-top: 3cm;
+    background: #e1e1e1;
+    padding: 1%;
 }
-table{
-    
+#ofe{
+    border: 1px solid black;
+    float: left;
+    width: auto;
+    height: auto;
+}
+table{ 
     margin: 0 auto;
 }
-
 .submit{
   width:100%;
   padding:8px 16px;
@@ -75,15 +74,19 @@ table{
 td{
   line-height: 1cm;
 }
+footer{
+    float: right;
+    background-color: #000;
+    width: 100%;
+    height: auto;
+}
+
 
 
 @media screen and (max-width:800px){
     .main{
         width: 100%;
     }
-    #txtizq{
-        width: 100%;
-    }
     #centro{
         width: 100%;
     }
@@ -91,25 +94,21 @@ td{
         width: 100%;
     }
 }
-@media screen and (max-width:1200px){
+@media screen and (max-width:1280px){
     .main{
         width: 100%;
     }
-    #txtizq{
-        width: 100%;
-    }
+    
     #centro{
         width: 100%;
     }
     #txtder{
         width: 100%;
+        margin-top: 0;
     }
 }
 @media screen and (max-width:1600px){
     .main{
-        width: 100%;
-    }
-    #txtizq{
         width: 100%;
     }
     #centro{

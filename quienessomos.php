@@ -120,7 +120,7 @@
     <div id="final">
 
         <a href="#">Pulsa aqui para subir</a>
-        <p>© 2021Company - Todos los derechos reservados</p>        
+        <p>© 2021 Company - Todos los derechos reservados</p>        
 
     </div>
 </body>
