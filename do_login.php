@@ -6,6 +6,7 @@
 </head>
 <body>
     <?php
+    #test
     include 'inc/constantes.php';
     # Incluir header
     include 'inc/header.php';
