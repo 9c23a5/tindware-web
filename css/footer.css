@@ -11,6 +11,8 @@ footer h2{
     margin-top: 0.5cm;
     border-right: 5px solid #920a0a;
     border-right-style:double;
+    padding-bottom: 2.5cm ;
+
 }
 #cuadro1 h1{
     color: wheat;
@@ -30,6 +32,7 @@ footer h2{
     margin-top: 0.5cm;
     border-right: 5px solid #920a0a;
     border-right-style:double;
+    line-height: 170%;
 }
 #cuadro2 a {
     color: white;
@@ -115,4 +118,8 @@ footer h2{
 #cuadro4 form{
     justify-content: center;
     align-items: center;
+}
+
+#final:hover{
+    background-color: #920a0a;
 }
