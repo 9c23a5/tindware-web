@@ -35,13 +35,13 @@ footer h2{
     line-height: 170%;
 }
 #cuadro2 a {
-    color: white;
+    color: #e1e1e1;
     text-decoration: none;
     margin-top: 0.5cm;
 
 }
 #cuadro2 a:hover{
-    color: burlywood;
+    color: #e1e1e1;
     font-weight: bold;
 }
 #cuadro3{   
