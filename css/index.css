@@ -18,14 +18,12 @@ body{
 h2{
     color: brown;
     font-weight: bold;  
-    font-size: 19px;;
+    font-size: 19px;
 }
-p{
-  
+p{ 
     font-weight: bold;
     line-height: 0.8cm;
     margin-left: 0.1cm;
-    font-size: 17px;
 }
 #centro{
     float: left;
@@ -36,10 +34,7 @@ p{
 #centro img{
     margin: auto;
     display: block;
-  
-
 }
-
 #txtder{
     float: left;
     margin-top: 3cm;
@@ -52,17 +47,12 @@ p{
     width: auto;
     height: auto;
 }
+
 table{ 
     margin: 0 auto;
+    padding: 15px;
 }
-.submit{
-  width:100%;
-  padding:8px 16px;
-  border:1px solid #000;
-  border-radius:4px;
-  color:#fff;
-  background-color:#000;
-} 
+
 .reg:hover{
   color: burlywood;
   font-weight: bold;
