@@ -6,6 +6,7 @@
 - Estetica ([css](https://github.com/9c23a5/tindware-web/tree/css))
 - Perfil (no hay rama todavia)
 - FAQ (en Tawk)
+- Crear distintos usuarios para SQL, para reforzar la seguridad 
 
 ## Ejemplo header
 ![Ejemplo header](https://github.com/9c23a5/tindware-web/blob/main/ejemplo_header.png?raw=true)
