@@ -41,8 +41,8 @@
             ponga a tu disposicion a los mejores técnicos del mercado.</p>
             <p>Además queremos ser unfa fuente de oprtunidades para aquellas personas con dificultades para encontrar un empleo pueda tener un oportunidad en este mercado en 
                 expansión</p>
-                <img src="img/desFE.jpg" alt="Los fundadores" width="400" height="300" class="flota">
-                <img src="img/desUX.jpg" alt="Los fundadores" width="400" height="300">
+                <img src="img/desFE.jpg" alt="Los fundadores" width="500" height="500">
+               
                
     </div>
     
@@ -51,19 +51,58 @@
             <p>Como hemos comentado anteriormente, ofrecemos servicios de mantenimiento hardware, desarrollo web, entre otros, orientado
             tanto a particulares como a empresas. Un auténtico soporte 365 dias al año, distinto, real. </p>
             <p>Sin necesitas más información, no dudes en ponerte en contacto con nosotros.</p>  
+            <img src="img/desUX.jpg" alt="Los fundadores" width="650" height="500">
     </div>
     <div id="team">
-        <h2>Our Team</h2>
-        <div id="anthony">
-        <img src="img/ander.png" alt="Los fundadores" width="100" height="100">
-        </div>
-    </div>          
-    <div id="img4">
-                <h2>Los fundadores de la empresa</h2>
-                
-             <img src="img/photo.jpg" alt="Los fundadores" width="500" height="500">
-    </div>
-        
+        <h2>Nuestro equipo</h2>
+                    <ul>
+                    <li>
+                    <img src="img/anthony.png">
+                    <div class="info">
+                    <h3>Anthony</h3>
+                    <p>Diseñador Front-End</p>
+                    <p>Demasiado flow</p>
+                    <p>El + sexy</p>
+                    </div>
+                    </li>
+                    <li>
+                    <img src="img/ander.png">
+                    <div class="info">
+                    <h3>Ander</h3>
+                    <p>Foto tomada por <a href="http://www.flickr.com/people/evapro/">Eva Prokop</a></p>
+                    <p><small>Tomada el 7 de enero de 2007 con una cámara Nikon D70s</small></p>
+                    <p>EXIF: <span class="exif">1/60</span> <span class="exif">ƒ/4.5</span> <span class="exif">50 mm</span></p>
+                    </div>
+                    </li>
+                    <li>
+                    <img src="img/asier.png">
+                    <div class="info">
+                    <h3>Asier</h3>
+                    <p>Foto tomada por <a href="http://www.flickr.com/people/evapro/">Eva Prokop</a></p>
+                    <p><small>Tomada el 7 de enero de 2007 con una cámara Nikon D70s</small></p>
+                    <p>EXIF: <span class="exif">1/60</span> <span class="exif">ƒ/4.5</span> <span class="exif">50 mm</span></p>
+                    </div>
+                    </li>
+                    <li>
+                    <img src="img/borja.png">
+                    <div class="info">
+                    <h3>Borja</h3>
+                    <p>Foto tomada por <a href="http://www.flickr.com/people/evapro/">Eva Prokop</a></p>
+                    <p><small>Tomada el 7 de enero de 2007 con una cámara Nikon D70s</small></p>
+                    <p>EXIF: <span class="exif">1/60</span> <span class="exif">ƒ/4.5</span> <span class="exif">50 mm</span></p>
+                    </div>
+                    </li>
+                    <li>
+                    <img src="img/jose.png">
+                    <div class="info">
+                    <h3>José</h3>
+                    <p>Foto tomada por <a href="http://www.flickr.com/people/evapro/">Eva Prokop</a></p>
+                    <p><small>Tomada el 7 de enero de 2007 con una cámara Nikon D70s</small></p>
+                    <p>EXIF: <span class="exif">1/60</span> <span class="exif">ƒ/4.5</span> <span class="exif">50 mm</span></p>
+                    </div>
+                    </li>
+                    </ul>
+    </div>            
     </div>
     <footer>
         <div id="cuadro1">
