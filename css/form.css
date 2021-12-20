@@ -17,13 +17,13 @@ th{
 
 .text{
     padding: 5px;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 1px;
 }
 td{
     color: black;
     padding: 10px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
 }
 .submit{
