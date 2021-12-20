@@ -2,6 +2,7 @@
 @include "constantes.php";
 @include "obtenerCookies.php";
 @include "obtenerDatosUser.php";
+@include "FAQ.php";
 
 $datosUser = obtenerDatosUser($id_user);
 ?>
