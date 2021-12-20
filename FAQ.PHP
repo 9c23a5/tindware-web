@@ -39,7 +39,7 @@ controlar es la cantidad de consultas que podamos llegar a tener al momento, por
 <h1>¿Hay que pagar mensualidades?</h1>
 <p>No, </p>
 
-<h1>¿Comó es el proceso de contratación?</h1>
+<h1>jiji¿Comó es el proceso de contratación?</h1>
 <p>Despues de registrarse en la pagina web, el solicitante puede depositar su curriculum en el apartado correspondiente 
 y despues de ello uno de nuestros gestores pasara a examinarlo. En caso de querer contar con su ayuda dicho gestor se 
 pondra en contacto con usted en 48-72h</p>
