@@ -36,11 +36,11 @@
                             <tr><th colspan="2">Inicio de sesión</th></tr>
                             <tr>
                                 <td>Nombre de usuario o email:</td>
-                                <td><input type="text" name="login" required placeholder="usuario"/></td>
+                                <td><input type="text" name="login" required placeholder="Usuario" class="text"/></td>
                             </tr>
                             <tr>
                                 <td>Contraseña:</td>
-                                <td><input type="password" name="passwd" required placeholder="contraseña"/></td> 
+                                <td><input type="password" name="passwd" required placeholder="Contraseña" class="text"/></td> 
                             </tr>
                             
                             <tr>
