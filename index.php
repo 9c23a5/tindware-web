@@ -36,14 +36,14 @@
                 <tr>
                     <td>
                         <table>
-                            <tr><th colspan="3">Formulario de Registro</th></tr>
+                            <tr><th colspan="3">Inicio de sesión</th></tr>
                             <tr>
                                 <td>Nombre de usuario o email:</td>
-                                <td><input type="text" name="login" required/></td>
+                                <td><input type="text" name="login" required placeholder="usuario"/></td>
                             </tr>
                             <tr>
                                 <td>Contraseña:</td>
-                                <td><input type="password" name="passwd" required/></td> 
+                                <td><input type="password" name="passwd" required placeholder="contraseña"/></td> 
                             </tr>
                             
                             <tr>
