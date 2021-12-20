@@ -1,4 +1,19 @@
 *{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   margin: 0;
   padding: 0;
 }
@@ -17,7 +32,12 @@ input:hover{
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
 }
-
+input{
+  border-radius: 3px;
+}
+input::placeholder{
+  text-align: center;
+}
 .volver:hover{
     color: burlywood;
     font-weight: bold;
@@ -40,9 +60,11 @@ table{
 }
 td{
   line-height: 1.5cm;
-  text-align: justify;
+  text-align: left;
   width: 250px;
   text-align: center;
+
+  
 }
 footer{
   float: right;

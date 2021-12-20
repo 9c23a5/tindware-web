@@ -26,22 +26,19 @@
     <div id="form_registro"><center>
         <h2>Formulario de Inscripción</h2>
     <form action="do_registro.php" method="POST">
-                <table>
-
-                <tr>
-                    <td>
+                    
                         <table>
                             <tr>
                              <td>Nombre de usuario: </td>
-                            <td><input type="text" name="username" required class="text"/></td>
+                            <td><input type="text" name="username" required class="text" placeholder="Nombre de usuario"/></td>
                             </tr>
                             <tr>
                                 <td>Contraseña: </td>
-                                <td><input type="password" name="passwd" required class="text"/></td>
+                                <td><input type="password" name="passwd" required class="text" placeholder="Contraseña"/></td>
                             </tr>
                             <tr>
                                 <td>Correo electrónico:</td>
-                                <td><input type="email" name="email" required class="text"/></td>
+                                <td><input type="email" name="email" required class="text" placeholder="Correo electrónico"/></td>
                             </tr>
                             <tr>
                                 <td>Tipo de usuario:</td>
@@ -59,9 +56,9 @@
                              <tr>
                                 <td colspan="2"><input type="submit" value="Registrarse" class="submit"/><br/></td>  
                             </tr>
-                        </table>
-                    </td>
-                </tr>
+                        
+                    
+                
                 </table>
         <!-- Formulario de inicio de sesión-->
     </form>
@@ -89,27 +86,8 @@
             <a href="#"><img src="img/fb.png" alt="Los fundadores" width="50" height="50" class="fb"><br/></a>
         </div>
         <div id="cuadro4">
-            <h2>¿Necesitas ayuda?</h2>
-            <form class="form">
-        <table>
-            <tr>
-                <td>
-                    <table>
-                        <tr>
-                            <td>Correo*: </td>
-                            <td><input type="email" name="email" class="input"></td>                                
-                        </tr>
-                        <tr>
-                        <td>Observaciones: </td>
-                        <td><textarea name="observaciones" cols="18" rows="5" class="input"></textarea></td>
-                        </tr>
-                        <tr><td colspan="2" ><input type="submit" value="Enviar" class="submit"></td></tr>
-
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </form>
+            <h2>¿?</h2>
+            
         </div>
     </footer>
     <div id="final">
