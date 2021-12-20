@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" href="css/form.css" type="text/css"/>
 
 </head>
 <body>
@@ -35,6 +36,7 @@
                 <tr>
                     <td>
                         <table>
+                            <tr><th colspan="3">Formulario de Registro</th></tr>
                             <tr>
                                 <td>Nombre de usuario o email:</td>
                                 <td><input type="text" name="login" required/></td>
@@ -77,29 +79,6 @@
             <a href="https://www.instagram.com/tindwareoficial/?hl=es"><img src="img/in.png" alt="Los fundadores" width="50" height="50" class="in"></a><br/>
             <a href="https://twitter.com/TindWare"><img src="img/tw.png" alt="Los fundadores" width="50" height="50" class="tw"></a><br/>
             <a href="#"><img src="img/fb.png" alt="Los fundadores" width="50" height="50" class="fb"><br/></a>
-        </div>
-        <div id="cuadro4">
-            <h2>¿Necesitas ayuda?</h2>
-            <form class="form">
-        <table>
-            <tr>
-                <td>
-                    <table>
-                        <tr>
-                            <td>Correo*: </td>
-                            <td><input type="email" name="email" class="input"></td>                                
-                        </tr>
-                        <tr>
-                        <td>Observaciones: </td>
-                        <td><textarea name="observaciones" cols="18" rows="5" class="input"></textarea></td>
-                        </tr>
-                        <tr><td colspan="2" ><input type="submit" value="Enviar" class="submit"></td></tr>
-
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </form>
         </div>
     </footer>
     <div id="final">

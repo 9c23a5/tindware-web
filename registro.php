@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/registro.css" type="text/css"/>
     <link rel="stylesheet" href="css/footer.css" type="text/css"/>
+    <link rel="stylesheet" href="css/form.css" type="text/css"/>
 </head>
 <body>
     <?php
@@ -24,10 +25,10 @@
     ?>
     <div class="main">
     <div id="form_registro"><center>
-        <h2>Formulario de Inscripción</h2>
     <form action="do_registro.php" method="POST">
                     
                         <table>
+                            <tr><th colspan="3">Formulario de Registro</th></tr>
                             <tr>
                              <td>Nombre de usuario: </td>
                             <td><input type="text" name="username" required class="text" placeholder="Nombre de usuario"/></td>
@@ -85,15 +86,11 @@
             <a href="https://twitter.com/TindWare"><img src="img/tw.png" alt="Los fundadores" width="50" height="50" class="tw"></a><br/>
             <a href="#"><img src="img/fb.png" alt="Los fundadores" width="50" height="50" class="fb"><br/></a>
         </div>
-        <div id="cuadro4">
-            <h2>¿?</h2>
-            
-        </div>
     </footer>
     <div id="final">
 
         <a href="#">Pulsa aqui para subir</a>
-        <p>© 2021 Company - Todos los derechos reservados</p>        
+        <p class="der">© 2021 Company - Todos los derechos reservados</p>        
 
     </div>
     <?php

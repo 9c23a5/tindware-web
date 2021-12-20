@@ -1,80 +1,17 @@
-*{
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  margin: 0;
-  padding: 0;
-}
 body{
   font-family: fantasy;
 }
 #form_registro{
-    margin-top: 1cm;
     margin:  100px auto;    
 }
-input:hover{
-  background-color: #d1d0cf;
-  color: white;
-  transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-}
-input{
-  border-radius: 3px;
-}
-input::placeholder{
-  text-align: center;
-}
-.volver:hover{
-    color: burlywood;
-    font-weight: bold;
-}
-.volver{
-    text-decoration: none;
-    color: black;
-}
-.submit{
-  width:100%;
-	padding:8px 16px;
-	border:1px solid #000;
-	border-radius:4px;
-	color:#fff;
-	background-color:#000;
-} 
-table{
-  background-color: rgb(224, 224, 224);
-  padding: 1px;
-}
-td{
-  line-height: 1.5cm;
-  text-align: left;
-  width: 250px;
-  text-align: center;
 
-  
-}
 footer{
   float: right;
   background-color: #000;
   width: 100%;
   height: auto;
 }
-
-
-
 
 
 @media screen and (max-width:800px){
