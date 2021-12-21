@@ -12,7 +12,7 @@
     # Recogemos datos del POST
     @$login = $_POST['login'];
     @$passwd = $_POST['passwd'];
-    $con = mysqli_connect('localhost', 'root');
+    $con = mysqli_connect('localhost', 'root', MYSQL_PASSWD);
     if (str_contains($login, '@')) {
         # Ha iniciado sesión utilizando un correo
         $query = "SELECT id FROM tindware.usuario WHERE email = '$login' AND passwd = '$passwd' LIMIT 1";
