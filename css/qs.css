@@ -2,37 +2,37 @@
     .main{
         width: 100%;
     }
-    #centro{
+    #qs{
         width: 100%;
     }
-    #txtder{
+    #qns{
+        width: 100%;
+    }
+    #sci{
+        width: 100%;
+    }
+    #team{
         width: 100%;
     }
 }
-@media screen and (max-width:1280px){
+@media screen and (max-width:800px){
     .main{
         width: 100%;
     }
-    
-    #centro{
+    #qs{
         width: 100%;
     }
-    #txtder{
-        width: 100%;
-        margin-top: 0;
-    }
-}
-@media screen and (max-width:1600px){
-    .main{
+    #qns{
         width: 100%;
     }
-    #centro{
+    #sci{
         width: 100%;
     }
-    #txtder{
+    #team{
         width: 100%;
     }
 }
+
 body{
     height: 100vh;
     width: 100%;
