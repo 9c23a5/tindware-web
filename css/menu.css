@@ -10,12 +10,9 @@ body {
 header {
       margin: 0;
       padding: 5px 10px 0 10px;
-      background-color: #053041;
+      background: -webkit-linear-gradient(90deg, black 10%, #053041 90%);
       top: 0;
-     
-    
 }
-
 header a {
       color: white;
       text-decoration: none;
@@ -53,6 +50,7 @@ header #links  li {
       box-sizing:border-box;
       display:inline-block;
       width: auto;
+      margin-top: 45px;
       height:30px;
       padding:5px 10px;
       background-color:#375967;
@@ -61,6 +59,7 @@ header #links  li {
       color: white;
       margin-right: 5px;
       border-radius: 10px 10px 0 0;
+
 }
 
 header #login_reg_logout {

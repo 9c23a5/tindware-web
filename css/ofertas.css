@@ -4,10 +4,6 @@
     height: 100vh;
     text-align: center;
   }
-  
-
-  
-  
   .box {
     float: left;
     position: relative;
@@ -15,8 +11,6 @@
     width: 40%;
     background-color: transparent;
   }
-  
-  
   .box-inner {
     position: absolute;
     top: 14em;

@@ -1,11 +1,10 @@
-body {
-    background-color: #dedeee;
-}
+
 form{
     color: #274755;
-    background: #e1e1e1;
     padding: 15px;
-    
+    background: linear-gradient(to bottom, #f6f4f4, white);
+    border: 1px solid transparent;  
+    border-image: linear-gradient(to bottom, black 0%, grey 100%) 1; 
 }
 table{
     padding: 15px;
@@ -42,6 +41,9 @@ input{
     outline: none;
     border: 0;
     border-radius: 1px;
+    border: 1px solid grey;
+    padding: 5px;
+    text-align: center;
 }
 input:hover{
     background-color: rgb(223, 221, 221);

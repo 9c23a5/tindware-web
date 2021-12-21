@@ -1,100 +1,88 @@
-body{
-    height: 100%;
-    width: 100%;
-    background-image: url("../img/qs.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  
+@media screen and (max-width:800px){
+    .main{
+        width: 100%;
+    }
+    #centro{
+        width: 100%;
+    }
+    #txtder{
+        width: 100%;
+    }
 }
-
+@media screen and (max-width:1280px){
+    .main{
+        width: 100%;
+    }
+    
+    #centro{
+        width: 100%;
+    }
+    #txtder{
+        width: 100%;
+        margin-top: 0;
+    }
+}
+@media screen and (max-width:1600px){
+    .main{
+        width: 100%;
+    }
+    #centro{
+        width: 100%;
+    }
+    #txtder{
+        width: 100%;
+    }
+}
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: fantasy;   
+}
+body img{
+    text-align: center;
+}
+#main{
+    width: 80%;
+    margin-left: 10%;
+}
 p{
     text-align: justify;
     font-size: 17px;
-    font:  monospace;
     line-height: 0.8cm;
-    color: #274755;
     text-decoration: none;
+    padding-left: 0.25cm;
+    padding-right: 0.25cm;
 }
-ul{
-    text-align: justify;
-    padding-left: 5cm;
-    padding-right: 4cm;
-    font-size: 17px;
-    font:  monospace;
-    line-height: 0.7cm;
-    color: #274755;
-    text-decoration: none;
+h2{
+    height: 0.8cm;
+    width: 100%;
+    text-align: center;
+    margin-top: 1cm;
+    padding-top: 0.25cm;
+    padding-bottom: 0.25cm;
+    border-bottom: 1px solid black;
 }
-#qs{
-    float: left;
-    margin-left: 0.5cm;
-    height: 404px;
-    width: 60%; 
+#qs img{
+    margin: 0 auto;
+    display: block;
 }
-#qs h2{  
-    font:  monospace;
-    color: #274755;
-    text-decoration:underline;
-    text-align: left;
+img{
+    text-align: right;
+    border-radius: 3px;
+    margin: 0 auto;
+    display: block;
 }
-#img1{
-    margin-right: 0.5cm;
-    margin-top: 0;
-  
+#qs,#qns,#sci,#team{
+    height: 0 auto;
+    width: 100%;
+    background: linear-gradient(to bottom, #f6f4f4, white);
 }
-#qns{
-    float: right;
-    margin-left: 0.5cm;
-    height: auto;
-    width: 60%;
-    margin-right: 0.5cm;  
-}
-#img2{
-    margin-left: 0.5cm;
-  
-  
-}
-#qns h2{
-    font:  monospace;
-    color: #274755;
-    text-decoration:underline;
-    text-align: left;
-}
-#sci{
-    float: left;
-    margin-left: 0.5cm;
-    height: 450px;
-    width: 65%;
-    
-}
-#img3{
-    margin-left: 0.5cm;
-   
-}
-#sci h2{
-   
-    font:  monospace;
-    color: #274755;
-    text-decoration:underline;
-    text-align: left;
-}
-#img3{
-    
-    margin-right: 0.5cm;
-    margin-top: 35px;
-}
+
 #img4{
     text-align: center;
     width: 100%;
     margin: 0;
     float: right; 
-}
-#img4 h2{
-    text-align: center;
-    font:  monospace;
-    color: #274755;
-    text-decoration:underline;   
 }
 #redes{
     height: 6cm;
@@ -130,8 +118,43 @@ td{
 
 footer{
     float: right;
-    background-color: #000;
+    background: -webkit-linear-gradient(90deg, black 10%, #053041 90%);
     width: 100%;
     height: auto;
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#team img{
+    margin-top: 5%;
+    height: 150px;
+    width: 150px;
+}
+li {
+    background-color:  #ebebeb;
+    border: 1px solid black;
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 270px;
+    overflow: hidden;
+    margin: 0 15px 15px 0;
+    }
+.info {
+     display: none;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    width: 400px;
+    color: #FFF;
+    padding: 10px;
+    height: 270px;
+}
+li:hover .info {
+display: block;
+}

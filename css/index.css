@@ -10,7 +10,6 @@ body{
 .main{
     width: 100%;
     max-width: 1920px;
-    background: #f3f1f0;
     margin: 0 auto;
     overflow: hidden;
     font-family: fantasy;
@@ -38,7 +37,6 @@ p{
 #txtder{
     float: left;
     margin-top: 3cm;
-    background: #e1e1e1;
     padding: 1%;
 }
 #ofe{
@@ -54,7 +52,7 @@ table{
 }
 
 .reg:hover{
-  color: burlywood;
+  color: brown;
   font-weight: bold;
 }
 .reg{
@@ -69,6 +67,9 @@ footer{
     background-color: #000;
     width: 100%;
     height: 0 auto;
+}
+#final p{
+    color: white;
 }
 
 
