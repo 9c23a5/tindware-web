@@ -25,7 +25,7 @@ $datosUser = obtenerDatosUser($id_user);
         <!-- Un img con el logo de TindWare y un canvas con el nombre -->
         <a href="index.php">
             <img src="img/logo.png">
-            <canvas id="miCanvas" height="101" width="355">Error al mostrar el canvas</canvas>
+            <canvas id="miCanvas" height="101" width="365">Error al mostrar el canvas</canvas>
         </a>
     </div>
     <div id="botones">
@@ -79,14 +79,13 @@ $datosUser = obtenerDatosUser($id_user);
     var canvas = document.getElementById("miCanvas");
     var ctx = canvas.getContext("2d");
     // ctx.font = "200px Press Start 2P";
-    ctx.font = "30px Fantasy";
-    ctx.font = "42px Fantasy";
+    ctx.font = "30px FreeLine";
+    ctx.font = "42px FreeLine";
     ctx.fillStyle = "#63c5d6";
     ctx.shadowColor = 'white';
     ctx.shadowOffsetX = 0;
     ctx.shadowOffsetY = 0;
     ctx.shadowBlur = 14;
-    ctx.fillText("T", 10, 75);
-    ctx.fillText("ind", 41, 75);
-    ctx.fillText("Ware", 171, 75);
+    ctx.fillText("TindWare", 10, 75);
+    
 </script> 

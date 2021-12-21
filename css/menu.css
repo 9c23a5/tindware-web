@@ -19,8 +19,8 @@ header a {
 }
 
 @font-face {
-      font-family: 'PressStart2P';
-      src: url("..\\inc\\PressStart2P.ttf")
+      font-family: 'FreeLine';
+      src: url("..\\inc\\FreeLine.ttf")
 }
 
 header #logo {
