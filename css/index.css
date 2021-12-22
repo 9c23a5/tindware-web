@@ -20,7 +20,6 @@ h2{
     font-size: 19px;
 }
 p{ 
-    font-weight: bold;
     line-height: 0.8cm;
     margin-left: 0.1cm;
 }
@@ -36,7 +35,7 @@ p{
 }
 #txtder{
     float: left;
-    margin-top: 3cm;
+    margin-top: 10vh;
 }
 #ofe{
     border: 1px solid black;

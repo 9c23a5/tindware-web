@@ -61,7 +61,9 @@ input:hover{
     font-size: 15px;
     text-decoration: none;
     color: black;
-    font-weight: bold;
+}
+a:hover{
+    color: brown;
 }
 
 .bienvenido{    
