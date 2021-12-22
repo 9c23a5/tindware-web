@@ -12,10 +12,12 @@ header {
       padding: 5px 10px 0 10px;
       background: -webkit-linear-gradient(90deg, black 10%, #053041 90%);
       top: 0;
+      height: 200px;
 }
 header a {
       color: white;
       text-decoration: none;
+      height: 170px;
 }
 
 @font-face {

@@ -47,7 +47,6 @@ footer h3{
     width: 33%;
     float: left;
     margin-top: 0.40cm;
-    border-right-style:double;
     width: 25%;
     float: left;
     text-align: center;
@@ -76,8 +75,8 @@ footer h3{
     text-align: center;
 }
 .in {
-    margin-top: 1cm;
-    transition: transform .2s;
+
+   transition: transform .2s;
    padding-bottom: 0.5cm;
 }
 .in:hover {
