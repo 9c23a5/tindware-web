@@ -1,14 +1,13 @@
 
-footer h2{
+footer h3{
     color: white;
     text-align: center;
-    font:  monospace;
     font-size: 20px;
 }
 #cuadro1{
     width: 33%;
     float: left;
-    margin-top: 0.5cm;
+    margin-top: 0.40cm;
     border-right: 5px solid #920a0a;
     border-right-style:double;
     padding-bottom: 2.5cm ;
@@ -29,7 +28,7 @@ footer h2{
     float: left;
     text-align: justify;
     margin-left: 0.5cm;
-    margin-top: 0.5cm;
+    margin-top: 0.40cm;
     border-right: 5px solid #920a0a;
     border-right-style:double;
     line-height: 170%;
@@ -47,21 +46,19 @@ footer h2{
 #cuadro3{   
     width: 33%;
     float: left;
-    margin-top: 0.5cm;
+    margin-top: 0.40cm;
     border-right-style:double;
-}
-#cuadro3{
     width: 25%;
     float: left;
     text-align: center;
 }
-
 
 #final{
     float: right;
     background-color: black;
     width: 100%;
     text-align: center;
+    height: 100px;
 }
 #final a{
     text-decoration: none;

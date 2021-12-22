@@ -37,7 +37,6 @@ p{
 #txtder{
     float: left;
     margin-top: 3cm;
-    padding: 1%;
 }
 #ofe{
     border: 1px solid black;
@@ -62,11 +61,12 @@ table{
 td{
   line-height: 1cm;
 }
+
 footer{
     float: right;
-    background-color: #000;
+    background: -webkit-linear-gradient(90deg, black 10%, #053041 90%);
     width: 100%;
-    height: 0 auto;
+    height: auto;
 }
 #final p{
     color: white;

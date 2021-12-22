@@ -38,9 +38,6 @@ body{
     width: 100%;
     font-family: fantasy;   
 }
-body img{
-    text-align: center;
-}
 #main{
     width: 80%;
     margin-left: 10%;
@@ -72,28 +69,17 @@ h2{
     margin: 0 auto;
     display: block;
 }
+#qns,#sci{
+    margin: 0 auto;
+    display: block;
+}
 #qs,#qns,#sci,#team{
     height: 0 auto;
     width: 100%;
     background: linear-gradient(to bottom, #f6f4f4, white);
 }
 
-#img4{
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    float: right; 
-}
-#redes{
-    height: 6cm;
-    float: right;
-    width: 30%;
-}
-#redes h2{
-    text-align: center;
-    font:  monospace;
-    color: #274755;
-}
+
 table{
     background-color:#375967;
     color: whitesmoke;

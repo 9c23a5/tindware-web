@@ -31,7 +31,7 @@
             <p>¿Y si ofrecemos un servicio jamás visto antes? Creíamos que sería una locura, pero aquí te presento TINDWARE, el servicio técnico que no duerme.</p>
             <p>Dedicamos todos nuestros esfuerzos a enlazar los mejores técnicos en cada campo de la informática con usuarios y empresas que necesiten en un momento crucial la asistencia.
             Creemos que el tiempo es oro, y por eso nuestros técnicos están capacitados para trabajar de la manera más rápida y eficiente.</p>
-            <img src="img/tindware.png" alt="Los fundadores" width="480" height="400">
+            <center><img src="img/tindware.png" alt="Los fundadores" width="480" height="400"></center>
     </div>
     <div id="qns">
         <h2>¿Por qué nuestro servicio?</h2>
@@ -106,19 +106,19 @@
     </div>
     <footer>
         <div id="cuadro1">
-            <h2>TindWare</h2>
+            <h3>TindWare</h3>
             <p>Dirección: Autonomia Kalea, 48012 Bilbao, Bizkaia</p>
             <p>Horario: Lunes a Viernes 08:00-14:00</p>
         </div>
         <div id="cuadro2">
-            <h3>Servicios</h2>
+            <h3>Navegación por la página</h3>
             <a href="index.php">Volver a la pagina principal</a><br/><br/>
             <a href="registro.php">Registrate</a><br/><br/>
             <a href="#">Todas nuestras ofertas de empleo</a><br/><br/>
             <a href="index.php">Iniciar sesión</a><br/><br/>
         </div>
         <div id="cuadro3">
-            <h2>Nuestras redes sociales</h2>
+            <h3>Nuestras redes sociales</h3>
             <a href="https://www.instagram.com/tindwareoficial/?hl=es"><img src="img/in.png" alt="Los fundadores" width="50" height="50" class="in"></a><br/>
             <a href="https://twitter.com/TindWare"><img src="img/tw.png" alt="Los fundadores" width="50" height="50" class="tw"></a><br/>
             <a href="#"><img src="img/fb.png" alt="Los fundadores" width="50" height="50" class="fb"><br/></a>
@@ -127,7 +127,7 @@
     <div id="final">
 
         <a href="#">Pulsa aqui para subir</a>
-        <p class="der">© 2021 Company - Todos los derechos reservados</p>        
+        <p class="der">© 2021 Mikeldi - Todos los derechos reservados</p>        
 
     </div>
     
