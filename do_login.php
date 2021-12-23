@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <title>TindWare - Iniciar Sesión</title>
-  
     <link rel="stylesheet" type="text/css" href="css/do_login.css">
 </head>
 <body>
