@@ -3,6 +3,7 @@
 <head>
     <title>TindWare - Inicio</title>
     <script src="scripts/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/mapa.css" type="text/css"/>
     <script src="scripts/loc.js"></script>
     <script src="scripts/mapa.js"></script>
 </head>
@@ -24,7 +25,7 @@
                     marginwidth="0"
                     src=""
                     width="100%"
-                    height="600"
+                    height="615"
                     frameborder="0">
                 </iframe>
                 <span class="errorMaps" id="gmap_antes">Por favor, activa la ubicación en su navegador o escriba su ubicación en el cuadro de texto.</span>
@@ -33,11 +34,9 @@
             </div>
         </div>
         <div id="columna">
-            <div id="buscar">
-                <input type="text" id="inputMostrar" placeholder="Introduce tu lugar..."/>
-                <button id="buttonMostrar" onclick="getLocForm()">Mostrar</button>
-                <button id="test" onclick="cookieTest()">Añadir cookie</button>
-            </div>
+            <span class="titulo_columna">Resultados de la busqueda</span><br/>
+            <input type="text" id="inputMostrar" placeholder="Introduce tu lugar..."/>
+            <button id="buttonMostrar" onclick="getLocForm()">Mostrar</button>
         </div>
     </div>
 </body>
