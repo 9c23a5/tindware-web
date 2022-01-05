@@ -12,6 +12,8 @@
     @$username = $_POST['username'];
     @$passwd = $_POST['passwd'];
     @$email = $_POST['email'];
+    @$lat = $_POST['lat'];
+    @$lon = $_POST['lon'];
     @$tipo = $_POST['tipo'];
     @$fechaNac = $_POST['fechanac'];
 
@@ -54,7 +56,7 @@
                         # El usuario no existe
                         # Insertamos el usuario
                         $fechaHoy = $dateHoy->format('Y-m-d');
-                        $query = "INSERT INTO tindware.usuario (tipo, username, passwd, email, fechanac, signupdate) VALUES ('$tipo', '$username', '$passwd', '$email', '$fechaNac', '$fechaHoy');";
+                        $query = "INSERT INTO tindware.usuario (tipo, username, passwd, email, fechanac, signupdate, lat, lon) VALUES ('$tipo', '$username', '$passwd', '$email', '$fechaNac', '$fechaHoy', $lat, $lon);";
                         $out = mysqli_query($con, $query);
 
                         # Comprobar si ahora si hay un resultado
@@ -104,7 +106,7 @@
      }
     ?>
     <div id="doregistro_success">
-        Bienvenido a TindWare, <?php echo @$username ?>. <a href="index.php">Volver al inicio</a> o <a href="#">crea su primera oferta</a>.
+        <center class="bienvenido">Bienvenido a TindWare, <?php echo @$username ?>. <a href="index.php">Volver al inicio</a> o <a href="#">crea su primera oferta</a>.</center>
     </div>
     <?php
     # Si el registro ha fallado escondemos el div de success

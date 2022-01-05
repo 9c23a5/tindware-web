@@ -13,6 +13,9 @@
 
 [Hired](https://hired.com/)
 
+## Tablas DB
+![Tablas](https://github.com/9c23a5/tindware-web/blob/main/tablas_db.png?raw=true)
+
 ## Para añadir virtual host en XAMMP a tindware-web
 1. Abrimos notepad como administrador
 2. Archivo > Abrir > C:\Windows\System32\drivers\etc > hosts (hay que seleccionar Todos los archivos (\*.\*))
@@ -52,7 +55,9 @@ NameVirtualHost *
 
 En nuestra compañia contamos con profesionales en todas las ramas de la informatica.
 servicio de mantenimiento y reparacion de hardware y perifericos(teclados, ratones, switches,etc...)
-diseñadores web: mediante lenguajes como css, html, javascript, y framewoks como jquery, etc... se encargaran de dar soporte y desarrollar
-paginas web segun las indicaciones del cliente.
+diseñadores web: mediante lenguajes como css, html, javascript, y framewoks como jquery, etc... se encargaran de dar soporte y desarrollar paginas web segun las indicaciones del cliente.
 Para ello, contamos con varios campos en los que seccionamos a nuestros empleados: UX developer,WEBDEVELOPER, MarketingONline. Cada uno de nuestros diseñdores webs
 se encuntran segmentados segun su experiencia, desde traine hasta senior.
+
+## Para poner la timeline de @tindware
+[Aqui](https://publish.twitter.com/?query=twitter.com%2Ftindware&widget=Timeline)
