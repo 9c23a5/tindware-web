@@ -1,20 +1,11 @@
 async function obtenerLatLon() {
     
     function geoloc_ok(pos) {
-        $("#gmap_antes").hide();
-        lat = pos.coords.latitude;
-        lon = pos.coords.longitude;
-        console.log("Localizacion permitida");
-        var objeto = {};
-        objeto["lat"] = lat;
-        objeto["lon"] = lon;
-        // updateGMaps(lat, lon);
-        console.log("objeto:", objeto)
-        return objeto;
+        console.log(pos)
     }
     
     function geoloc_error(err) {
-        console.log(err.message);
+        console.log(err);
     }
 
     return new Promise((geoloc_ok, geoloc_error) => {
@@ -35,30 +26,15 @@ function updateGMaps(lat, lon, query) {
     $("#gmap").show();
 }
 
-function geoloc_ok(pos) {
-    $("#gmap_antes").hide();
-    lat = pos.coords.latitude;
-    lon = pos.coords.longitude;
-    console.log("Localizacion permitida");
-    updateGMaps(lat, lon);
-}
-
-function geoloc_error(err) {
-    console.log(err.message);
-}
-
 function getLocForm() {
     var texto = $("#inputMostrar").val();
     if (!texto) {
         alert("Form vacio");
     }
     else {
+        console.log("UPDATE texto: " + texto);
         updateGMaps(undefined, undefined, texto);
     }
-}
-
-function cookieTest() {
-    document.cookie = "test=value";
 }
 
 $(function(){
@@ -80,13 +56,12 @@ $(document).ready(async function() {
             console.log('tiene api')
             const promiseLatLon = await obtenerLatLon();
             if (!promiseLatLon) {
-                alert("Se ha encontrado el siguiente error: " + error);
+                console.log("ERROR: " + error);
             }
             else {
                 var lat = promiseLatLon.coords.latitude.toString();
                 var lon = promiseLatLon.coords.longitude.toString();
-                console.log(`lat: ${lat} lon: ${lon}`)
-                console.log('updateando')
+                console.log(`UPDATE lat: ${lat} lon: ${lon}`)
                 updateGMaps(lat, lon);
             }
         }
