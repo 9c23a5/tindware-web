@@ -11,7 +11,6 @@
     include 'inc/constantes.php';
     # Cargamos cookies
     include 'inc/obtenerCookies.php';
-
     # Incluir header
     include 'inc/header.php';
     ?>
@@ -53,8 +52,6 @@
         <a href="index.php" class="volver" align="center">Volver al inicio</a>
       </center>
         
-       
-    
     </div>
     <?php
     # Si el usuario no es invitado escondemos el form de login

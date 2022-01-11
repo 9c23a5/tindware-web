@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/misc.css" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="css/do_registro.css">
     <title>TindWare - Registro</title>
 </head>
 <body>
@@ -49,7 +50,7 @@
                 if ($annosRegistro >= EDADMINIMA) {
                     # Comprobamos si el usuario existe en la base de datos
                     # Conexion a la base de datos y query
-                    $con = mysqli_connect('localhost', 'root');
+                    $con = mysqli_connect('localhost', 'root', MYSQL_PASSWD);
                     $query = "SELECT * FROM tindware.usuario WHERE username = '$username' OR email = '$email' LIMIT 1;";
                     $out = mysqli_query($con, $query);
                     if (mysqli_num_rows($out) == 0) {
@@ -106,7 +107,8 @@
      }
     ?>
     <div id="doregistro_success">
-        <center class="bienvenido">Bienvenido a TindWare, <?php echo @$username ?>. <a href="index.php">Volver al inicio</a> o <a href="#">crea su primera oferta</a>.</center>
+        <center class="bienvenido">Bienvenido a TindWare, <?php echo @$username ?>.<br/>
+        <a href="index.php">Volver al inicio</a> o <a href="#">crea su primera oferta</a>.</center>
     </div>
     <?php
     # Si el registro ha fallado escondemos el div de success
@@ -121,7 +123,7 @@
          echo HIDE;
      }
     ?>
-    <div id="doregistro_error">
+    <div id="doregistro_error" class="error">
         Error: <?php echo @$mensajeError ?>. <a href="registro.php">Vuelva al formulario</a> o <a href="index.php">vuelve al inicio</a>
     </div>
     <?php

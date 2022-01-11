@@ -6,68 +6,78 @@ body {
 
 
 
+form{
+    color: #274755;
+    padding: 15px;
+    background: linear-gradient(to bottom, #f6f4f4, white);
+    border: 1px solid transparent;  
+    border-image: linear-gradient(to bottom, black 0%, grey 100%) 1; 
+}
 table{
-    background-color:#375967;
-    color: whitesmoke;
-    border-radius: 4px;
-    border-color: gray;
+    padding: 15px;
+}
+th{
+    color: black;
+    font-size: 20px;
 }
 
 .text{
-
-    background-color: rgb(233, 229, 229);
-    border-radius: 4px;
-    border-color: silver;
     padding: 5px;
     font-size: 15px;
     letter-spacing: 1px;
-    
 }
-
 td{
-
+    color: black;
     padding: 10px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
 }
-
 .submit{
 	width:100%;
 	padding:8px 16px;
-	border:1px solid #000;
 	border-radius:4px;
-	color:#fff;
-	background-color:#000;
+	color: white;
+	background-color: black;
+    font-weight: bold;
 } 
+.submit:hover{
+    background: brown;
+    color: white ;
+}
+input{
+    outline: none;
+    border: 0;
+    border-radius: 1px;
+    border: 1px solid grey;
+    padding: 5px;
+    text-align: center;
+}
+input:hover{
+    background-color: rgb(223, 221, 221);
+    color: black;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+  }
+  input:focus{
+      border-color: brown;
+  }
 
 .volver{
-
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     color: black;
-    font-weight: bold;
-    
 }
-
- a:hover{
-
-    color:red;
-}
-
-.aviso{
-
-    color: rgb(187, 20, 54);
-    letter-spacing: 2px;
+a:hover{
+    color: brown;
 }
 
 .bienvenido{    
-    
     margin-top: 100px;
     font-size: 20px;
     color:#375967;
     font-weight: bold;
     font-size: 20px;
-
 }
-
 

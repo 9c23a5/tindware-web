@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   
+    font-family: arial;
+}
+p{
+    text-align: left;
+    font-size: 20px;
+    margin-left: 0.5cm;
+    margin-top: 0.5cm;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #f64598;
+}
+.volver:hover{
+    color: brown;
+    font-weight: bold;
+}
+
+.submit{
+	width:100%;
+	padding:8px 16px;
+	border:1px solid #000;
+	border-radius:4px;
+	color:#fff;
+	background-color:#000;
+} 
+

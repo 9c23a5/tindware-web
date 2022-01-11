@@ -1,10 +1,12 @@
 ## Tareas a hacer
 - Panel admin ([panel-admin](https://github.com/9c23a5/tindware-web/tree/panel-admin))
+- Proteccion de Datos (no hay rama todavia)
 - Asignar ofertas ([ofertas](https://github.com/9c23a5/tindware-web/tree/ofertas))
 - Crear ofertas ([ofertas](https://github.com/9c23a5/tindware-web/tree/ofertas))
 - Estetica ([css](https://github.com/9c23a5/tindware-web/tree/css))
 - Perfil (no hay rama todavia)
-- FAQ (no hay rama todavia)
+- FAQ (en Tawk)
+- Crear distintos usuarios para SQL, para reforzar la seguridad 
 
 ## Ejemplo header
 ![Ejemplo header](https://github.com/9c23a5/tindware-web/blob/main/ejemplo_header.png?raw=true)
@@ -49,7 +51,7 @@ NameVirtualHost *
 </VirtualHost>
 ```
 8. Guardamos y (re)iniciamos Apache
-9. Para acceder a nuestro proyecto, una vez iniciado Apache y MySQL introducimos ```tindware-web.local`` (o la URL que queramos escoger) en nuestro navegador
+9. Para acceder a nuestro proyecto, una vez iniciado Apache y MySQL introducimos ``tindware-web.local`` (o la URL que queramos escoger) en nuestro navegador
 
 ## [BEST ENLACE PARA HACER UN BUEN QS JEJE](https://linkiafp.es/blog/profesiones-informatica/)
 
