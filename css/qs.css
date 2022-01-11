@@ -14,6 +14,12 @@
     #team{
         width: 100%;
     }
+    #footer{
+        width: 100%;
+    }
+    #header{
+        width: 100%;
+    }
 }
 @media screen and (max-width:800px){
     .main{
@@ -59,20 +65,18 @@ h2{
     padding-bottom: 0.25cm;
     border-bottom: 1px solid black;
 }
-#qs img{
+
+#qns img{
     margin: 0 auto;
     display: block;
 }
-#qs,#qns,#sci{
+#sci img{
     text-align: right;
     border-radius: 3px;
     margin: 0 auto;
     display: block;
 }
-#qns,#sci{
-    margin: 0 auto;
-    display: block;
-}
+
 #qs,#qns,#sci,#team{
     height: 0 auto;
     width: 100%;
