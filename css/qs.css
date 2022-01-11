@@ -1,36 +1,150 @@
-header{
-
-    background-color: bisque;
-    font-family: fantasy;   
-
+@media screen and (max-width:800px){
+    .main{
+        width: 100%;
+    }
+    #qs{
+        width: 100%;
+    }
+    #qns{
+        width: 100%;
+    }
+    #sci{
+        width: 100%;
+    }
+    #team{
+        width: 100%;
+    }
+    #footer{
+        width: 100%;
+    }
+    #header{
+        width: 100%;
+    }
+}
+@media screen and (max-width:800px){
+    .main{
+        width: 100%;
+    }
+    #qs{
+        width: 100%;
+    }
+    #qns{
+        width: 100%;
+    }
+    #sci{
+        width: 100%;
+    }
+    #team{
+        width: 100%;
+    }
 }
 
 body{
-
-    font-family: fantasy;
+    height: 100vh;
+    width: 100%;
+    font-family: fantasy;   
 }
-
-
-h1{
+#main{
+    width: 80%;
+    margin-left: 10%;
+}
+p{
+    text-align: justify;
+    font-size: 17px;
+    line-height: 0.8cm;
+    text-decoration: none;
+    padding-left: 0.25cm;
+    padding-right: 0.25cm;
+}
+h2{
+    height: 0.8cm;
+    width: 100%;
     text-align: center;
-    font-family: fantasy;
+    margin-top: 1cm;
+    padding-top: 0.25cm;
+    padding-bottom: 0.25cm;
+    border-bottom: 1px solid black;
 }
+
+#qns img{
+    margin: 0 auto;
+    display: block;
+}
+#sci img{
+    text-align: right;
+    border-radius: 3px;
+    margin: 0 auto;
+    display: block;
+}
+
+#qs,#qns,#sci,#team{
+    height: 0 auto;
+    width: 100%;
+    background: linear-gradient(to bottom, #f6f4f4, white);
+}
+
+
+table{
+    background-color:#375967;
+    color: whitesmoke;
+    border-radius: 4px;
+    border-color: gray;
+    margin: 0 auto;
+}
+td{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.submit{
+	width:100%;
+	padding:8px 16px;
+	border:1px solid #000;
+	border-radius:4px;
+	color:#fff;
+	background-color:#000;
+} 
 
 footer{
-
-    background-color: black;
-    color: aliceblue;
-    font-family: fantasy;
-
+    float: right;
+    background: -webkit-linear-gradient(90deg, black 10%, #053041 90%);
+    width: 100%;
+    height: auto;
 }
 
-#qs{
+#team ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
 
-   margin-left: 7cm;
-   margin-right: 7cm;
-   text-align: justify;
-   font-size: 20px;
-   font-family: fantasy;
-   line-height: 0.9cm;
-
+#team img{
+    margin-top: 5%;
+    height: 150px;
+    width: 150px;
+}
+#team li {
+    background-color:  #ebebeb;
+    border: 1px solid black;
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 270px;
+    overflow: hidden;
+    margin: 0 15px 15px 0;
+    }
+.info {
+     display: none;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    width: 400px;
+    color: #FFF;
+    padding: 10px;
+    height: 270px;
+}
+#team li:hover .info {
+display: block;
 }

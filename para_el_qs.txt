@@ -1,9 +1,10 @@
 https://linkiafp.es/blog/profesiones-informatica/ BEST ENLACE PARA HACER UN BUEN QS JEJE.
+https://www.lineagrafica.es/8-consejos-para-redactar-el-quienes-somos-de-tu-web/ 
 
 
 En nuestra compañia contamos con profesionales en todas las ramas de la informatica.
-Servicio de mantenimiento y reparacion de hardware y perifericos(teclados, ratones, switches,etc...)
-Diseñadores web: mediante lenguajes como css, html, javascript, y framewoks como jquery, etc... 
+-Servicio de mantenimiento y reparacion de hardware y perifericos(teclados, ratones, switches,etc...)
+-Diseñadores web: mediante lenguajes como css, html, javascript, y framewoks como jquery, etc... 
 se encargarán de dar soporte y desarrollar paginas web según las indicaciones del cliente.
 Para ello, contamos con varios campos en los que seccionamos a nuestros empleados: 
 UX developer,WEBDEVELOPER, MarketingONline. 
@@ -16,3 +17,38 @@ Cada uno de nuestros diseñdores webs se encuentran segmentados según su experi
 
 Principalmente no, realizamos nuestros propios examanes tanto practicos como teoricos para valorar si esa persona 
 tiene cumple con nuestros requisitos minimos. De todos modos, la titulación que poseas nos ayuda de manera orientativa
+
+
+
+Nos centramos en ofrecer un servicio de calidad, orientado hacia todas las personas. Creemos que es importante que una sociedad tenga
+conocimientos en informática, ya que un futuro completamente informatizado está a la vuelta de la esquina.
+Por tanto, estamos plantando la semilla de un futuro sin preocupaciones, en el cuál un simple mensaje de texto o una llamada teléfonica
+ponga a tu disposicion a los mejores técnicos del mercado.
+
+
+            <p>Asier Mejuto DESARROLADOR BACK END</p>
+            <p>Ander Herrero DISEÑADOR UX</p>
+            <p>Jose Luis Villalba DISEÑADOR UI</p>
+            <p>Borja Montaño DESARROLADOR BACK END</p>
+            <p>Anthony Rodriguez DESARROLLADOR FRONT END</p>
+
+<form>
+        <table>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>Correo electrónico*</td>
+                            <td><input type="email" name="email"></td>                                
+                        </tr>
+                        <tr>
+                        <td>Observaciones</td>
+                        <td><textarea name="observaciones" cols="18" rows="5"></textarea></td>
+                        </tr>
+                        <tr><td colspan="2" ><input type="submit" value="Enviar" class="submit"></td></tr>
+
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>

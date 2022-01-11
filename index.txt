@@ -1,0 +1,10 @@
+ <div id="txtizq">
+        <h2>"Un nuevo soporte técnico nunca antes visto"</h2>
+            <p>Nos dedicamos a implementar soluciones en tu dia a dia.</p>
+
+        <h2>"Hay una igualdad absoluta en todos los sentidos"</h2>
+            <p>Si la persona está feliz, el trabajo será desarollado de forma eficaz y eficiente.</p>
+
+        <h2>"Es increíble, son muy profesionales"</h2>
+            <p>Las personas que dan el soporte técnico deben poseer una cualidad básica: Ganas de aprender.</p>
+    </div> 

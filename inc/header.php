@@ -2,6 +2,7 @@
 @include "constantes.php";
 @include "obtenerCookies.php";
 @include "obtenerDatosUser.php";
+@include "FAQ.php";
 
 $datosUser = obtenerDatosUser($id_user);
 ?>
@@ -24,7 +25,7 @@ $datosUser = obtenerDatosUser($id_user);
         <!-- Un img con el logo de TindWare y un canvas con el nombre -->
         <a href="index.php">
             <img src="img/logo.png">
-            <canvas id="miCanvas" height="101" width="355">Error al mostrar el canvas</canvas>
+            <canvas id="miCanvas" height="101" width="365">Error al mostrar el canvas</canvas>
         </a>
     </div>
     <div id="botones">
@@ -33,7 +34,10 @@ $datosUser = obtenerDatosUser($id_user);
             <ul>
                 <li><a href="#">Mapa técnicos</a></li>
                 <li><a href="#">Ultima ofertas</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="https://tindware.tawk.help/">FAQ</a></li>
+                <li><a href="oficios.php">Trabaja con nosotros</a></li>
+                <li><a href="quienessomos.php">Quienes somos</a></li>
+                <li><a href="aboutus.php">About us</a></li>
                 <li><a><a href="/admin/">Panel administrativo</a></a><!--Admin--></li>
             </ul>
         <!-- Hay otros menus, por ejemplo 'Panel administracion', que dependen segun el valor de la cookie de inicio de sesion -->
@@ -46,7 +50,7 @@ $datosUser = obtenerDatosUser($id_user);
             }
             ?>
                 <!-- Enlaces para Iniciar Sesión y Registro -->
-                <a href="login.php">Iniciar Sesión</a>
+                <a href="index.php">Iniciar Sesión</a>
                 <span class="separador">&nbsp;</span>
                 <a href="registro.php">Registro</a>
             <?php
@@ -76,14 +80,13 @@ $datosUser = obtenerDatosUser($id_user);
     var canvas = document.getElementById("miCanvas");
     var ctx = canvas.getContext("2d");
     // ctx.font = "200px Press Start 2P";
-    ctx.font = "30px PressStart2P";
-    ctx.font = "42px PressStart2P";
-    ctx.fillStyle = "#17d314";
+    ctx.font = "30px FreeLine";
+    ctx.font = "42px FreeLine";
+    ctx.fillStyle = "#63c5d6";
     ctx.shadowColor = 'white';
     ctx.shadowOffsetX = 0;
     ctx.shadowOffsetY = 0;
     ctx.shadowBlur = 14;
-    ctx.fillText("T", 10, 75);
-    ctx.fillText("ind", 41, 75);
-    ctx.fillText("Ware", 171, 75);
+    ctx.fillText("TindWare", 10, 75);
+    
 </script> 
