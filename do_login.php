@@ -53,6 +53,12 @@
     include 'inc/header.php';
     ?>
     <div id="main">
+        <?php
+        # Si el usuario no ha introducido los datos correctos escondemos el div de success
+        if (!$loginCorrecto) {
+            echo HIDE;
+        }
+        ?>
         <div id="dologin_success">
 
         <p class="bienvenido">Bienvenido de nuevo, <?php echo $username ?>. 

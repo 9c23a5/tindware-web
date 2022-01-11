@@ -150,6 +150,18 @@ ALTER TABLE `ofertas`
 --
 -- Constraints for table `perfil`
 --
+--
+
+--
+-- Constraints for table `ofertas`
+--
+ALTER TABLE `ofertas`
+  ADD CONSTRAINT `ofertas_ibfk_1` FOREIGN KEY (`id_usuariotec`) REFERENCES `usuario` (`id`),
+  ADD CONSTRAINT `ofertas_ibfk_2` FOREIGN KEY (`id_usuariopart`) REFERENCES `usuario` (`id`);
+
+--
+-- Constraints for table `perfil`
+--
 ALTER TABLE `perfil`
   ADD CONSTRAINT `perfil_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id`);
 
