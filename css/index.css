@@ -5,14 +5,14 @@
 
 body{
    
-    font-family: fantasy;
+    font-family: arial;
 }
 .main{
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
     overflow: hidden;
-    font-family: fantasy;
+    font-family: arial;
 }
 h2{
     color: brown;

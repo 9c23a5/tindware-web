@@ -23,7 +23,6 @@ $datosUser = obtenerDatosUser($id_user);
     <script type="text/javascript" src="../scripts/chat.js"></script>
 </head>
 <header>
-    <div style="font-family: PressStart2P;" onload="hacerCanvas();">.</div>
     <div id="logo">
         <!-- Un img con el logo de TindWare y un canvas con el nombre -->
         <a href="index.php">
