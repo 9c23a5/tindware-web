@@ -17,18 +17,17 @@
     # Incluir header
     include 'inc/header.php';
     ?>
-    <?php
-    # Si el usuario no es invitado escondemos el form de login
-    if ($type_user != 'invitado') {
-         echo HIDE;
-     }
-    ?>
-
     <div class="main">
    
         <div id="centro">
             <img src="img/tindware.png" alt="Los fundadores" width="480" height="400" class="logo">
         </div>
+        <?php
+        # Si el usuario no es invitado escondemos el form de login
+        if ($type_user != 'invitado') {
+            echo HIDE;
+        }
+        ?>
         <div id="txtder">
         <form action="do_login.php" method="POST">
         <!-- Formulario de inicio de sesión-->
@@ -52,6 +51,11 @@
                         </table>
         </form>
     </div>
+    <?php
+    if ($type_user != 'invitado') {
+         echo HIDECLOSE;
+     }
+    ?>
     <div id="ofe">
         <p>aqui van algunas ofertas</p>
     </div>
@@ -79,35 +83,6 @@
 
         <a href="#">Pulsa aqui para subir</a>
         <p class="der">© 2021 Mikeldi - Todos los derechos reservados</p>        
-
-    </div>
-
-
-    </div>
-   
-    <?php
-    # Si el usuario no es invitado escondemos el form de login
-    if ($type_user != 'invitado') {
-         echo HIDECLOSE;
-     }
-    ?>
-
-    <?php
-    # Si el usuario es invitado escondemos el mensaje de error
-    if ($type_user == 'invitado') {
-         echo HIDE;
-     }
-    ?>
-    <div id="login_error">
-        Ya has iniciado sesión. <a href="index.php">Volver al inicio</a>
-        <!-- Error cuando ya has iniciado sesión -->
-    </div>
-    <?php
-    # Si el usuario es invitado escondemos el mensaje de error
-    if ($type_user == 'invitado') {
-         echo HIDECLOSE;
-     }
-    ?>
 
 </body>
 </html>
