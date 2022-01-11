@@ -7,7 +7,10 @@ if (str_starts_with($_SERVER['REQUEST_URI'], '/admin')) {
 else {
     @include "constantes.php";
     @include "obtenerCookies.php";
-    @include "obtenerDatosUser.php";
+    if (@!function_exists('obtenerDatosUser')) {
+        @include "obtenerDatosUser.php";
+    }
+    @include "FAQ.php";
 }
 
 $datosUser = obtenerDatosUser($id_user);
@@ -29,22 +32,67 @@ $datosUser = obtenerDatosUser($id_user);
     <script type="text/javascript" src="../scripts/chat.js"></script>
 </head>
 <header>
-    <div style="font-family: PressStart2P;" onload="hacerCanvas();">.</div>
     <div id="logo">
         <!-- Un img con el logo de TindWare y un canvas con el nombre -->
         <a href="index.php">
             <img src="img/logo.png">
-            <canvas id="miCanvas" height="101" width="355">Error al mostrar el canvas</canvas>
+            <canvas id="miCanvas" height="101" width="365">Error al mostrar el canvas</canvas>
         </a>
     </div>
     <div id="botones">
         <!-- Un menu con las diferentes opciones (mapa tecnicos, ultimas ofertas, faq, etc...) -->
         <div id="links">
             <ul>
-                <li><a href="mapatecnicos.php">Mapa técnicos</a></li>
-                <li><a href="#">Ultima ofertas</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a><a href="admin/index.php">Panel administrativo</a></a><!--Admin--></li>
+                <li><a href="index.php">Inicio</a></li>
+                <?php
+                    # Si el usuario no es ni part ni tec quitamos esta entrada
+                    if ($type_user != 'tecnico' AND $type_user != 'particular') {
+                        echo HIDE;
+                    }
+                ?>
+                <li><a href="mapatecnicos.php">Mapa técnicos</a></li> <!--- Para particulares y tecnicos -->
+                <?php
+                    if ($type_user != 'tecnico' AND $type_user != 'particular') {
+                        echo HIDECLOSE;
+                    }
+
+                    # Si el usuario no es un particular quitamos el menu de Mis ofertas
+                    if ($type_user != 'particular') {
+                        echo HIDE;
+                    }
+                ?>
+                <li><a href="ofertas_part.php">Mis ofertas</a></li> <!-- Para particulares -->
+                <?php
+                    if ($type_user != 'particular') {
+                        echo HIDECLOSE;
+                    }
+
+                    # Si el usuario no es un tecicno quitamos el menu de Ultimas ofertas
+                    if ($type_user != 'tecnico') {
+                        echo HIDE;
+                    }
+                ?>
+                <li><a href="ofertas_tec.php">Últimas ofertas</a></li> <!-- Para tecnicos -->
+                <?php
+                    if ($type_user != 'tecnico') {
+                        echo HIDECLOSE;
+                    }
+                ?>
+                <li><a href="https://tindware.tawk.help/">FAQ</a></li>
+                <li><a href="oficios.php">Trabaja con nosotros</a></li>
+                <li><a href="quienessomos.php">Quienes somos</a></li>
+                <li><a href="aboutus.php">About us</a></li>
+                <?php
+                if ($type_user != 'admin') {
+                    echo HIDE;
+                }
+                ?>
+                <li><a href="/admin/">Panel administrativo</a><!--Admin--></li>
+                <?php
+                if ($type_user != 'admin') {
+                    echo HIDECLOSE;
+                }
+                ?>
             </ul>
         <!-- Hay otros menus, por ejemplo 'Panel administracion', que dependen segun el valor de la cookie de inicio de sesion -->
         </div>
@@ -56,7 +104,7 @@ $datosUser = obtenerDatosUser($id_user);
             }
             ?>
                 <!-- Enlaces para Iniciar Sesión y Registro -->
-                <a href="login.php">Iniciar Sesión</a>
+                <a href="index.php">Iniciar Sesión</a>
                 <span class="separador">&nbsp;</span>
                 <a href="registro.php">Registro</a>
             <?php
@@ -83,23 +131,16 @@ $datosUser = obtenerDatosUser($id_user);
     </div>
 </header>
 <script>
-    const myFont = new FontFace('PressStart2P', 'url(../inc/PressStart2P.ttf)');
-    myFont.load().then((font) => {
-        document.fonts.add(font);
-        console.log('Font loaded');
-
-        var canvas = document.getElementById("miCanvas");
-        var ctx = canvas.getContext("2d");
-        // ctx.font = "200px Press Start 2P";
-        // ctx.font = "30px PressStart2P";
-        ctx.font = "42px PressStart2P";
-        ctx.fillStyle = "#17d314";
-        ctx.shadowColor = 'white';
-        ctx.shadowOffsetX = 0;
-        ctx.shadowOffsetY = 0;
-        ctx.shadowBlur = 14;
-        ctx.fillText("T", 10, 75);
-        ctx.fillText("ind", 41, 75);
-        ctx.fillText("Ware", 171, 75);
-    });
+    var canvas = document.getElementById("miCanvas");
+    var ctx = canvas.getContext("2d");
+    // ctx.font = "200px Press Start 2P";
+    ctx.font = "30px FreeLine";
+    ctx.font = "42px FreeLine";
+    ctx.fillStyle = "#63c5d6";
+    ctx.shadowColor = 'white';
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 0;
+    ctx.shadowBlur = 14;
+    ctx.fillText("TindWare", 10, 75);
+    
 </script> 

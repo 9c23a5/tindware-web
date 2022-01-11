@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/misc.css" type="text/css"/>
     <title>TindWare - Iniciar Sesión</title>
+    <link rel="stylesheet" type="text/css" href="css/do_login.css">
 </head>
 <body>
     <?php
     include 'inc/constantes.php';
-    # Incluir header
-    include 'inc/header.php';
+    @include "inc/obtenerDatosUser.php";
     # Recogemos datos del POST
     @$login = $_POST['login'];
     @$passwd = $_POST['passwd'];
-    $con = mysqli_connect('localhost', 'root');
+    $con = mysqli_connect('localhost', 'root', MYSQL_PASSWD);
     if (str_contains($login, '@')) {
         # Ha iniciado sesión utilizando un correo
-        $query = "SELECT id FROM tindware.usuario WHERE email = '$login' AND passwd = '$passwd' LIMIT 1";
+        $query = "SELECT id, username FROM tindware.usuario WHERE email = '$login' AND passwd = '$passwd' LIMIT 1";
     }
     else {
         # Ha iniciado sesión utilizando un username
-        $query = "SELECT id FROM tindware.usuario WHERE username = '$login' AND passwd = '$passwd' LIMIT 1";
+        $query = "SELECT id, username FROM tindware.usuario WHERE username = '$login' AND passwd = '$passwd' LIMIT 1";
     }
     
     $out = mysqli_query($con, $query);
@@ -30,6 +29,7 @@
 
         # Y obtenemos los datos del usuario mediante su id
         $id = $resultado['id'];
+        $username = $resultado['username'];
         $datosUser = obtenerDatosUser($id);
 
         # Setteamos las cookies
@@ -49,10 +49,14 @@
     if (!$loginCorrecto) {
          echo HIDE;
      }
+    # Incluir header
+    include 'inc/header.php';
     ?>
     <div id="main">
         <div id="dologin_success">
-            Bienvenido, <?php echo $datosUser['username'] ?>. <a href="index.php">Volver al inicio</a>
+
+        <p class="bienvenido">Bienvenido de nuevo, <?php echo $username ?>. 
+        <p><a href="index.php" class="volver">Volver al inicio</a></p>
         </div>
         <?php
         # Si el usuario no ha introducido los datos correctos escondemos el div de success
@@ -68,7 +72,7 @@
         }
         ?>
         <div id="dologin_error">
-            El usuaio o la contraseña son inválidos. <a href="login.php">Vuelve a intentarlo</a> o <a href="index.php">vuelve al inicio</a>
+            <center class="bienvenido">El usuaio o la contraseña son inválidos. <a href="login.php" class="volver">Vuelve a intentarlo</a> o <a href="index.php" class="volver">vuelve al inicio</a></center>
             <!-- Error cuando ya has iniciado sesión -->
         </div>
         <?php

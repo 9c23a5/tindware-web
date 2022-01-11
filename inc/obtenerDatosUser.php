@@ -9,7 +9,7 @@
 function obtenerDatosUser($id) {
     $datosUser['id'] = $id;
     if ($id != 0) {
-        $con = mysqli_connect('localhost', 'root');
+        $con = mysqli_connect('localhost', 'root', MYSQL_PASSWD);
         $query = "SELECT tipo, username, email FROM tindware.usuario WHERE id = $id LIMIT 1";
 
         $out = mysqli_query($con, $query);

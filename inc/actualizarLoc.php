@@ -7,7 +7,7 @@
     if ($id_user = 0) {
         return;
     } else {
-        $con = mysqli_connect('localhost', 'root');
+        $con = mysqli_connect('localhost', 'root', MYSQL_PASSWD);
 
         # Comprobar si existe un registro de este usuario
         $query = "SELECT * FROM tindware.usuario WHERE id_usuario = $id_user LIMIT 1;";

@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   
+    font-family: arial;
+}
+.main{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+    font-family: arial;
+}
+h2{
+    color: brown;
+    font-weight: bold;  
+    font-size: 19px;
+}
+p{ 
+    line-height: 0.8cm;
+    margin-left: 0.1cm;
+}
+#centro{
+    float: left;
+    width: 40%;
+    margin-bottom: 0 auto;
+    
+}
+#centro img{
+    margin: auto;
+    display: block;
+}
+#txtder{
+    float: left;
+    margin-top: 10vh;
+}
+#ofe{
+    border: 1px solid black;
+    float: left;
+    width: auto;
+    height: auto;
+}
+
+table{ 
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.reg:hover{
+  color: brown;
+  font-weight: bold;
+}
+.reg{
+  text-decoration: none;
+  color: black;
+}
+td{
+  line-height: 1cm;
+}
+
+footer{
+    float: right;
+    background: -webkit-linear-gradient(90deg, black 10%, #053041 90%);
+    width: 100%;
+    height: auto;
+}
+#final p{
+    color: white;
+}
+
+
+
+@media screen and (max-width:800px){
+    .main{
+        width: 100%;
+    }
+    #centro{
+        width: 100%;
+    }
+    #txtder{
+        width: 100%;
+    }
+}
+@media screen and (max-width:1280px){
+    .main{
+        width: 100%;
+    }
+    
+    #centro{
+        width: 100%;
+    }
+    #txtder{
+        width: 100%;
+        margin-top: 0;
+    }
+}
+@media screen and (max-width:1600px){
+    .main{
+        width: 100%;
+    }
+    #centro{
+        width: 100%;
+    }
+    #txtder{
+        width: 100%;
+    }
+}
+
