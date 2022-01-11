@@ -53,8 +53,8 @@
     <div id="main">
         <div id="dologin_success">
 
-        <center class="bienvenido">Bienvenido de nuevo, <?php echo $datosUser['username'] ?>. 
-        <p><a href="index.php" class="volver">Volver al inicio</a></p></center>
+        <p class="bienvenido">Bienvenido de nuevo, <?php echo $datosUser['username'] ?>. 
+        <p><a href="index.php" class="volver">Volver al inicio</a></p>
         </div>
         <?php
         # Si el usuario no ha introducido los datos correctos escondemos el div de success
