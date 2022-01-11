@@ -7,19 +7,18 @@
 <body>
     <?php
     include 'inc/constantes.php';
-    # Incluir header
-    include 'inc/header.php';
+    @include "inc/obtenerDatosUser.php";
     # Recogemos datos del POST
     @$login = $_POST['login'];
     @$passwd = $_POST['passwd'];
     $con = mysqli_connect('localhost', 'root', MYSQL_PASSWD);
     if (str_contains($login, '@')) {
         # Ha iniciado sesión utilizando un correo
-        $query = "SELECT id FROM tindware.usuario WHERE email = '$login' AND passwd = '$passwd' LIMIT 1";
+        $query = "SELECT id, username FROM tindware.usuario WHERE email = '$login' AND passwd = '$passwd' LIMIT 1";
     }
     else {
         # Ha iniciado sesión utilizando un username
-        $query = "SELECT id FROM tindware.usuario WHERE username = '$login' AND passwd = '$passwd' LIMIT 1";
+        $query = "SELECT id, username FROM tindware.usuario WHERE username = '$login' AND passwd = '$passwd' LIMIT 1";
     }
     
     $out = mysqli_query($con, $query);
@@ -30,6 +29,7 @@
 
         # Y obtenemos los datos del usuario mediante su id
         $id = $resultado['id'];
+        $username = $resultado['username'];
         $datosUser = obtenerDatosUser($id);
 
         # Setteamos las cookies
@@ -49,11 +49,13 @@
     if (!$loginCorrecto) {
          echo HIDE;
      }
+    # Incluir header
+    include 'inc/header.php';
     ?>
     <div id="main">
         <div id="dologin_success">
 
-        <p class="bienvenido">Bienvenido de nuevo, <?php echo $datosUser['username'] ?>. 
+        <p class="bienvenido">Bienvenido de nuevo, <?php echo $username ?>. 
         <p><a href="index.php" class="volver">Volver al inicio</a></p>
         </div>
         <?php
