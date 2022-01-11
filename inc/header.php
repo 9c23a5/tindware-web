@@ -35,13 +35,45 @@ $datosUser = obtenerDatosUser($id_user);
         <div id="links">
             <ul>
                 <li><a href="index.php">Inicio</a></li>
-                <li><a href="mapatecnicos.php">Mapa técnicos</a></li>
-                <li><a href="#">Ultima ofertas</a></li>
+                <?php
+                    # Si el usuario no es ni part ni tec quitamos esta entrada
+                    if ($type_user != 'tecnico' AND $type_user != 'particular') {
+                        echo HIDE;
+                    }
+                ?>
+                <li><a href="mapatecnicos.php">Mapa técnicos</a></li> <!--- Para particulares y tecnicos -->
+                <?php
+                    if ($type_user != 'tecnico' AND $type_user != 'particular') {
+                        echo HIDECLOSE;
+                    }
+
+                    # Si el usuario no es un particular quitamos el menu de Mis ofertas
+                    if ($type_user != 'particular') {
+                        echo HIDE;
+                    }
+                ?>
+                <li><a href="ofertas_part.php">Mis ofertas</a></li> <!-- Para particulares -->
+                <?php
+                    if ($type_user != 'particular') {
+                        echo HIDECLOSE;
+                    }
+
+                    # Si el usuario no es un tecicno quitamos el menu de Ultimas ofertas
+                    if ($type_user != 'tecnico') {
+                        echo HIDE;
+                    }
+                ?>
+                <li><a href="ofertas_tec.php">Últimas ofertas</a></li> <!-- Para tecnicos -->
+                <?php
+                    if ($type_user != 'tecnico') {
+                        echo HIDECLOSE;
+                    }
+                ?>
                 <li><a href="https://tindware.tawk.help/">FAQ</a></li>
                 <li><a href="oficios.php">Trabaja con nosotros</a></li>
                 <li><a href="quienessomos.php">Quienes somos</a></li>
                 <li><a href="aboutus.php">About us</a></li>
-                <li><a><a href="/admin/">Panel administrativo</a></a><!--Admin--></li>
+                <li><a href="/admin/">Panel administrativo</a><!--Admin--></li>
             </ul>
         <!-- Hay otros menus, por ejemplo 'Panel administracion', que dependen segun el valor de la cookie de inicio de sesion -->
         </div>

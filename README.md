@@ -48,7 +48,7 @@ NameVirtualHost *
 </VirtualHost>
 ```
 8. Guardamos y (re)iniciamos Apache
-9. Para acceder a nuestro proyecto, una vez iniciado Apache y MySQL introducimos ```tindware-web.local`` (o la URL que queramos escoger) en nuestro navegador
+9. Para acceder a nuestro proyecto, una vez iniciado Apache y MySQL introducimos ``tindware-web.local`` (o la URL que queramos escoger) en nuestro navegador
 
 ## [BEST ENLACE PARA HACER UN BUEN QS JEJE](https://linkiafp.es/blog/profesiones-informatica/)
 
