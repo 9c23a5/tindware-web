@@ -1,18 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body{
-   
-    font-family: arial;
-}
 p{
     text-align: left;
     font-size: 20px;
     margin-left: 0.5cm;
     margin-top: 0.5cm;
-    line-break: 1cm
 }
 a{
     text-decoration: none;
@@ -20,10 +10,9 @@ a{
 }
 a:hover{
     color: #f64598;
-    font-weight: bold
 }
 .volver:hover{
-    color: brown;
+    color: #f64598;
     font-weight: bold;
 }
 

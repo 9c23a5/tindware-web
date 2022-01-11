@@ -124,7 +124,7 @@
      }
     ?>
     <div id="doregistro_error" class="error">
-        Error: <?php echo @$mensajeError ?>. <a href="registro.php">Vuelva al formulario</a> o <a href="index.php">vuelve al inicio</a>
+        <p> Error: <?php echo @$mensajeError ?>. <a href="registro.php">Vuelva al formulario</a> o <a href="index.php">vuelve al inicio</a></p>
     </div>
     <?php
     # Si el registro es correcto escondemos el div de error
