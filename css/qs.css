@@ -114,33 +114,42 @@ footer{
 }
 
 #team ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+    padding-left: 3cm;
 }
+ 
+#team h3,h4{
+    text-align: center;
+}
+
 
 #team img{
     margin-top: 5%;
-    height: 150px;
-    width: 150px;
+    height:180px;
+    width: 180px;
+    margin: auto;
+    display: block;
+    margin-top: 1cm;
 }
 #team li {
-    background-color:  #ebebeb;
+    background: black;
     border: 1px solid black;
     position: relative;
     float: left;
-    width: 400px;
+    width: 600px;
     height: 270px;
     overflow: hidden;
     margin: 0 15px 15px 0;
     }
+    #team p{
+        margin-right: 10px;
+    }
 .info {
-     display: none;
+    display: none;
     position: absolute;
     bottom: 0;
     z-index: 10;
     background: rgba(0, 0, 0, 0.5);
-    width: 400px;
+    width: 600px;
     color: #FFF;
     padding: 10px;
     height: 270px;

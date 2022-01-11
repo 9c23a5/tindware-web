@@ -59,46 +59,41 @@
                     <li>
                     <img src="img/anthony.png">
                     <div class="info">
-                    <h3>Anthony</h3>
-                    <p>Diseñador Front-End</p>
-                    <p>Demasiado flow</p>
-                    <p>El + sexy</p>
+                    <h3>Anthony Rodriguez</h3>
+                    <h4>CEO y Desarrollador Frontend</h4>
+                    <p>Soy una persona perfeccionista, me encanta que todo funcione como un reloj suizo. Mi principal función es el desarrollo web y rescatar animalitos de las calles</p>
                     </div>
                     </li>
                     <li>
                     <img src="img/ander.png">
                     <div class="info">
-                    <h3>Ander</h3>
-                    <p>Foto tomada por <a href="http://www.flickr.com/people/evapro/">Eva Prokop</a></p>
-                    <p><small>Tomada el 7 de enero de 2007 con una cámara Nikon D70s</small></p>
-                    <p>EXIF: <span class="exif">1/60</span> <span class="exif">ƒ/4.5</span> <span class="exif">50 mm</span></p>
+                    <h3>Ander Herrero</h3>
+                    <h4>Atención al Cliente y Departamento de Hardware</h4>
+                    <p>Soy una persona muy entusiasmada en el mundo del hardware. Me encanta montar mis propios ordenadores y sobre todo resolver las dudas que puedan surgir a los clientes de nuestra empresa</p>
                     </div>
                     </li>
                     <li>
                     <img src="img/asier.png">
                     <div class="info">
-                    <h3>Asier</h3>
-                    <p>Foto tomada por <a href="http://www.flickr.com/people/evapro/">Eva Prokop</a></p>
-                    <p><small>Tomada el 7 de enero de 2007 con una cámara Nikon D70s</small></p>
-                    <p>EXIF: <span class="exif">1/60</span> <span class="exif">ƒ/4.5</span> <span class="exif">50 mm</span></p>
+                    <h3>Asier Mejuto</h3>
+                    <h4>Jefe de Seguridad y Disponilidad de Sistemas y Redes</h4>
+                    <p>Me aseguro de que nadie no autorizado le de por curiosear, de mi depende toda la seguridad de esta empresa. Adicto al Visual Studio Code</p>
                     </div>
                     </li>
                     <li>
                     <img src="img/borja.png">
                     <div class="info">
-                    <h3>Borja</h3>
-                    <p>Foto tomada por <a href="http://www.flickr.com/people/evapro/">Eva Prokop</a></p>
-                    <p><small>Tomada el 7 de enero de 2007 con una cámara Nikon D70s</small></p>
-                    <p>EXIF: <span class="exif">1/60</span> <span class="exif">ƒ/4.5</span> <span class="exif">50 mm</span></p>
+                    <h3>Borja Montaño</h3>
+                    <h4>Director de Software</h4>
+                    <p>Mi primera aplicación la desarrollé a los 3 años, lo demás vino solo. Dirijo al equipo de desarrollo software.</p>
                     </div>
                     </li>
                     <li>
                     <img src="img/jose.png">
                     <div class="info">
-                    <h3>José</h3>
-                    <p>Foto tomada por <a href="http://www.flickr.com/people/evapro/">Eva Prokop</a></p>
-                    <p><small>Tomada el 7 de enero de 2007 con una cámara Nikon D70s</small></p>
-                    <p>EXIF: <span class="exif">1/60</span> <span class="exif">ƒ/4.5</span> <span class="exif">50 mm</span></p>
+                    <h3>José Luis Villalba</h3>
+                    <h4>Departamento de Marketing y Relaciones Públicas</h4>
+                    <p>Las ideas no vienen solas, hay que generarlas, y ese es mi trabajo. Proplayer del COD Warzone.</p>
                     </div>
                     </li>
                     </ul>
