@@ -1,5 +1,5 @@
   <?php
-   include 'inc/constantes.php';
+   include '../inc/constantes.php';
    define('EDADMINIMA', 18); # Edad minima del usuario en un registro
    # Recogemos datos del POST
    @$username = $_POST['username'];
@@ -88,8 +88,7 @@
    else {
        errorReg("Algunos de los campos está vacío");
    }
-   # Incluir header
-   include 'inc/header.php';
+   echo eval($registroCorrecto);
    ?>
 
    <?php
@@ -99,7 +98,7 @@
     }
    ?>
    <div id="doregistro_success">
-       <center class="bienvenido">Bienvenido a TindWare, <?php echo @$username ?>. <a href="index.php">Volver al inicio</a> o <a href="#">crea su primera oferta</a>.</center>
+       <center class="bienvenido">Registro añadido correctamente</center>
    </div>
    <?php
    # Si el registro ha fallado escondemos el div de success
@@ -115,7 +114,7 @@
     }
    ?>
    <div id="doregistro_error">
-       Error: <?php echo @$mensajeError ?>. <a href="registro.php">Vuelva al formulario</a> o <a href="index.php">vuelve al inicio</a>
+       Error al añadir el registro: <?php echo @$mensajeError ?>
    </div>
    <?php
    # Si el registro es correcto escondemos el div de error

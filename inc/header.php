@@ -1,7 +1,14 @@
 <?php
-@include "constantes.php";
-@include "obtenerCookies.php";
-@include "obtenerDatosUser.php";
+if (str_starts_with($_SERVER['REQUEST_URI'], '/admin')) {
+    @include "../constantes.php";
+    @include "../obtenerCookies.php";
+    @include "../obtenerDatosUser.php";
+}
+else {
+    @include "constantes.php";
+    @include "obtenerCookies.php";
+    @include "obtenerDatosUser.php";
+}
 
 $datosUser = obtenerDatosUser($id_user);
 ?>
