@@ -17,7 +17,6 @@ header {
 header a {
       color: #f64598;
       text-decoration: none;
-      height: 170px;
 }
 
 @font-face {
@@ -28,6 +27,8 @@ header a {
 header #logo {
       display: flex;
       justify-content: left;
+      align-items: center;
+      height: 170px;
 }
 
 header #links ul {
@@ -43,7 +44,7 @@ header #botones {
 }
 
 header #links {
-      font:  monospace;
+      font-family:  Outfit;
       font-weight: 300;
       width: auto;
 }
@@ -64,7 +65,7 @@ header #links  li {
 }
 
 header #login_reg_logout {
-      font:  monospace;
+      font-family:  Outfit;
       color: #bfd312;
       margin-bottom: 5px;
 }

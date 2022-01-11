@@ -34,6 +34,7 @@ $datosUser = obtenerDatosUser($id_user);
         <!-- Un menu con las diferentes opciones (mapa tecnicos, ultimas ofertas, faq, etc...) -->
         <div id="links">
             <ul>
+                <li><a href="index.php">Inicio</a></li>
                 <li><a href="mapatecnicos.php">Mapa técnicos</a></li>
                 <li><a href="#">Ultima ofertas</a></li>
                 <li><a href="https://tindware.tawk.help/">FAQ</a></li>
