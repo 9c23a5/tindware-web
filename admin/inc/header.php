@@ -25,6 +25,7 @@ if ($type_user != 'admin') {
             <td><a href='listar.html'>Listar</a></td>
             <td><a href='borrar.html'>Borrar</a></td>
             <td><a href='buscar.html'>Buscar</a></td>
+            <td><a href='cvs.html'>Curriculums</a></td>
         </tr>
     </table>
 </header>
