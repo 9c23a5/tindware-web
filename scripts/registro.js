@@ -6,7 +6,7 @@ function coordenadasDesdeGeocoding() {
         $("#geocoding_input").attr("onclick", "limpiarInput()");
     }
     else {
-        var apikey = "2a6ef58c88ad4fd9810b422c5348c25e" // en produccion esto no deberia estar asi c:;
+    var apikey = "2a6ef58c88ad4fd9810b422c5348c25e" // en produccion esto no deberia estar asi c:;
     var requestOptions = {
         method: "GET",
     };

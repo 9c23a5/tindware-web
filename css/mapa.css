@@ -1,0 +1,29 @@
+#main {
+    margin: 10px 10px 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 5px;
+    row-gap: 10px;
+}
+
+#mapa {
+    width: 60%;
+    flex-grow: 2;
+}
+
+#columna {
+    width: 450px;
+    height: 600px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.titulo_columna  {
+    font-family:  'Outfit', sans-serif;
+    font-weight: 500;
+    margin: auto;
+    font-size: 18pt;
+}
