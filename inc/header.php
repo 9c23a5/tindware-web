@@ -31,9 +31,40 @@ $datosUser = obtenerDatosUser($id_user);
         <!-- Un menu con las diferentes opciones (mapa tecnicos, ultimas ofertas, faq, etc...) -->
         <div id="links">
             <ul>
-                <li><a href="mapatecnicos.php">Mapa técnicos</a></li> <!--- Para particulares -->
+                <?php
+                    # Si el usuario no es ni part ni tec quitamos esta entrada
+                    if ($type_user != 'tecnico' AND $type_user != 'particular') {
+                        echo HIDE;
+                    }
+                ?>
+                <li><a href="mapatecnicos.php">Mapa técnicos</a></li> <!--- Para particulares y tecnicos -->
+                <?php
+                    if ($type_user != 'tecnico' AND $type_user != 'particular') {
+                        echo HIDECLOSE;
+                    }
+
+                    # Si el usuario no es un particular quitamos el menu de Mis ofertas
+                    if ($type_user != 'particular') {
+                        echo HIDE;
+                    }
+                ?>
                 <li><a href="ofertas_part.php">Mis ofertas</a></li> <!-- Para particulares -->
-                <li><a href="ofertas_tec.php">Ultima ofertas</a></li> <!-- Para tecnicos -->
+                <?php
+                    if ($type_user != 'particular') {
+                        echo HIDECLOSE;
+                    }
+
+                    # Si el usuario no es un tecicno quitamos el menu de Ultimas ofertas
+                    if ($type_user != 'tecnico') {
+                        echo HIDE;
+                    }
+                ?>
+                <li><a href="ofertas_tec.php">Últimas ofertas</a></li> <!-- Para tecnicos -->
+                <?php
+                    if ($type_user != 'tecnico') {
+                        echo HIDECLOSE;
+                    }
+                ?>
                 <li><a href="#">FAQ</a></li>
                 <li><a><a href="/admin/">Panel administrativo</a></a><!--Admin--></li>
             </ul>
