@@ -15,6 +15,9 @@
 
 [Hired](https://hired.com/)
 
+## Tablas DB
+![Tablas](https://github.com/9c23a5/tindware-web/blob/main/tablas_db.png?raw=true)
+
 ## Para añadir virtual host en XAMMP a tindware-web
 1. Abrimos notepad como administrador
 2. Archivo > Abrir > C:\Windows\System32\drivers\etc > hosts (hay que seleccionar Todos los archivos (\*.\*))

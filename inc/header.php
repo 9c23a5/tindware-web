@@ -1,8 +1,17 @@
 <?php
-@include "constantes.php";
-@include "obtenerCookies.php";
-@include "obtenerDatosUser.php";
-@include "FAQ.php";
+if (str_starts_with($_SERVER['REQUEST_URI'], '/admin')) {
+    @include "../constantes.php";
+    @include "../obtenerCookies.php";
+    @include "../obtenerDatosUser.php";
+}
+else {
+    @include "constantes.php";
+    @include "obtenerCookies.php";
+    if (@!function_exists('obtenerDatosUser')) {
+        @include "obtenerDatosUser.php";
+    }
+    @include "FAQ.php";
+}
 
 $datosUser = obtenerDatosUser($id_user);
 ?>
@@ -10,7 +19,7 @@ $datosUser = obtenerDatosUser($id_user);
     <!-- Fuentes Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet"> 
     <!-- CSS local -->
     <link rel="stylesheet" href="../css/misc.css" type="text/css"/>
     <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
@@ -73,7 +82,17 @@ $datosUser = obtenerDatosUser($id_user);
                 <li><a href="oficios.php">Trabaja con nosotros</a></li>
                 <li><a href="quienessomos.php">Quienes somos</a></li>
                 <li><a href="aboutus.php">About us</a></li>
+                <?php
+                if ($type_user != 'admin') {
+                    echo HIDE;
+                }
+                ?>
                 <li><a href="/admin/">Panel administrativo</a><!--Admin--></li>
+                <?php
+                if ($type_user != 'admin') {
+                    echo HIDECLOSE;
+                }
+                ?>
             </ul>
         <!-- Hay otros menus, por ejemplo 'Panel administracion', que dependen segun el valor de la cookie de inicio de sesion -->
         </div>
