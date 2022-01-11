@@ -74,6 +74,9 @@
                     echo "<div class='oferta'>";
                     echo "<span class='tituloOferta'>$titulo</span><br/>";
                     echo "$descripcion<br/>";
+                    if ($tipo = 'disponible') {
+                        echo "<span class='iroferta'><a href='viewOferta.php?id=$id_oferta'>Ver más</a></span><br/>";
+                    }
                     #echo "<form method='post' action='do_asignar_terminar.php'><input type='submit' value='";
                     echo "<input type='button' onclick=$miOnclick";
                     #if (!$clickable) {echo " disbaled";}
