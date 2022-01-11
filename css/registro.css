@@ -1,0 +1,43 @@
+
+body{
+  font-family: arial;
+}
+#form_registro{
+    margin:  100px auto;    
+}
+
+footer{
+  float: right;
+  background: -webkit-linear-gradient(90deg, black 10%, #053041 90%);
+  width: 100%;
+  height: auto;
+}
+
+
+@media screen and (max-width:800px){
+  .main{
+      width: 100%;
+  }
+  #form_registro{
+      width: 100%;
+  }
+ 
+}
+@media screen and (max-width:1280px){
+  .main{
+      width: 100%;
+  }
+  #form_registro{
+      width: 100%;
+  }
+ 
+}
+@media screen and (max-width:1600px){
+  .main{
+      width: 100%;
+  }
+  #form_registro{
+      width: 100%;
+  }
+ 
+}

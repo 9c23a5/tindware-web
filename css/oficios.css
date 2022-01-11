@@ -1,0 +1,100 @@
+p{
+    text-align: justify;
+    font-size: 17px;
+    font-family: arial;
+    line-height: 0.7cm;
+    color: #274755;
+    text-decoration: none;
+}
+ul{
+    text-align: justify;
+    padding-left: 5cm;
+    padding-right: 4cm;
+    font-size: 17px;
+    font-family: arial;
+    line-height: 0.7cm;
+    color: #274755;
+    text-decoration: none;
+}
+
+
+#principal{
+    float: left;
+    width: 65%;
+    float: left;
+    margin-left: 0.5cm;
+
+}
+
+#principal h1{
+    color: #053041;
+    font:  monospace;
+    color: #274755;
+    
+}
+
+#principal h2{
+   
+    font:  monospace;
+    color: #274755;
+    text-decoration:underline;
+    text-align: left;
+}
+
+#principal img{   
+    content: "";
+    background: transparent url(MoneyIcon.png) scroll no-repeat 0 0;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    display: block;
+    top: 12.5cm;
+    left: 28cm;
+}
+#secundario{
+    float: right;
+    width: 30%;
+}
+
+#secundario h2{
+    text-align: center;
+    font:  monospace;
+    color: #274755;
+}
+
+#redes{
+    height: 6cm;
+    float: right;
+    width: 30%;
+}
+
+#redes h2{
+    text-align: center;
+    font:  monospace;
+    color: #274755;
+}
+
+
+table{
+    background-color:#375967;
+    color: whitesmoke;
+    border-radius: 4px;
+    border-color: gray;
+}
+
+td{
+
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.submit{
+	width:100%;
+	padding:8px 16px;
+	border:1px solid #000;
+	border-radius:4px;
+	color:#fff;
+	background-color:#000;
+} 

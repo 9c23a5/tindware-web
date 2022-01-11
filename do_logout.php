@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="css/misc.css" type="text/css"/>
     <title>TindWare - Cerrar Sesión</title>
+    <link rel="stylesheet" type="text/css" href="css/form.css">
 </head>
 <body>
     <?php
@@ -20,7 +21,8 @@
      }
     ?>
     <div id="dologout_success">
-        Has cerrado sesión correctamente. <a href="index.php">Volver al inicio</a>.
+        
+        <center class="bienvenido">¡Hasta pronto <?php echo $datosUser['username'] ?>!<p>Has cerrado sesión correctamente. </p><a href="index.php" class="volver">Volver al inicio</a></center>
     </div>
     <?php
     # Si el usuario no ha introducido los datos correctos escondemos el div de success
@@ -36,7 +38,7 @@
      }
     ?>
     <div id="dologout_error">
-        ¡Todavía no has iniciado sesión! <a href="login.php">Inicia sesión</a> o <a href="index.php">vuelve al inicio</a>.
+        <center class="bienvenido">¡Todavía no has iniciado sesión! <a href="login.php" class="volver">Inicia sesión</a> o <a href="index.php" class="volver">vuelve al inicio</a>.</center>
         <!-- Error cuando ya has iniciado sesión -->
     </div>
     <?php

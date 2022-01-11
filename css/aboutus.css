@@ -1,0 +1,9 @@
+#video p{
+    border: 1px solid black;
+
+    height: 100px;
+}
+#video{
+    background: linear-gradient(to bottom, #f6f4f4, white);
+    text-align: center;
+}
