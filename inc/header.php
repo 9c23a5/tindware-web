@@ -37,7 +37,7 @@ $datosUser = obtenerDatosUser($id_user);
                 <li><a href="mapatecnicos.php">Mapa técnicos</a></li>
                 <li><a href="#">Ultima ofertas</a></li>
                 <li><a href="#">FAQ</a></li>
-                <li><a><a href="Z:\Tindware\tindware-web\admin\index.html">Panel administrativo</a></a><!--Admin--></li>
+                <li><a><a href="admin/index.php">Panel administrativo</a></a><!--Admin--></li>
             </ul>
         <!-- Hay otros menus, por ejemplo 'Panel administracion', que dependen segun el valor de la cookie de inicio de sesion -->
         </div>
