@@ -79,7 +79,7 @@ $datosUser = obtenerDatosUser($id_user);
                     }
                 ?>
                 <li><a href="https://tindware.tawk.help/">FAQ</a></li>
-                <li><a href="oficios.php">Trabaja con nosotros</a></li>
+                <!-- <li><a href="oficios.php">Trabaja con nosotros</a></li> -->
                 <li><a href="quienessomos.php">Quienes somos</a></li>
                 <li><a href="aboutus.php">About us</a></li>
                 <?php
