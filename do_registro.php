@@ -105,8 +105,8 @@
      }
     ?>
     <div id="doregistro_success">
-        <center class="bienvenido">Bienvenido a TindWare, <?php echo @$username ?>.<br/>
-        <a href="index.php">Volver al inicio</a> o <a href="#">crea su primera oferta</a>.</center>
+        <p class="bienvenido">Bienvenido a TindWare, <?php echo @$username ?>.<br/>
+        <a href="index.php">Volver al inicio</a> o <a href="#">crea su primera oferta</a>.</p>
     </div>
     <?php
     # Si el registro ha fallado escondemos el div de success

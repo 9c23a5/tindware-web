@@ -1,13 +1,32 @@
-body {
-    height: 100%;
-    width: 100%;
-    background-image: url("../img/registroimg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
    
-    background-attachment: fixed;
-    scroll-behavior: auto;
-  }
+    font-family: arial;
+}
+p{
+    text-align: left;
+    font-size: 20px;
+    margin-left: 0.5cm;
+    margin-top: 0.5cm;
+    line-break: 1cm
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #f64598;
+    font-weight: bold
+}
+.volver:hover{
+    color: brown;
+    font-weight: bold;
+}
+
 .submit{
 	width:100%;
 	padding:8px 16px;
@@ -16,20 +35,3 @@ body {
 	color:#fff;
 	background-color:#000;
 } 
-.volver{
-    font-size: 30px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-a:hover{
-    color: burlywood;
-    font-weight: bold;
-}
-.bienvenido{     
-    margin-top: 10cm;
-    font-size: 30px;
-    font-weight: bold;
-    font-size: 30px;
-
-}
