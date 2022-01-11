@@ -102,7 +102,7 @@
                     </div>
                     </li>
                     </ul>
-    </div>            
+    </div>         
     </div>
     <footer>
         <div id="cuadro1">
