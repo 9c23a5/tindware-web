@@ -10,7 +10,7 @@ $datosUser = obtenerDatosUser($id_user);
     <!-- Fuentes Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap" rel="stylesheet"> 
     <!-- CSS local -->
     <link rel="stylesheet" href="../css/misc.css" type="text/css"/>
     <link rel="stylesheet" href="../css/menu.css" type="text/css"/>
@@ -19,8 +19,11 @@ $datosUser = obtenerDatosUser($id_user);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Chat Tawk -->
+    <script type="text/javascript" src="../scripts/chat.js"></script>
 </head>
 <header>
+    <div style="font-family: PressStart2P;" onload="hacerCanvas();">.</div>
     <div id="logo">
         <!-- Un img con el logo de TindWare y un canvas con el nombre -->
         <a href="index.php">
@@ -32,7 +35,7 @@ $datosUser = obtenerDatosUser($id_user);
         <!-- Un menu con las diferentes opciones (mapa tecnicos, ultimas ofertas, faq, etc...) -->
         <div id="links">
             <ul>
-                <li><a href="#">Mapa técnicos</a></li>
+                <li><a href="mapatecnicos.php">Mapa técnicos</a></li>
                 <li><a href="#">Ultima ofertas</a></li>
                 <li><a href="https://tindware.tawk.help/">FAQ</a></li>
                 <li><a href="oficios.php">Trabaja con nosotros</a></li>
