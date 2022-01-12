@@ -24,14 +24,14 @@ if ($type_user == "admin") {
 <body>
 
 <div id="main">
-    <p>Seleccione la tabla: </p>
+    <!-- <p>Seleccione la tabla: </p>
     <select class="tabla">
         <?php
         foreach ($listaTablas as $tabla) {
             echo "<option value='$tabla'>$tabla</option>";
         }
         ?>
-    </select>
+    </select> -->
     <form action='insert_regis.php' method='get'>
     <table>   
     <tr>

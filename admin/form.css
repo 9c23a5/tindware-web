@@ -31,13 +31,13 @@ table{
     width: 25%
 }
 
-table td{
+table td:not([class="header"]){
    text-align: left;
     padding: 8px;
   
 
 }
-a{
+a:not([class="titulo"]){
     text-decoration: none;
     font-family: arial;
     font-size: 20px;

@@ -10,6 +10,7 @@ $datosUser = obtenerDatosUser($id_user);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/misc.css" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="form.css">
     <link rel="stylesheet" href="css/header.css" type="text/css"/>
     <link rel="stylesheet" href="../pa.css" type="text/css"/>
 </head>
@@ -37,5 +38,5 @@ if ($type_user != 'admin') {
 ?>
 
 <header>
-    <h1 class="header"><a href="index.php" style="color: white; text-decoration:none">Panel Administrativo</a></h1>
+    <h1 class="header"><a href="index.php" style="color: white; text-decoration:none" class="titulo">Panel Administrativo</a></h1>
 </header>
