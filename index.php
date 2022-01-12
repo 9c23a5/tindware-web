@@ -19,16 +19,26 @@
     ?>
     <div class="main">
    
-        <div id="centro">
-            <img src="img/tindware.png" alt="Los fundadores" width="480" height="400" class="logo">
-        </div>
+        
         <?php
         # Si el usuario no es invitado escondemos el form de login
         if ($type_user != 'invitado') {
             echo HIDE;
         }
         ?>
-        <div id="txtder">
+   
+    <?php
+    if ($type_user != 'invitado') {
+         echo HIDECLOSE;
+     }
+    ?>
+    <div id="int">
+        <p>Somos una empresa dedicada a la conexión de personas del mundo de la informática y telecomunicaciones con particulares y empresas.</p>
+        <p>Desde una avería puntual en el ordenador hasta el monataje y la configuración de servidores para una sustentar una tienda online</p>
+        <p>Lo más importante es el servicio técnico operativo las 24h del dia, los 365 dias del año</p>
+        <img src="img/prueba.png" alt="Los fundadores" width="500" height="500">
+    </div>
+    <div id="txtder">
         <form action="do_login.php" method="POST">
         <!-- Formulario de inicio de sesión-->
                         <table>
@@ -50,14 +60,6 @@
                             </tr>
                         </table>
         </form>
-    </div>
-    <?php
-    if ($type_user != 'invitado') {
-         echo HIDECLOSE;
-     }
-    ?>
-    <div id="ofe">
-        <p>aqui van algunas ofertas</p>
     </div>
     <footer>
         <div id="cuadro1">
@@ -83,10 +85,9 @@
 
         <a href="#">Pulsa aqui para subir</a>
         <p class="der">© 2021 Mikeldi - Todos los derechos reservados</p>        
-
-
-    
-
-
+    </div>
 </body>
 </html>
+
+
+

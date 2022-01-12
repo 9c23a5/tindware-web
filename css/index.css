@@ -37,13 +37,21 @@ p{
     float: left;
     margin-top: 10vh;
 }
-#ofe{
-    border: 1px solid black;
-    float: left;
-    width: auto;
-    height: auto;
-}
 
+#int{
+    float: left;
+    /*! width: 25%; */
+    height: auto;
+    margin-top: 1.9cm;
+    margin-left: 1%;
+    background: linear-gradient(to bottom, #f6f4f4, white);
+}
+#int img{
+    margin: auto;
+    display: block;
+    height: 5cm;
+    width: 20%
+}
 table{ 
     margin: 0 auto;
     padding: 15px;
@@ -70,7 +78,6 @@ footer{
 #final p{
     color: white;
 }
-
 
 
 @media screen and (max-width:800px){
@@ -106,6 +113,10 @@ footer{
     }
     #txtder{
         width: 100%;
+    }
+    #int{
+        width: 100%;
+        margin: 0;
     }
 }
 
