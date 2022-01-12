@@ -8,10 +8,6 @@ mysqli_select_db($conexion,"tindware") or die ("No se ha conectado a la base de 
 $username=$_GET['username'];
 $email=$_GET['email'];
 
-
-
-
-
 if (empty($username) and empty($email)){
     echo "Los campos estan vacios<br/>";
     echo "Recuerde rellenarlos<br/>";
