@@ -3,43 +3,22 @@
 
 
 
-$conexion=mysqli_connect('localhost','root') or die ("No se ha conectado al servidor  la base de datos");
+$conexion=mysqli_connect("localhost","root") or die ("no se ha podido conectar");
+mysqli_select_db($conexion,"tindware");
 
-mysqli_select_db($conexion,"tindware") or die ("No se ha conectado a la base de datos");
-
-$username=$_GET['username'];
-
-
-
+$consulta="SELECT * FROM username;";
+$consulta2=mysqli_query($conexion,$consulta);
+$consultarow=mysqli_num_rows($consulta2);
 
 
+echo "<table border=1 >";
+echo "<tr bgcolor=grey ><td>Nombre de usuario<td/>";
+echo "<td>Direccion de correo<td/><td>tipo de usuario <td/><td>fecha de alta<td/><td>Ultimo login <td/><tr/>";
 
-if (empty($username)){
-    echo "Los campos estan vacios<br/>";
-    echo "Recuerde rellenarlos<br/>";
-    echo "<a href='Pantalla_inicial.html'>Volver al inicio<a/>";
-    }
+while($consultarow=mysqli_fetch_array($consulta2))
+{
+    echo "<tr><td>".$fila['username']."</td><td>".$fila['email']."</td><td>".$fila['tipo']."</td><td>".$fila['signupdate']."</td><td>".$fila['lastlogin']."</td></tr>";
+     echo "<br/>";
+}
 
-else {
-        $res="SELECT * FROM  tindware.usuario where username='$username';";
-        $resultado=mysqli_query($conexion,$res);
-        $registro=mysqli_num_rows($resultado);
-    
-        if ($registro==0){
-             echo "No se han encontrado registros<br/>";
-            echo "<a href='Pantalla_inicial.html'>Volver al inicio<a/>";  
-         }//cierra if de registro ==0
-    
-    
-        else{ 
-     
-            while($fila=mysqli_fetch_array($resultado)){ 
-               echo  $fila ['username'];
-               echo " ";
-                echo $fila ['email'];
-                  echo "<br/>";
-          }//cierra while
-           
-    
-             }//cierra else antes while
-    }
+?>
