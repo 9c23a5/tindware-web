@@ -1,15 +1,20 @@
 /* #main {
     float 
 } */
-
+body{
+    font-family: arial;
+ 
+}
 #menuBotones {
     width: 35%;
     float: left;
+     background: linear-gradient(to bottom, #cbdce1 , white);
+ 
 }
 
 #menuBotones h1 {
     text-align: center;
-    font-weight: bold;
+    
 }
 
 #menuBotones table {
@@ -18,12 +23,16 @@
 }
 
 #menuBotones td {
-    background-color: #2b2b2b;
+    background-color: #053041;
     margin-bottom: 1000px;
+    border-radius: 3px;
+}
+#menuBotones td:hover{
+    background: #0069f8;
 }
 
 #menuBotones td:hover {
-    background-color: #4d4d4d;
+   
 }
 
 .botonOfertas {
@@ -50,18 +59,19 @@
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(200px, auto);
-    margin: 10px;
+    padding-top: 10px; 
+     background: linear-gradient(to bottom, #cbdce1 , white);
+
 }
 
 .oferta {
-   
     position: relative;
     border: #053041 3px solid;
     border-left: #053041 5px solid;
     border-bottom: #053041 9px solid;
     margin: 1%;
     padding: 8px;
-        background: #00eddb;
+    background:  #AEC6CF;
 }
 input{
     margin-top: 10px;

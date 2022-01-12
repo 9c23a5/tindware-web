@@ -60,11 +60,10 @@
                             <tr>
                                 <td>Ubicación</td>
                                 <td>
-                                    <center>
+                                    
                                         <input type="text" id="geocoding_input" placeholder="Escriba su dirección..."/> <button type="button" onclick="coordenadasDesdeGeocoding();">Buscar coordenadas</button><br/>
-                                        u <button type="button" onclick="posicionAForm();">Obtener ubicación</button><br/>
-                                        Latitud: <input type="text" size="2" onkeydown="return false;" style="pointer-events: none;" id="lat" name="lat" required value=""/> Longitud: <input type="text" size="2" onkeydown="return false;" style="pointer-events: none;" name="lon" id="lon" required value=""/>
-                                    </center>
+                                        Latitud: <input type="text" size="5" onkeydown="return false;" style="pointer-events: none;" id="lat" name="lat" required value=""/> Longitud: <input type="text" size="5" onkeydown="return false;" style="pointer-events: none;" name="lon" id="lon" required value=""/>
+                                
                                 </td>
                             </tr>
                             <tr> <td colspan="2" align="center" class="aviso">Rellena todos los campos</td></tr>

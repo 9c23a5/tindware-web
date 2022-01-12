@@ -78,17 +78,16 @@
                         echo "<span class='iroferta'><a href='viewOferta.php?id=$id_oferta'>Ver más</a></span><br/>";
                     }
                     #echo "<form method='post' action='do_asignar_terminar.php'><input type='submit' value='";
-                    echo "<input type='button' onclick=$miOnclick";
                     #if (!$clickable) {echo " disbaled";}
                     #if (!$clickable) {echo "style='pointer-events: none;cursor: default;'";}
                     if ($tipo == 'disponible') {
-                        echo " value='Asignar'";
+                      
                     }
                     else {
                         echo " value='Terminar'";
                     }
                     if (!$clickable) { echo " disabled"; }
-                    echo "></input>";
+                    echo "</input>";
                     echo "<span class='ubicacion'><img src='img/place.png'/> $lat, $lon</span>";
                     echo "</div>";
                 }
