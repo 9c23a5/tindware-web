@@ -11,7 +11,7 @@
 <body>
 
 <div id="main">
-<form action='buscar.php' method='get'>
+<form action='search.php' method='get'>
 <table>
     
     <tr > 

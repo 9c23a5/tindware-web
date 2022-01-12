@@ -24,7 +24,7 @@
                 </tr>
                 <tr>
                     <td>Descripción</td>
-                    <td><textarea type="text" name="titulo" required cols="50" rows="10" placeholder="Rellena este campo"></textarea></td>
+                    <td><textarea type="text" name="descripcion" required cols="50" rows="10" placeholder="Rellena este campo"></textarea></td>
                 </tr>
                 <tr>
                     <td colspan="2"><input type="submit" value="Crear"/></td>
