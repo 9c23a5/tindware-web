@@ -1,12 +1,12 @@
 form{
     color: #274755;
-    padding: 15px;
-    background: linear-gradient(to bottom, #f6f4f4, white);
-    border: 1px solid transparent;  
-    border-image: linear-gradient(to bottom, black 0%, grey 100%) 1; 
+    padding: 20px;
+    background: #f6f4f4;
+    width: 50%;
+    margin: auto;
 }
 table{
-    padding: 15px;
+    margin: auto;
 }
 th{
     color: black;
@@ -23,6 +23,9 @@ td{
     padding: 10px;
     font-size: 18px;
     font-weight: bold;
+}
+input{
+    width: 100%;
 }
 .submit{
 	width:100%;
@@ -75,17 +78,4 @@ a{
 a:hover{
     color: #f64598;
 }
-.volver:hover{
-    color: #f64598;
-    font-weight: bold;
-}
-
-.submit{
-	width:100%;
-	padding:8px 16px;
-	border:1px solid #000;
-	border-radius:4px;
-	color:#fff;
-	background-color:#000;
-} 
 
