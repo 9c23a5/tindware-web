@@ -41,7 +41,7 @@ else {
             }//cierra else antes while
             echo "<table/>";
     }
-
+ echo "<a href='index.php'>[Volver al inicio]<a/>";  
    
    
    
