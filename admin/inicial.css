@@ -1,6 +1,7 @@
 body {
-    background-color: #dedeee;
-}
+    background-color: #ffdd90;
+    background-image: url("pa.png");
+  }
 
 #div1 { margin-left:40%;
     border: 1px solid black;
