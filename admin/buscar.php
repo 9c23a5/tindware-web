@@ -37,6 +37,9 @@
     
 </table>
 </form>
+    <form action="list.php" method="get">
+    <input type="submit" value="Listar usuarios">
+</form>
 <br/>
 
 </div>
