@@ -6,7 +6,7 @@
 $conexion=mysqli_connect("localhost","root") or die ("no se ha podido conectar");
 mysqli_select_db($conexion,"tindware");
 
-$consulta="SELECT * FROM tindware.username;";
+$consulta="SELECT * FROM usuarios;";
 $consulta2=mysqli_query($conexion,$consulta);
 $consultarow=mysqli_num_rows($consulta2);
 
