@@ -16,13 +16,6 @@
 <form action='borrar.php' method='get'>
 <table>
     
-    <tr> 
-        <td><h1 class="style">Borrar Usuarios</h1></td>
-        <tr><td class="style">Escriba los criterios de busqueda:</td></tr>
-      
-    
- </tr>
-    
     <tr>
 <td class="style">Username:</td>    
 <td>
@@ -36,23 +29,15 @@
 <input type="text" name="email">
 </td>
 </tr>
-      <tr> <td><input type="submit" value="Borrar"> </td>
-    </tr>
-    
-   <br/>
-    
+    <tr> 
+        <td><button onclick="history.back()" class="xd">Volver</button></td>
+        <td><input type="submit" value="Borrar" class="xd"></td>
+    </tr> 
+
   
-  
-    
-    
-    
-    
-    
-    
 </table>
 </form>
 <br/>
-<button onclick="history.back()">Volver</button>
 
 </div>
 </body>

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>TindWare - Creación de Oferta</title>
+    <link rel=stylesheet href="css/part.css" type="text/css">
 </head>
 <body>
     <?php
@@ -15,11 +16,18 @@
     <div id="main">
         <form action="do_crearoferta.php" method="POST">
             <!-- Formulario creación oferta -->
-            Título:
-            <input type="text" name="titulo" required/><br/>
-            Descripción:
-            <textarea name="descripcion" required></textarea><br/>
-            <input type="submit" value="Crear"/>
+            <table>
+
+                <tr>
+                    <td>Titulo</td>
+                    <td><input type="text" name="titulo" required/><br/></td>
+                </tr>
+                <tr>
+                    <td>Descripción</td>
+                    <td><textarea name="descripcion" required></textarea></td>
+                </tr>
+
+            </table> 
         </form>
     </div>
 </body>

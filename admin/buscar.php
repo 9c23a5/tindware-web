@@ -16,10 +16,8 @@
 <table>
     
     <tr > 
-        <td><h1 class="style">Buscar Usuarios</h1></td>
-     <tr><td class="style">Escriba los criterios de busqueda:</td></tr> 
-    
- </tr>
+     <tr><td class="style">Escriba los criterios de busqueda:</td></tr>  
+    </tr>
     
     <tr>
 <td class="style">Username:</td>    
@@ -34,22 +32,16 @@
 <input type="text" name="email">
 </td>
 </tr>
-      <tr> <td><input type="submit" value="Buscar"> </td></tr>
+<tr> 
+        <td><button onclick="history.back()" class="xd">Volver</button></td>
+        <td><input type="submit" value="Buscar" class="xd"></td>
+   </tr> 
     
    <br/>
-    
-  
-  
-    
-    
-    
-    
-    
     
 </table>
 </form>
 <br/>
-<button onclick="history.back()">Volver</button>
 
 </div>
 </body>

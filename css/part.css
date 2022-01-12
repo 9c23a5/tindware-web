@@ -1,0 +1,88 @@
+
+form{
+    color: #274755;
+    padding: 15px;
+    background: linear-gradient(to bottom, #f6f4f4, white);
+    border: 1px solid transparent;  
+    border-image: linear-gradient(to bottom, black 0%, grey 100%) 1; 
+}
+table{
+    padding: 15px;
+}
+th{
+    color: black;
+    font-size: 20px;
+}
+
+.text{
+    padding: 5px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+td{
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.submit{
+	width:100%;
+	padding:8px 16px;
+	border-radius:4px;
+	color: white;
+	background-color: black;
+    font-weight: bold;
+} 
+.submit:hover{
+    background: brown;
+    color: white ;
+}
+input{
+    outline: none;
+    border: 0;
+    border-radius: 1px;
+    border: 1px solid grey;
+    padding: 5px;
+    text-align: center;
+}
+input:hover{
+    background-color: rgb(223, 221, 221);
+    color: black;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+  }
+  input:focus{
+      border-color: brown;
+  }
+
+body{
+   
+    font-family: arial;
+}
+p{
+    text-align: left;
+    margin-left: 0.5cm;
+    margin-top: 0.5cm;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #f64598;
+}
+.volver:hover{
+    color: #f64598;
+    font-weight: bold;
+}
+
+.submit{
+	width:100%;
+	padding:8px 16px;
+	border:1px solid #000;
+	border-radius:4px;
+	color:#fff;
+	background-color:#000;
+} 

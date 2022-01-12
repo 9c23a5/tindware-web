@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/misc.css"/>
+
     <title>Curriculums - Panel Admin</title>
-    <link rel="stylesheet" href="pa.css" type="text/css"/>
+    <link rel="stylesheet" href="cv.css" type="text/css"/>
 </head>
 <?php
 @include "inc/header.php";
@@ -13,58 +13,41 @@
 
     <div id="main">
         <table>
-
             <tr>
-                <td>
-                    <h1 class="style">Base de Datos de Curriculums</h1>
-                </td>
-            <tr>
-                <td class="style">Seleccione el trabajador:</td>
-            </tr>
-            <tr>
-                <td class="style">Ander:</td>
+                <td class="style">Ander Herrero:</td>
                 <td>
                     <a href="cv/CV_ANDER.pdf" download="CV Ander">Descargar</a>
                 </td>
             </tr>
             <tr>
-                <td class="style">Anthony:</td>
+                <td class="style">Anthony Rodriguez:</td>
                 <td>
                     <a href="cv/cv_anthony.pdf" download="CV Anthony">Descargar</a>
                 </td>
             </tr>
             <tr>
-                <td class="style">Asier:</td>
+                <td class="style">Asier Mejuto:</td>
                 <td>
                     <a href="cv/cv_asier.pdf" download="CV Asier">Descargar</a>
                 </td>
             </tr>
             <tr>
-                <td class="style">Borja:</td>
+                <td class="style">Borja Montaño:</td>
                 <td>
                     <a href="cv/cv_borja.pdf" download="CV Borja">Descargar</a>
                 </td>
             </tr>
             <tr>
-                <td class="style">Jose:</td>
+                <td class="style">Jose Villalba:</td>
                 <td>
                     <a href="cv/cv_jose.pdf" download="CV Jose">Descargar</a>
                 </td>
             </tr>
-
-            <br />
-
-
-
-
-
-
-
-
-
-            <br />
+            <tr>
+                <td><button onclick="history.back()">Volver</button></td>
+            </tr>
         </table>
-        <button onclick="history.back()">Volver</button>
+        
 
     </div>
 </body>
