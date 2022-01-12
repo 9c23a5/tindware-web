@@ -1,8 +1,4 @@
 <?php
-
-
-
-
 $conexion=mysqli_connect('localhost','root') or die ("No se ha conectado al servidor  la base de datos");
 
 mysqli_select_db($conexion,"tindware") or die ("No se ha conectado a la base de datos");
@@ -33,21 +29,10 @@ else {
                 echo $fila ['email'];
                   echo "<br/>";
           }//cierra while
-           
-    
+
              }//cierra else antes while
     }
 
    
-   
-   
-
-
-
-
-
-
-
-
 
 ?>
