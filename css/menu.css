@@ -4,72 +4,79 @@
       color:inherit;
       font-size:14px;
       } */
-body {
-      margin: 0;
-}
-header {
-      margin: 0;
-      padding: 5px 10px 0 10px;
-      background: -webkit-linear-gradient(90deg, black 10%, #053041 90%);
-      top: 0;
-      height: 200px;
-}
-header a {
-      color: #f64598;
-      text-decoration: none;
-}
-
-@font-face {
-      font-family: 'FreeLine';
-      src: url("..\\inc\\FreeLine.ttf")
-}
-
-header #logo {
-      display: flex;
-      justify-content: left;
-      align-items: center;
-      height: 170px;
-}
-
-header #links ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-}
-
-header #botones {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-}
-
-header #links {
-      font-family: 'Outfit', sans-serif;
-      font-weight: 300;
-      width: auto;
-}
-            
-header #links  li {
-      box-sizing:border-box;
-      display:inline-block;
-      width: auto;
-      height:30px;
-      padding:5px 10px;
-      background-color:#375967;
-      border:1px solid #375967;
-      text-align:center;
-      color: white;
-      margin-right: 5px;
-      border-radius: 10px 10px 0 0;
-
-}
-
-header #login_reg_logout {
-      font-family: 'Outfit', sans-serif;
-      color: #bfd312;
-      margin-bottom: 5px;
-}
-
-header #login_reg_logout a {
-      color: #f64598;
-}
+      body {
+            margin: 0;
+      }
+      header {
+            margin: 0;
+            padding: 5px 10px 0 10px;
+            background: -webkit-linear-gradient(90deg, black 10%, #053041 90%);
+            top: 0;
+            height: 200px;
+      }
+      header a {
+            color: #f64598;
+            text-decoration: none;
+            font-size: 20px;
+      }
+      
+      @font-face {
+            font-family: 'FreeLine';
+            src: url("..\\inc\\FreeLine.ttf")
+      }
+      
+      header #logo {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            height: 170px;
+      }
+      
+      header #links ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+      }
+      
+      header #botones {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+      }
+      
+      header #links {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 300;
+            width: auto;
+            text-align: center;
+            margin: auto;
+      }
+      
+                  
+      header #links  li {
+            box-sizing:border-box;
+            display:inline-block;
+            width: auto;
+            height:30px;
+            padding:5px 10px;
+            text-align:center;
+            color: white;
+            margin-right: 5px;
+            border-radius: 3px;
+      
+      }
+      
+      #links li:hover{
+            background: #002263;
+      }
+      
+      header #login_reg_logout {
+            font-family: 'Outfit', sans-serif;
+            color: #bfd312;
+            margin-bottom: 5px;
+      }
+      
+      header #login_reg_logout a {
+            color: #f64598;
+      }
+      

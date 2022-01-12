@@ -34,8 +34,8 @@
     ?>
     <div id="int">
         <p>Somos una empresa dedicada a la conexión de personas del mundo de la informática y telecomunicaciones con particulares y empresas.</p>
-        <p>Desde una avería puntual en el ordenador hasta el monataje y la configuración de servidores para una sustentar una tienda online</p>
-        <p>Lo más importante es el servicio técnico operativo las 24h del dia, los 365 dias del año</p>
+        <p>Desde una avería puntual en el ordenador hasta el monataje y la configuración de servidores para una sustentar una tienda online.</p>
+        <p>Lo más importante es el servicio técnico operativo las 24h del dia, los 365 dias del año.</p>
         <img src="img/prueba.png" alt="Los fundadores" width="500" height="500">
     </div>
     <div id="txtder">
