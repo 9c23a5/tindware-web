@@ -33,72 +33,39 @@ if ($type_user == "admin") {
         ?>
     </select>
     <form action='insert_regis.php' method='get'>
-    <table>
-        
-        <tr>
-        
-        <td><h1>Registro</h1></td>
-        </tr> <td>Escriba los datos del nuevo registro:</td>
-        
-    
-        
-        <tr>
-    <td>Tipo:</td>    
-    <td>
-    <input required type="text" name="tipo">
-    </td>
-    </tr>
-        
-        <tr>
-    <td>Username:</td>    
-    <td>
-    <input required type="text" name="username">
-    </td>
+    <table>   
+    <tr>
+        <td>Tipo:</td> 
+        <td><input required type="text" name="tipo"></td>   
+    </tr>  
+    <tr>
+        <td>Username:</td>  
+        <td><input required type="text" name="username"></td> 
     </tr>
 
     <tr>
-        <td>Password:</td>    
-        <td>
-        <input required type="password" name="passwd">
-        </td>
-        </tr>
-        
         <tr>
-            <td>Email:</td>    
-            <td>
-            <input required type="text" name="email">
-            </td>
-            </tr>
+          <td>Password:</td>  
+          <td><input required type="password" name="passwd"></td>    
+        </tr>
+        <tr>
+            <td>Email:</td> 
+            <td><input required type="text" name="email"></td>    
             <tr>
                 <td>Fecha nacimiento:</td>    
-                <td>
-                <input required type="date" name="fechanac">
-                </td>
-                </tr>
-                <tr>
-                    <td>Ubicacion:</td>    
-                    <td>coordenadas X
-                    <input required type="text" name="coordX">
-                    </td>
-                    <td>coordenadas Y
-                        <input required type="text" name="coordY">
-                        </td>
-                    </tr>
-                                
-
-
-
-
-
-
-
-
-        <tr> <td><input type="submit" value="Anadir"></td>
-        </tr>        
+                <td><input required type="date" name="fechanac"></td>
+            </tr>
+            <tr>
+                <td>Ubicacion:</td>    
+                <td><input required type="text" name="coordX" placeholder="Coordenada X">
+                <input required type="text" name="coordY" placeholder="Coordenada Y"> </td>  
+        <tr> 
+            <td><button onclick="history.back()" class="xd">Volver</button></td>
+            <td><input type="submit" value="Agregar" class="xd"></td>
+        </tr>     
     </table>
     </form>
-    <br/>
-    <button onclick="history.back()">Volver</button>
+   
 </div>
 </body>
 </html>
