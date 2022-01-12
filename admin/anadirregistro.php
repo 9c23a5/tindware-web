@@ -10,7 +10,7 @@
 
 if ($type_user == "admin") {
     # Obtengo todas las tablas
-    $con = mysqli_connect('localhost', 'root');
+    $con = mysqli_connect('localhost', 'root', MYSQL_PASSWD);
     $queryTablas = "SHOW TABLES FROM tindware;";
     $outTablas = mysqli_query($con, $queryTablas);
 

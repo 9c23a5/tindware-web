@@ -17,7 +17,7 @@
 
     @$id_oferta = $_GET['id'];
     if (@isset($id_oferta)) {
-        $con = mysqli_connect('localhost', 'root');
+        $con = mysqli_connect('localhost', 'root', MYSQL_PASSWD);
         $queryOferta = "SELECT * FROM tindware.ofertas WHERE id = $id_oferta;";
 
         if ($outOferta = mysqli_query($con, $queryOferta)) {

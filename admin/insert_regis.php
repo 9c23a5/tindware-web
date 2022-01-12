@@ -42,7 +42,7 @@
                if ($annosRegistro >= EDADMINIMA) {
                    # Comprobamos si el usuario existe en la base de datos
                    # Conexion a la base de datos y query
-                   $con = mysqli_connect('localhost', 'root');
+                   $con = mysqli_connect('localhost', 'root', MYSQL_PASSWD);
                    $query = "SELECT * FROM tindware.usuario WHERE username = '$username' OR email = '$email' LIMIT 1;";
                    $out = mysqli_query($con, $query);
                    if (mysqli_num_rows($out) == 0) {
