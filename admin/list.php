@@ -19,6 +19,7 @@ while($fila=mysqli_fetch_array($consulta2))
 {
     echo "<tr><td>".$fila['username']."</td><td>".$fila['email']."</td><td>".$fila['tipo']."</td><td>".$fila['signupdate']."</td><td>".$fila['lastlogin']."</td></tr>";
      echo "<br/>";
+     echo "<a href='index.php'>[Volver al inicio]<a/>";  
 }
 
 ?>
