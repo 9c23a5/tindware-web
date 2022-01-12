@@ -8,14 +8,10 @@ mysqli_select_db($conexion,"tindware") or die ("No se ha conectado a la base de 
 $username=$_GET['username'];
 $email=$_GET['email'];
 
-
-
-
-
 if (empty($username) and empty($email)){
     echo "Los campos estan vacios<br/>";
     echo "Recuerde rellenarlos<br/>";
-    echo "<a href='Pantalla_inicial.html'>Volver al inicio<a/>";
+    echo "<a href='index.php'>Volver a Inicio<a/>";
     }
 
 else {
@@ -25,7 +21,7 @@ else {
     
         if ($registro==0){
              echo "No se han encontrado registros<br/>";
-            echo "<a href='Pantalla_inicial.html'>Volver al inicio<a/>";  
+            echo "<a href='buscar.php'>Volver a buscar<a/>";  
          }//cierra if de registro ==0
     
     
@@ -38,8 +34,6 @@ else {
                 
                echo  "<tr><td>".$fila ['username']."<td/><td>".$fila ['email']."<td/><tr/>";
           }//cierra while
-           
-    
              
             }//cierra else antes while
             echo "<table/>";

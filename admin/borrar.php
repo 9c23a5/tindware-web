@@ -12,7 +12,7 @@ $email=$_GET['email'];
 if (empty($username)and empty($email)){
     echo "Los campos estan vacios<br/>";
     echo "Recuerde rellenarlos";
-    echo "<a href='Pantalla_inicial.html'>Volver al inicio<a/>";
+    echo "<a href='index.php'>Volver<a/>";
 }
 else
 {   $borrar="DELETE FROM usuario WHERE nombre='$username' and apellido='$email';";

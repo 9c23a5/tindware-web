@@ -3,22 +3,15 @@
 <html>
 <head>
     <title>Page Title</title>
-    <link rel="stylesheet" type="text/css"
-    href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="form.css">
 </head>
 
 <body>
 
 <div id="main">
+<h1>Buscar Usuarios</h1>
 <form action='buscar.php' method='get'>
 <table>
-    
-    <tr > 
-        <td><h1 class="style">Buscar Usuarios</h1></td>
-     <tr><td class="style">Escriba los criterios de busqueda:</td></tr> 
-    
- </tr>
-    
     <tr>
 <td class="style">Username:</td>    
 <td>
@@ -32,23 +25,12 @@
 <input type="text" name="email">
 </td>
 </tr>
-      <tr> <td><input type="submit" value="Buscar"> </td></tr>
-    
-   <br/>
-    
-  
-  
-    
-    
-    
-    
-    
-    
+<tr> 
+    <td><button onclick="history.back()" class="xd">Volver</button></td>
+    <td><input type="submit" value="Buscar" class="xd"></td>
+</tr>
 </table>
 </form>
-<br/>
-<button onclick="history.back()">Volver</button>
-
 </div>
 </body>
 </html>
