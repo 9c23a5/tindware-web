@@ -27,13 +27,12 @@ else {
     
     
         else{ 
-      echo "<table border=1 >";
-     echo "<tr bgcolor=grey ><td>Nombre de usuario<td/>";
-     echo "<td>Direccion de correo<td/><td>tipo de usuario <td/><td>fecha de alta<td/><td>Ultimo login <td/><tr/>";
+ 
+     echo "<table border='1'><tr><td>Nombre de usuario</td><td>Direccion de correo</td><td>tipo de usuario</td><td>fecha de alta</td><td>Ultimo login</td><tr/>";
      
             while($fila=mysqli_fetch_array($resultado)){
                 
-                echo "<tr><td>".$fila['username']."</td><td>".$fila['email']."</td><td>".$fila['tipo']."</td><td>".$fila['signupdate']."</td><td>".$fila['lastlogin']."</td></tr>";
+               echo "<tr><td>".$fila['username']."</td><td>".$fila['email']."</td><td>".$fila['tipo']."</td><td>".$fila['signupdate']."</td><td>".$fila['lastlogin']."</td></tr>";
           }//cierra while
            
     
