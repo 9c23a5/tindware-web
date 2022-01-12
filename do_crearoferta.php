@@ -29,7 +29,7 @@
         if ($type_user = 'particular') {
             # Comprobamos si existe una misma oferta del usuario con los mismos datos
             # Conexion a la base de datos y query
-            $con = mysqli_connect('localhost', 'root');
+            $con = mysqli_connect('localhost', 'root', MYSQL_PASSWD);
             $queryExiste = "SELECT * FROM tindware.ofertas WHERE titulo = '$titulo' AND descripcion = '$descripcion' AND id_usuariopart = $id_user AND fechafinalizacion IS NULL;";
             $outExiste = mysqli_query($con, $queryExiste);
 

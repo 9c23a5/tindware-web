@@ -39,7 +39,7 @@
         }
 
         if ($permitido) {
-            $con = mysqli_connect('localhost', 'root');
+            $con = mysqli_connect('localhost', 'root', MYSQL_PASSWD);
             
             $queryOfertasPendientes = "SELECT * FROM tindware.ofertas WHERE id_usuariotec = $id_user AND fechafinalizacion IS NULL;";
             $queryOfertasDisponibles = "SELECT * FROM tindware.ofertas WHERE id_usuariotec IS NULL;";
