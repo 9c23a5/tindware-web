@@ -49,7 +49,7 @@
                                 <td><select name="tipo" class="text">
                                 <option value="particular" selected>Particular</option>
                                 <option value="tecnico">Técnico</option>
-                                <option value="business">Business</option>
+                                <!-- <option value="business">Business</option> -->
                                 </select></td>
                                 </tr>
                             <tr>
