@@ -11,7 +11,7 @@
 ?>
 <body>
 <div id="main">
-<form action='listar.php' method='get'>
+<form action='list.php' method='get'>
 <table>
     
     <tr>
