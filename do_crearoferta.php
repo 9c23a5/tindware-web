@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>TindWare - Creación de Oferta</title>
+    <link rel=stylesheet href="css/part.css" type="text/css">
 </head>
 <body>
     <?php

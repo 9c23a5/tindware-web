@@ -38,7 +38,7 @@
      }
     ?>
     <div id="dologout_error">
-        <p class="bienvenido">¡Todavía no has iniciado sesión! <a href="login.php" class="volver">Inicia sesión</a> o <a href="index.php" class="volver">vuelve al inicio</a>.</p>
+        <p class="bienvenido">¡Todavía no has iniciado sesión! <a href="index.php" class="volver">Inicia sesión</a> o <a href="index.php" class="volver">vuelve al inicio</a>.</p>
         <!-- Error cuando ya has iniciado sesión -->
     </div>
     <?php
