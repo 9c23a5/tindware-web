@@ -143,7 +143,7 @@
                 if (!$enProcesoVacio) {
                     echo HIDE;
                 }?>
-                No tienes ninguna oferta en prooceso
+                No tienes ninguna oferta en proceso
                 <?php
                 if (!$enProcesoVacio) {
                     echo HIDECLOSE;
