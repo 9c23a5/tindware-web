@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-    <title>anadirregistro</title>
-    <link rel="stylesheet" type="text/css"
-    href="estilo.css">
+    <link rel="stylesheet" href="css/misc.css"/>
+    <title>Añadir Registro - Panel Admin</title>
+    <link rel="stylesheet" href="pa.css" type="text/css"/>
 </head>
+<?php
+@include "inc/header.php";
 
+?>
 <body>
 
 <div id="main">
@@ -72,17 +74,7 @@
 
 
         <tr> <td><input type="submit" value="Anadir"></td>
-        </tr>
-        
-        
-    
-    
-        
-        
-        
-        
-        
-        
+        </tr>        
     </table>
     </form>
     <br/>

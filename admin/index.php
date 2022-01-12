@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="pa.css" type="text/css"/>
 </head>
 <body>
-    <h1>Panel Administrativo</h1>
     <?php
-    include '../inc/constantes.php';
-    include '../inc/obtenerCookies.php';
-    include '../inc/obtenerDatosUser.php';
-    $datosUsuario = obtenerDatosUser($id_user);
     include 'inc/header.php';
     ?>
+<span class="bienvenido">Bienvenido, <?php echo @$datosUser['username']?></span>
+    <table class="header">
+            <tr><td class="header"><a class="header" href='anadirregistro.php'>Añadir registro</a></td></tr>
+            <tr><td class="header"><a class="header" href='listar.php'>Listar</a></td></tr>
+            <tr><td class="header"><a class="header" href='borrar.php'>Borrar</a></td></tr>
+            <tr><td class="header"><a class="header" href='buscar.php'>Buscar</a></td></tr>
+            <tr><td class="header"><a class="header" href='cvs.php'>Curriculums</a></td></tr>
+            <tr><td class="header">  <a class="header" href="../index.php">Volver a la página inicial</a></td></tr>
+    </table>
   
     
 

@@ -14,7 +14,7 @@ body {
   }
 
 
-  h1{
+h1[class="header"]{
     background: -webkit-linear-gradient(90deg, black 10%, #053041 90%);
     color: white;
     font-family: arial;
@@ -22,7 +22,7 @@ body {
     padding: 15px;
 }
 
-span{
+span[class="bienvenido"]{
     font-family: arial;
     font-size: 25px;
     text-align: center;
@@ -32,30 +32,30 @@ span{
 }
 
 
-table{
+table[class="header"]{
   
     text-align: center;
     margin: auto;
     width: 25%
 }
 
-table td{
+td[class="header"]{
     padding: 15px;
     border: 1px solid black;
 
 
 }
-a{
+a[class="header"]{
     text-decoration: none;
     font-family: arial;
     font-size: 20px;
     color: black;
 }
-a:hover{
+a[class="header"]:hover{
     color: white;
 }
 
-td:hover{
+.header td:hover{
     background-color: #c1c1c1;
     transition: all 0.01s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
