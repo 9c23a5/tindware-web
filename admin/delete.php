@@ -15,9 +15,9 @@ if (empty($username)and empty($email)){
     echo "<a href='Pantalla_inicial.html'>Volver al inicio<a/>";
 }
 else
-{   $borrar="DELETE FROM usuario WHERE nombre='$username' and apellido='$email';";
+{   $borrar="DELETE FROM usuario WHERE nombre='$username' and email='$email';";
         mysqli_query($conexion,$borrar);
-        echo "Valor Borrado";
+        echo "Se han eliminado los registros<a href='index.php'>Volver al inicio</a>;
      }
      
      
