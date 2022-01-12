@@ -40,7 +40,7 @@
     }
     else {
         $loginCorrecto = false;
-        #echo "Datos incorrectos"; # DEBUG
+        echo "<a href='index.php'>Datos incorrectos, pincha aquí para rellenar   los datos de inicio de sesión correctamente</a>"; # DEBUG
     }
     ?>
 
