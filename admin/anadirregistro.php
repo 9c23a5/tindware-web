@@ -1,15 +1,37 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-    <title>anadirregistro</title>
-    <link rel="stylesheet" type="text/css" href="form.css">
+    <link rel="stylesheet" href="css/misc.css"/>
+    <title>Añadir Registro - Panel Admin</title>
+    <link rel="stylesheet" href="pa.css" type="text/css"/>
 </head>
+<?php
+@include "inc/header.php";
 
+if ($type_user == "admin") {
+    # Obtengo todas las tablas
+    $con = mysqli_connect('localhost', 'root');
+    $queryTablas = "SHOW TABLES FROM tindware;";
+    $outTablas = mysqli_query($con, $queryTablas);
+
+    $listaTablas = array();
+    while ($resultadoTablas = mysqli_fetch_array($outTablas)) {
+        array_push($listaTablas, $resultadoTablas[0]);
+    }
+    mysqli_close($con);
+}
+?>
 <body>
 
 <div id="main">
-    <h1>Nuevo registro </h1>
+    <p>Seleccione la tabla: </p>
+    <select class="tabla">
+        <?php
+        foreach ($listaTablas as $tabla) {
+            echo "<option value='$tabla'>$tabla</option>";
+        }
+        ?>
+    </select>
     <form action='insert_regis.php' method='get'>
     <table>   
     <tr>

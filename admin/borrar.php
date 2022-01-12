@@ -1,37 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/misc.css"/>
+    <title>Borrar Registro - Panel Admin</title>
+    <link rel="stylesheet" href="pa.css" type="text/css"/>
+</head>
 <?php
-
-
-
-$conexion=mysqli_connect('localhost','root') or die ("No se ha conectado al servidor  la base de datos");
-
-mysqli_select_db($conexion,"tindware") or die ("No se ha conectado a la base de datos");
-
-$username=$_GET['username'];
-$email=$_GET['email'];
-
-if (empty($username)and empty($email)){
-    echo "Los campos estan vacios<br/>";
-    echo "Recuerde rellenarlos";
-    echo "<a href='index.php'>Volver<a/>";
-}
-else
-{   $borrar="DELETE FROM usuario WHERE nombre='$username' and apellido='$email';";
-        mysqli_query($conexion,$borrar);
-        echo "Valor Borrado";
-     }
-     
-     
-
-
-
-
-
-
-
-
-
-
-
-
+@include "inc/header.php";
 
 ?>
+
+<body>
+
+<div id="main">
+<form action='borrar.php' method='get'>
+<table>
+    
+    <tr> 
+        <td><h1 class="style">Borrar Usuarios</h1></td>
+        <tr><td class="style">Escriba los criterios de busqueda:</td></tr>
+      
+    
+ </tr>
+    
+    <tr>
+<td class="style">Username:</td>    
+<td>
+<input type="text" name="username">
+</td>
+</tr>
+    
+       <tr>
+<td class="style">Email:</td>    
+<td>
+<input type="text" name="email">
+</td>
+</tr>
+      <tr> <td><input type="submit" value="Borrar"> </td>
+    </tr>
+    
+   <br/>
+    
+  
+  
+    
+    
+    
+    
+    
+    
+</table>
+</form>
+<br/>
+<button onclick="history.back()">Volver</button>
+
+</div>
+</body>
+</html>
