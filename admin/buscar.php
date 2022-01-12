@@ -7,7 +7,6 @@
 </head>
 <?php
 @include "inc/header.php";
-
 ?>
 <body>
 
@@ -22,15 +21,12 @@
     <tr>
 <td class="style">Username:</td>    
 <td>
-<input type="text" name="username">
-</td>
+<input type="text" name="username" placeholder="Usuario"></td>
 </tr>
     
        <tr>
-<td class="style">Email:</td>    
-<td>
-<input type="text" name="email">
-</td>
+<td class="style">Email:</td>    <td>
+<input type="text" name="email" placeholder="Email"></td>
 </tr>
 <tr> 
         <td><button onclick="history.back()" class="xd">Volver</button></td>

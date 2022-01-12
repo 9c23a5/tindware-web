@@ -24,10 +24,12 @@
                 </tr>
                 <tr>
                     <td>Descripción</td>
-                    <td><textarea name="descripcion" required></textarea></td>
+                    <td><input type="text" name="titulo" required/><br/></td>
                 </tr>
-
-            </table> 
+                <tr>
+                    <td colspan="2"><input type="submit" value="Crear"/></td>
+                </tr>
+            </table>    
         </form>
     </div>
 </body>
