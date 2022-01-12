@@ -13,7 +13,7 @@
 <body>
 
 <div id="main">
-<form action='borrar.php' method='get'>
+<form action='delete.php' method='get'>
 <table>
     
     <tr>
