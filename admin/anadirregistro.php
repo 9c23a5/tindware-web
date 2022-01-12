@@ -28,7 +28,6 @@ if ($type_user == "admin") {
     <select class="tabla">
         <?php
         foreach ($listaTablas as $tabla) {
-            echo $tabla;
             echo "<option value='$tabla'>$tabla</option>";
         }
         ?>
