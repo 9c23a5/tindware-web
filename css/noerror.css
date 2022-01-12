@@ -1,0 +1,22 @@
+body{
+    font-family: arial;
+}
+
+
+#noError{
+    background: linear-gradient(to bottom, #cbdce1 , white);
+    width: 50%;
+    display: block;
+    margin:auto;
+    padding-left: 1%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blue;
+}
+h1{
+    text-align: center;
+}

@@ -5,6 +5,7 @@
     <script src="scripts/ofertas_tec.js"></script>
     <link rel="stylesheet" href="css/misc.css" type="text/css"/>
     <link rel="stylesheet" href="css/ofertas.css" type="text/css"/>
+    
     <title>TindWare - Últimas ofertas</title>
 </head>
 <body>
@@ -117,7 +118,7 @@
                 if (!$pendientesVacio) {
                     echo HIDE;
                 }?>
-                no tienes ninguna oferta todavia
+                No tienes ninguna oferta todavia
                 <?php
                 if (!$pendientesVacio) {
                     echo HIDECLOSE;
@@ -139,7 +140,7 @@
                 if (!$disponiblesVacio) {
                     echo HIDE;
                 }?>
-                no se ha encontrado ninguna oferta
+                No se ha encontrado ninguna oferta
                 <?php
                 if (!$disponiblesVacio) {
                     echo HIDECLOSE;
