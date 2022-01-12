@@ -47,7 +47,8 @@ p{
     background: linear-gradient(to bottom, #f6f4f4, white);
 }
 #int img{
-    margin: auto;
+    margin:inherit;
+    margin-left: 20cm;
     display: block;
     height: 5cm;
     width: 20%

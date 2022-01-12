@@ -1,6 +1,4 @@
 <?php
-echo $_GET['id']."<br/>"; #debug
-echo $_GET['accion']; #debug
     # Cargar constantes
     include 'inc/constantes.php';
     # Cargamos cookies
@@ -18,16 +16,16 @@ echo $_GET['accion']; #debug
         mysqli_query($con, $query);
         $query = "UPDATE tindware.ofertas SET id_usuariotec = $id_user WHERE id = $oferta_id;";
         mysqli_query($con, $query);
+        echo "<a href='ofertas_tec.php'>Oferta asignada con éxito</a>";
     }
     else { 
         # Vamos a dar por finalizada la oferta
         $query = "UPDATE tindware.ofertas SET fechafinalizacion = CURRENT_TIMESTAMP() WHERE id = $oferta_id;";
         mysqli_query($con, $query);
+        echo "<a href='ofertas_tec.php'>Has cubierto el servicio técnico de forma satisfactoria</a>";
     }
 
     mysqli_close($con);
 
 
-    # Damos por hecho que todo va bien (como en mi vioda) (este commit es de las 4 de la madrugada) (no me suspendas por esto)
-    echo "Query realizada, se ha cambiado la oferta con id $oferta_id (eres el usuario con id $id_user)"; #debug
 ?>
