@@ -2,7 +2,8 @@
 <?php
 
 
-$conexion=mysqli_connect('localhost','root') or die ("No se ha conectado al servidor  la base de datos");
+@include '../inc/constantes.php';
+$conexion=mysqli_connect('localhost','root', MYSQL_PASSWD) or die ("No se ha conectado al servidor  la base de datos");
 
 mysqli_select_db($conexion,"tindware") or die ("No se ha conectado a la base de datos");
 

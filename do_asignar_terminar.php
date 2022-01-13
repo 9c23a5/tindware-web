@@ -24,7 +24,7 @@
 
     $accion = $_GET['accion'];
     $oferta_id = $_GET['id'];
-    $con =mysqli_connect('localhost', 'root');
+    $con =mysqli_connect('localhost', 'root', MYSQL_PASSWD);
 
     if ($accion == 'asignar') {
         # Vamos a asignar la oferta al usuario logeado

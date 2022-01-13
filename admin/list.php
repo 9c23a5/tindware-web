@@ -3,7 +3,8 @@
 
 
 
-$conexion=mysqli_connect("localhost","root") or die ("no se ha podido conectar");
+@include '../inc/constantes.php';
+$conexion=mysqli_connect("localhost","root", MYSQL_PASSWD) or die ("no se ha podido conectar");
 mysqli_select_db($conexion,"tindware");
 
 $consulta="SELECT * FROM usuario;";
