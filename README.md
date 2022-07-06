@@ -1,20 +1,7 @@
-## Tareas a hacer
-- Panel admin ([panel-admin](https://github.com/9c23a5/tindware-web/tree/panel-admin))
-- Proteccion de Datos (no hay rama todavia)
-- Asignar ofertas ([ofertas](https://github.com/9c23a5/tindware-web/tree/ofertas))
-- Crear ofertas ([ofertas](https://github.com/9c23a5/tindware-web/tree/ofertas))
-- Estetica ([css](https://github.com/9c23a5/tindware-web/tree/css))
-- Perfil (no hay rama todavia)
-- FAQ (en Tawk)
-- Crear distintos usuarios para SQL, para reforzar la seguridad 
+# Este repositorio se ha movido a [AnthonyMU/bootstrap-tindware](https://github.com/AnthonyMU/bootstrap-tindware)
+Este proyecto ha evolucionado, sobre todo en la parte gráfica, en este otro repositorio. En este queda un CSS hecho a mano (2da evaluación).
 
-## Ejemplo header
-![Ejemplo header](https://github.com/9c23a5/tindware-web/blob/main/ejemplo_header.png?raw=true)
-## Enlaces
-[Header Prospects](https://www.prospects.ac.uk/)
-
-[Hired](https://hired.com/)
-
+# Datos técnicos
 ## Tablas DB
 ![Tablas](https://github.com/9c23a5/tindware-web/blob/main/tablas_db.png?raw=true)
 
@@ -52,14 +39,3 @@ NameVirtualHost *
 ```
 8. Guardamos y (re)iniciamos Apache
 9. Para acceder a nuestro proyecto, una vez iniciado Apache y MySQL introducimos ``tindware-web.local`` (o la URL que queramos escoger) en nuestro navegador
-
-## [BEST ENLACE PARA HACER UN BUEN QS JEJE](https://linkiafp.es/blog/profesiones-informatica/)
-
-En nuestra compañia contamos con profesionales en todas las ramas de la informatica.
-servicio de mantenimiento y reparacion de hardware y perifericos(teclados, ratones, switches,etc...)
-diseñadores web: mediante lenguajes como css, html, javascript, y framewoks como jquery, etc... se encargaran de dar soporte y desarrollar paginas web segun las indicaciones del cliente.
-Para ello, contamos con varios campos en los que seccionamos a nuestros empleados: UX developer,WEBDEVELOPER, MarketingONline. Cada uno de nuestros diseñdores webs
-se encuntran segmentados segun su experiencia, desde traine hasta senior.
-
-## Para poner la timeline de @tindware
-[Aqui](https://publish.twitter.com/?query=twitter.com%2Ftindware&widget=Timeline)
